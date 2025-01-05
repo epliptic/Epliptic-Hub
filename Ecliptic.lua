@@ -1,4 +1,13 @@
---  Scripts: 42 
+--[=[
+███████╗░█████╗░██╗░░░░░██╗██████╗░████████╗██╗░█████╗░  ██╗░░██╗██╗░░░██╗██████╗░
+██╔════╝██╔══██╗██║░░░░░██║██╔══██╗╚══██╔══╝██║██╔══██╗  ██║░░██║██║░░░██║██╔══██╗
+█████╗░░██║░░╚═╝██║░░░░░██║██████╔╝░░░██║░░░██║██║░░╚═╝  ███████║██║░░░██║██████╦╝
+██╔══╝░░██║░░██╗██║░░░░░██║██╔═══╝░░░░██║░░░██║██║░░██╗  ██╔══██║██║░░░██║██╔══██╗
+███████╗╚█████╔╝███████╗██║██║░░░░░░░░██║░░░██║╚█████╔╝  ██║░░██║╚██████╔╝██████╦╝
+╚══════╝░╚════╝░╚══════╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═╝░╚════╝░  ╚═╝░░╚═╝░╚═════╝░╚═════╝░
+--]=]
+
+-- Instances: 119 | Scripts: 42 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ECLIPTIC
@@ -38,7 +47,6 @@ G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["TextScaled"] = true;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["4"]["ZIndex"] = 7;
 G2L["4"]["Size"] = UDim2.new(0, 281, 0, 37);
 G2L["4"]["Name"] = [[Scripts]];
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -83,7 +91,6 @@ G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a"]["TextScaled"] = true;
 G2L["a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["a"]["ZIndex"] = 7;
 G2L["a"]["Size"] = UDim2.new(0, 130, 0, 37);
 G2L["a"]["Name"] = [[Home]];
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -123,7 +130,6 @@ G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["f"]["TextScaled"] = true;
 G2L["f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["f"]["ZIndex"] = 7;
 G2L["f"]["Size"] = UDim2.new(0, 130, 0, 37);
 G2L["f"]["Name"] = [[Updates]];
 G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -192,7 +198,7 @@ G2L["15"]["Position"] = UDim2.new(-0.47254, 0, -1.20924, 0);
 -- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame
 G2L["16"] = Instance.new("Frame", G2L["2"]);
 G2L["16"]["Visible"] = false;
-G2L["16"]["ZIndex"] = 3;
+G2L["16"]["ZIndex"] = 0;
 G2L["16"]["BorderSizePixel"] = 0;
 G2L["16"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["16"]["Size"] = UDim2.new(0, 544, 0, 269);
@@ -712,7 +718,7 @@ G2L["5a"]["CornerRadius"] = UDim.new(0, 15);
 -- StarterGui.ECLIPTIC.Ecliptic.UpdatesFrame
 G2L["5b"] = Instance.new("Frame", G2L["2"]);
 G2L["5b"]["Visible"] = false;
-G2L["5b"]["ZIndex"] = 3;
+G2L["5b"]["ZIndex"] = 0;
 G2L["5b"]["BorderSizePixel"] = 0;
 G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5b"]["Size"] = UDim2.new(0, 544, 0, 269);
@@ -881,7 +887,7 @@ G2L["65"]["Position"] = UDim2.new(0, 0, 0.19397, 0);
 -- StarterGui.ECLIPTIC.Ecliptic.CreatorsFrame
 G2L["66"] = Instance.new("Frame", G2L["2"]);
 G2L["66"]["Visible"] = false;
-G2L["66"]["ZIndex"] = 3;
+G2L["66"]["ZIndex"] = 0;
 G2L["66"]["BorderSizePixel"] = 0;
 G2L["66"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["66"]["Size"] = UDim2.new(0, 544, 0, 269);
@@ -990,7 +996,6 @@ G2L["70"] = Instance.new("LocalScript", G2L["2"]);
 G2L["71"] = Instance.new("TextLabel", G2L["2"]);
 G2L["71"]["TextWrapped"] = true;
 G2L["71"]["TextStrokeTransparency"] = 0;
-G2L["71"]["ZIndex"] = 0;
 G2L["71"]["BorderSizePixel"] = 0;
 G2L["71"]["TextScaled"] = true;
 G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -1006,7 +1011,6 @@ G2L["71"]["Position"] = UDim2.new(0.10662, 0, 0.52731, 0);
 
 -- StarterGui.ECLIPTIC.Ecliptic.ImageLabel
 G2L["72"] = Instance.new("ImageLabel", G2L["2"]);
-G2L["72"]["ZIndex"] = 0;
 G2L["72"]["BorderSizePixel"] = 0;
 G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["72"]["Image"] = [[http://www.roblox.com/asset/?id=113994082044278]];
