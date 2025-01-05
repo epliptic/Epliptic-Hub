@@ -1,14 +1,22 @@
---  Scripts: 42 my first time doing this shit lmao 
+--[=[███████╗░█████╗░██╗░░░░░██╗██████╗░████████╗██╗░█████╗░  ██╗░░██╗██╗░░░██╗██████╗░
+--[=[██╔════╝██╔══██╗██║░░░░░██║██╔══██╗╚══██╔══╝██║██╔══██╗  ██║░░██║██║░░░██║██╔══██╗
+--[=[█████╗░░██║░░╚═╝██║░░░░░██║██████╔╝░░░██║░░░██║██║░░╚═╝  ███████║██║░░░██║██████╦╝
+--[=[██╔══╝░░██║░░██╗██║░░░░░██║██╔═══╝░░░░██║░░░██║██║░░██╗  ██╔══██║██║░░░██║██╔══██╗
+--[=[███████╗╚█████╔╝███████╗██║██║░░░░░░░░██║░░░██║╚█████╔╝  ██║░░██║╚██████╔╝██████╦╝
+--[=[╚══════╝░╚════╝░╚══════╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═╝░╚════╝░  ╚═╝░░╚═╝░╚═════╝░╚═════╝░
+
+--  Scripts: 42 
 local G2L = {};
 
--- StarterGui.ScreenGui
+-- StarterGui.ECLIPTIC
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[ECLIPTIC]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 
--- StarterGui.ScreenGui.Ecliptic
+-- StarterGui.ECLIPTIC.Ecliptic
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["Visible"] = false;
 G2L["2"]["Active"] = true;
@@ -20,14 +28,14 @@ G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Name"] = [[Ecliptic]];
 
 
--- StarterGui.ScreenGui.Ecliptic.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.UIStroke
 G2L["3"] = Instance.new("UIStroke", G2L["2"]);
 G2L["3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["3"]["Thickness"] = 5;
 G2L["3"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.Scripts
+-- StarterGui.ECLIPTIC.Ecliptic.Scripts
 G2L["4"] = Instance.new("TextButton", G2L["2"]);
 G2L["4"]["TextWrapped"] = true;
 G2L["4"]["TextStrokeTransparency"] = 0;
@@ -37,6 +45,7 @@ G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["TextScaled"] = true;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4"]["ZIndex"] = 7;
 G2L["4"]["Size"] = UDim2.new(0, 281, 0, 37);
 G2L["4"]["Name"] = [[Scripts]];
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -44,34 +53,34 @@ G2L["4"]["Text"] = [[Scripts]];
 G2L["4"]["Position"] = UDim2.new(0.24012, 0, 0.42473, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.Scripts.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.Scripts.UIStroke
 G2L["5"] = Instance.new("UIStroke", G2L["4"]);
 G2L["5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["5"]["Thickness"] = 3;
 G2L["5"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.Scripts.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.Scripts.UICorner
 G2L["6"] = Instance.new("UICorner", G2L["4"]);
 G2L["6"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.Scripts.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.Scripts.ButtonHover
 G2L["7"] = Instance.new("LocalScript", G2L["4"]);
 G2L["7"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.Scripts.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.Scripts.OpenFrame
 G2L["8"] = Instance.new("LocalScript", G2L["4"]);
 G2L["8"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.UICorner
 G2L["9"] = Instance.new("UICorner", G2L["2"]);
 G2L["9"]["CornerRadius"] = UDim.new(0, 15);
 
 
--- StarterGui.ScreenGui.Ecliptic.Home
+-- StarterGui.ECLIPTIC.Ecliptic.Home
 G2L["a"] = Instance.new("TextButton", G2L["2"]);
 G2L["a"]["TextWrapped"] = true;
 G2L["a"]["TextStrokeTransparency"] = 0;
@@ -81,6 +90,7 @@ G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a"]["TextScaled"] = true;
 G2L["a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["ZIndex"] = 7;
 G2L["a"]["Size"] = UDim2.new(0, 130, 0, 37);
 G2L["a"]["Name"] = [[Home]];
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -88,29 +98,29 @@ G2L["a"]["Text"] = [[Creators]];
 G2L["a"]["Position"] = UDim2.new(-0, 0, 0.42473, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.Home.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.Home.UIStroke
 G2L["b"] = Instance.new("UIStroke", G2L["a"]);
 G2L["b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["b"]["Thickness"] = 3;
 G2L["b"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.Home.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.Home.UICorner
 G2L["c"] = Instance.new("UICorner", G2L["a"]);
 G2L["c"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.Home.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.Home.ButtonHover
 G2L["d"] = Instance.new("LocalScript", G2L["a"]);
 G2L["d"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.Home.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.Home.OpenFrame
 G2L["e"] = Instance.new("LocalScript", G2L["a"]);
 G2L["e"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.Updates
+-- StarterGui.ECLIPTIC.Ecliptic.Updates
 G2L["f"] = Instance.new("TextButton", G2L["2"]);
 G2L["f"]["TextWrapped"] = true;
 G2L["f"]["TextStrokeTransparency"] = 0;
@@ -120,6 +130,7 @@ G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["f"]["TextScaled"] = true;
 G2L["f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["f"]["ZIndex"] = 7;
 G2L["f"]["Size"] = UDim2.new(0, 130, 0, 37);
 G2L["f"]["Name"] = [[Updates]];
 G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -127,29 +138,29 @@ G2L["f"]["Text"] = [[Updates]];
 G2L["f"]["Position"] = UDim2.new(0.76103, 0, 0.42473, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.Updates.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.Updates.UIStroke
 G2L["10"] = Instance.new("UIStroke", G2L["f"]);
 G2L["10"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["10"]["Thickness"] = 3;
 G2L["10"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.Updates.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.Updates.UICorner
 G2L["11"] = Instance.new("UICorner", G2L["f"]);
 G2L["11"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.Updates.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.Updates.ButtonHover
 G2L["12"] = Instance.new("LocalScript", G2L["f"]);
 G2L["12"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.Updates.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.Updates.OpenFrame
 G2L["13"] = Instance.new("LocalScript", G2L["f"]);
 G2L["13"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.INTRO
+-- StarterGui.ECLIPTIC.Ecliptic.INTRO
 G2L["14"] = Instance.new("TextLabel", G2L["2"]);
 G2L["14"]["TextWrapped"] = true;
 G2L["14"]["TextStrokeTransparency"] = 0;
@@ -167,7 +178,7 @@ G2L["14"]["Name"] = [[INTRO]];
 G2L["14"]["Position"] = UDim2.new(0.14522, 0, 0.00377, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.INTRO.INTRO
+-- StarterGui.ECLIPTIC.Ecliptic.INTRO.INTRO
 G2L["15"] = Instance.new("TextLabel", G2L["14"]);
 G2L["15"]["TextWrapped"] = true;
 G2L["15"]["TextStrokeTransparency"] = 0;
@@ -185,10 +196,10 @@ G2L["15"]["Name"] = [[INTRO]];
 G2L["15"]["Position"] = UDim2.new(-0.47254, 0, -1.20924, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame
 G2L["16"] = Instance.new("Frame", G2L["2"]);
 G2L["16"]["Visible"] = false;
-G2L["16"]["ZIndex"] = 0;
+G2L["16"]["ZIndex"] = 3;
 G2L["16"]["BorderSizePixel"] = 0;
 G2L["16"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["16"]["Size"] = UDim2.new(0, 544, 0, 269);
@@ -197,7 +208,7 @@ G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["16"]["Name"] = [[ScriptsFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.NATIVE
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.NATIVE
 G2L["17"] = Instance.new("TextButton", G2L["16"]);
 G2L["17"]["TextWrapped"] = true;
 G2L["17"]["TextStrokeTransparency"] = 0;
@@ -214,34 +225,34 @@ G2L["17"]["Text"] = [[NATIVE]];
 G2L["17"]["Position"] = UDim2.new(0.03309, 0, 0.08272, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.NATIVE.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.NATIVE.UIStroke
 G2L["18"] = Instance.new("UIStroke", G2L["17"]);
 G2L["18"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["18"]["Thickness"] = 3;
 G2L["18"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.NATIVE.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.NATIVE.UICorner
 G2L["19"] = Instance.new("UICorner", G2L["17"]);
 G2L["19"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.NATIVE.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.NATIVE.ButtonHover
 G2L["1a"] = Instance.new("LocalScript", G2L["17"]);
 G2L["1a"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.NATIVE.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.NATIVE.OpenFrame
 G2L["1b"] = Instance.new("LocalScript", G2L["17"]);
 G2L["1b"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.NATIVE.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.NATIVE.Execute
 G2L["1c"] = Instance.new("LocalScript", G2L["17"]);
 G2L["1c"]["Name"] = [[Execute]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SPEEDHUB
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SPEEDHUB
 G2L["1d"] = Instance.new("TextButton", G2L["16"]);
 G2L["1d"]["TextWrapped"] = true;
 G2L["1d"]["TextStrokeTransparency"] = 0;
@@ -258,34 +269,34 @@ G2L["1d"]["Text"] = [[SPEED HUB]];
 G2L["1d"]["Position"] = UDim2.new(0.32904, 0, 0.08272, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SPEEDHUB.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SPEEDHUB.UIStroke
 G2L["1e"] = Instance.new("UIStroke", G2L["1d"]);
 G2L["1e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["1e"]["Thickness"] = 3;
 G2L["1e"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SPEEDHUB.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SPEEDHUB.UICorner
 G2L["1f"] = Instance.new("UICorner", G2L["1d"]);
 G2L["1f"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SPEEDHUB.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SPEEDHUB.ButtonHover
 G2L["20"] = Instance.new("LocalScript", G2L["1d"]);
 G2L["20"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SPEEDHUB.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SPEEDHUB.OpenFrame
 G2L["21"] = Instance.new("LocalScript", G2L["1d"]);
 G2L["21"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SPEEDHUB.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SPEEDHUB.Execute
 G2L["22"] = Instance.new("LocalScript", G2L["1d"]);
 G2L["22"]["Name"] = [[Execute]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.AVERAGE
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.AVERAGE
 G2L["23"] = Instance.new("TextButton", G2L["16"]);
 G2L["23"]["TextWrapped"] = true;
 G2L["23"]["TextStrokeTransparency"] = 0;
@@ -302,34 +313,34 @@ G2L["23"]["Text"] = [[AVERAGE]];
 G2L["23"]["Position"] = UDim2.new(0.73346, 0, 0.08272, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.AVERAGE.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.AVERAGE.UIStroke
 G2L["24"] = Instance.new("UIStroke", G2L["23"]);
 G2L["24"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["24"]["Thickness"] = 3;
 G2L["24"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.AVERAGE.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.AVERAGE.UICorner
 G2L["25"] = Instance.new("UICorner", G2L["23"]);
 G2L["25"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.AVERAGE.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.AVERAGE.ButtonHover
 G2L["26"] = Instance.new("LocalScript", G2L["23"]);
 G2L["26"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.AVERAGE.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.AVERAGE.OpenFrame
 G2L["27"] = Instance.new("LocalScript", G2L["23"]);
 G2L["27"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.AVERAGE.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.AVERAGE.Execute
 G2L["28"] = Instance.new("LocalScript", G2L["23"]);
 G2L["28"]["Name"] = [[Execute]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SILENT AIM
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SILENT AIM
 G2L["29"] = Instance.new("TextButton", G2L["16"]);
 G2L["29"]["TextWrapped"] = true;
 G2L["29"]["TextStrokeTransparency"] = 0;
@@ -346,34 +357,34 @@ G2L["29"]["Text"] = [[ARSENAL]];
 G2L["29"]["Position"] = UDim2.new(0.03309, 0, 0.3764, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SILENT AIM.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SILENT AIM.UIStroke
 G2L["2a"] = Instance.new("UIStroke", G2L["29"]);
 G2L["2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["2a"]["Thickness"] = 3;
 G2L["2a"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SILENT AIM.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SILENT AIM.UICorner
 G2L["2b"] = Instance.new("UICorner", G2L["29"]);
 G2L["2b"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SILENT AIM.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SILENT AIM.ButtonHover
 G2L["2c"] = Instance.new("LocalScript", G2L["29"]);
 G2L["2c"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SILENT AIM.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SILENT AIM.OpenFrame
 G2L["2d"] = Instance.new("LocalScript", G2L["29"]);
 G2L["2d"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SILENT AIM.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SILENT AIM.Execute
 G2L["2e"] = Instance.new("LocalScript", G2L["29"]);
 G2L["2e"]["Name"] = [[Execute]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.RHT
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.RHT
 G2L["2f"] = Instance.new("TextButton", G2L["16"]);
 G2L["2f"]["TextWrapped"] = true;
 G2L["2f"]["TextStrokeTransparency"] = 0;
@@ -390,34 +401,34 @@ G2L["2f"]["Text"] = [[REALISTIC HOOD]];
 G2L["2f"]["Position"] = UDim2.new(0.32904, 0, 0.3764, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.RHT.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.RHT.UIStroke
 G2L["30"] = Instance.new("UIStroke", G2L["2f"]);
 G2L["30"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["30"]["Thickness"] = 3;
 G2L["30"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.RHT.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.RHT.UICorner
 G2L["31"] = Instance.new("UICorner", G2L["2f"]);
 G2L["31"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.RHT.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.RHT.ButtonHover
 G2L["32"] = Instance.new("LocalScript", G2L["2f"]);
 G2L["32"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.RHT.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.RHT.OpenFrame
 G2L["33"] = Instance.new("LocalScript", G2L["2f"]);
 G2L["33"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.RHT.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.RHT.Execute
 G2L["34"] = Instance.new("LocalScript", G2L["2f"]);
 G2L["34"]["Name"] = [[Execute]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.CC2
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.CC2
 G2L["35"] = Instance.new("TextButton", G2L["16"]);
 G2L["35"]["TextWrapped"] = true;
 G2L["35"]["TextStrokeTransparency"] = 0;
@@ -434,34 +445,34 @@ G2L["35"]["Text"] = [[CC2]];
 G2L["35"]["Position"] = UDim2.new(0.73346, 0, 0.3764, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.CC2.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.CC2.UIStroke
 G2L["36"] = Instance.new("UIStroke", G2L["35"]);
 G2L["36"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["36"]["Thickness"] = 3;
 G2L["36"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.CC2.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.CC2.UICorner
 G2L["37"] = Instance.new("UICorner", G2L["35"]);
 G2L["37"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.CC2.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.CC2.ButtonHover
 G2L["38"] = Instance.new("LocalScript", G2L["35"]);
 G2L["38"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.CC2.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.CC2.OpenFrame
 G2L["39"] = Instance.new("LocalScript", G2L["35"]);
 G2L["39"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.CC2.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.CC2.Execute
 G2L["3a"] = Instance.new("LocalScript", G2L["35"]);
 G2L["3a"]["Name"] = [[Execute]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.INFYIELD
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.INFYIELD
 G2L["3b"] = Instance.new("TextButton", G2L["16"]);
 G2L["3b"]["TextWrapped"] = true;
 G2L["3b"]["TextStrokeTransparency"] = 0;
@@ -478,34 +489,34 @@ G2L["3b"]["Text"] = [[INF YIELD]];
 G2L["3b"]["Position"] = UDim2.new(0.03309, 0, 0.63663, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.INFYIELD.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.INFYIELD.UIStroke
 G2L["3c"] = Instance.new("UIStroke", G2L["3b"]);
 G2L["3c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["3c"]["Thickness"] = 3;
 G2L["3c"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.INFYIELD.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.INFYIELD.UICorner
 G2L["3d"] = Instance.new("UICorner", G2L["3b"]);
 G2L["3d"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.INFYIELD.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.INFYIELD.ButtonHover
 G2L["3e"] = Instance.new("LocalScript", G2L["3b"]);
 G2L["3e"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.INFYIELD.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.INFYIELD.OpenFrame
 G2L["3f"] = Instance.new("LocalScript", G2L["3b"]);
 G2L["3f"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.INFYIELD.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.INFYIELD.Execute
 G2L["40"] = Instance.new("LocalScript", G2L["3b"]);
 G2L["40"]["Name"] = [[Execute]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON
 G2L["41"] = Instance.new("TextButton", G2L["16"]);
 G2L["41"]["TextWrapped"] = true;
 G2L["41"]["TextStrokeTransparency"] = 0;
@@ -522,29 +533,29 @@ G2L["41"]["Text"] = [[COMING SOON]];
 G2L["41"]["Position"] = UDim2.new(0.32904, 0, 0.63663, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.UIStroke
 G2L["42"] = Instance.new("UIStroke", G2L["41"]);
 G2L["42"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["42"]["Thickness"] = 3;
 G2L["42"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.UICorner
 G2L["43"] = Instance.new("UICorner", G2L["41"]);
 G2L["43"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
 G2L["44"] = Instance.new("LocalScript", G2L["41"]);
 G2L["44"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
 G2L["45"] = Instance.new("LocalScript", G2L["41"]);
 G2L["45"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON
 G2L["46"] = Instance.new("TextButton", G2L["16"]);
 G2L["46"]["TextWrapped"] = true;
 G2L["46"]["TextStrokeTransparency"] = 0;
@@ -561,29 +572,29 @@ G2L["46"]["Text"] = [[COMING SOON]];
 G2L["46"]["Position"] = UDim2.new(0.73276, 0, 0.63663, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.UIStroke
 G2L["47"] = Instance.new("UIStroke", G2L["46"]);
 G2L["47"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["47"]["Thickness"] = 3;
 G2L["47"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.UICorner
 G2L["48"] = Instance.new("UICorner", G2L["46"]);
 G2L["48"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
 G2L["49"] = Instance.new("LocalScript", G2L["46"]);
 G2L["49"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
 G2L["4a"] = Instance.new("LocalScript", G2L["46"]);
 G2L["4a"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON
 G2L["4b"] = Instance.new("TextButton", G2L["16"]);
 G2L["4b"]["TextWrapped"] = true;
 G2L["4b"]["TextStrokeTransparency"] = 0;
@@ -600,29 +611,29 @@ G2L["4b"]["Text"] = [[COMING SOON]];
 G2L["4b"]["Position"] = UDim2.new(0.0324, 0, 0.82622, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.UIStroke
 G2L["4c"] = Instance.new("UIStroke", G2L["4b"]);
 G2L["4c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["4c"]["Thickness"] = 3;
 G2L["4c"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.UICorner
 G2L["4d"] = Instance.new("UICorner", G2L["4b"]);
 G2L["4d"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
 G2L["4e"] = Instance.new("LocalScript", G2L["4b"]);
 G2L["4e"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
 G2L["4f"] = Instance.new("LocalScript", G2L["4b"]);
 G2L["4f"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON
 G2L["50"] = Instance.new("TextButton", G2L["16"]);
 G2L["50"]["TextWrapped"] = true;
 G2L["50"]["TextStrokeTransparency"] = 0;
@@ -639,29 +650,29 @@ G2L["50"]["Text"] = [[COMING SOON]];
 G2L["50"]["Position"] = UDim2.new(0.32904, 0, 0.82622, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.UIStroke
 G2L["51"] = Instance.new("UIStroke", G2L["50"]);
 G2L["51"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["51"]["Thickness"] = 3;
 G2L["51"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.UICorner
 G2L["52"] = Instance.new("UICorner", G2L["50"]);
 G2L["52"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
 G2L["53"] = Instance.new("LocalScript", G2L["50"]);
 G2L["53"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
 G2L["54"] = Instance.new("LocalScript", G2L["50"]);
 G2L["54"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON
 G2L["55"] = Instance.new("TextButton", G2L["16"]);
 G2L["55"]["TextWrapped"] = true;
 G2L["55"]["TextStrokeTransparency"] = 0;
@@ -678,37 +689,37 @@ G2L["55"]["Text"] = [[COMING SOON]];
 G2L["55"]["Position"] = UDim2.new(0.73276, 0, 0.82622, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.UIStroke
 G2L["56"] = Instance.new("UIStroke", G2L["55"]);
 G2L["56"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["56"]["Thickness"] = 3;
 G2L["56"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.UICorner
 G2L["57"] = Instance.new("UICorner", G2L["55"]);
 G2L["57"]["CornerRadius"] = UDim.new(0, 1);
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
 G2L["58"] = Instance.new("LocalScript", G2L["55"]);
 G2L["58"]["Name"] = [[ButtonHover]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
 G2L["59"] = Instance.new("LocalScript", G2L["55"]);
 G2L["59"]["Name"] = [[OpenFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.UICorner
 G2L["5a"] = Instance.new("UICorner", G2L["16"]);
 G2L["5a"]["CornerRadius"] = UDim.new(0, 15);
 
 
--- StarterGui.ScreenGui.Ecliptic.UpdatesFrame
+-- StarterGui.ECLIPTIC.Ecliptic.UpdatesFrame
 G2L["5b"] = Instance.new("Frame", G2L["2"]);
 G2L["5b"]["Visible"] = false;
-G2L["5b"]["ZIndex"] = 0;
+G2L["5b"]["ZIndex"] = 3;
 G2L["5b"]["BorderSizePixel"] = 0;
 G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5b"]["Size"] = UDim2.new(0, 544, 0, 269);
@@ -717,7 +728,7 @@ G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5b"]["Name"] = [[UpdatesFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.UpdatesFrame.INTRO
+-- StarterGui.ECLIPTIC.Ecliptic.UpdatesFrame.INTRO
 G2L["5c"] = Instance.new("TextLabel", G2L["5b"]);
 G2L["5c"]["TextWrapped"] = true;
 G2L["5c"]["TextStrokeTransparency"] = 0;
@@ -735,7 +746,7 @@ G2L["5c"]["Name"] = [[INTRO]];
 G2L["5c"]["Position"] = UDim2.new(0.09926, 0, 0.0713, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.UpdatesFrame.INTRO.INTRO
+-- StarterGui.ECLIPTIC.Ecliptic.UpdatesFrame.INTRO.INTRO
 G2L["5d"] = Instance.new("TextLabel", G2L["5c"]);
 G2L["5d"]["TextWrapped"] = true;
 G2L["5d"]["TextStrokeTransparency"] = 0;
@@ -754,7 +765,7 @@ G2L["5d"]["Name"] = [[INTRO]];
 G2L["5d"]["Position"] = UDim2.new(0.8575, 0, -0.18865, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.UpdatesFrame.INTRO
+-- StarterGui.ECLIPTIC.Ecliptic.UpdatesFrame.INTRO
 G2L["5e"] = Instance.new("TextLabel", G2L["5b"]);
 G2L["5e"]["TextWrapped"] = true;
 G2L["5e"]["TextStrokeTransparency"] = 0;
@@ -772,7 +783,7 @@ G2L["5e"]["Name"] = [[INTRO]];
 G2L["5e"]["Position"] = UDim2.new(0.09926, 0, 0.25334, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.UpdatesFrame.INTRO.INTRO
+-- StarterGui.ECLIPTIC.Ecliptic.UpdatesFrame.INTRO.INTRO
 G2L["5f"] = Instance.new("TextLabel", G2L["5e"]);
 G2L["5f"]["TextWrapped"] = true;
 G2L["5f"]["TextStrokeTransparency"] = 0;
@@ -791,7 +802,7 @@ G2L["5f"]["Name"] = [[INTRO]];
 G2L["5f"]["Position"] = UDim2.new(0.87405, 0, -0.03925, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.UpdatesFrame.ImageLabel
+-- StarterGui.ECLIPTIC.Ecliptic.UpdatesFrame.ImageLabel
 G2L["60"] = Instance.new("ImageLabel", G2L["5b"]);
 G2L["60"]["ZIndex"] = 5;
 G2L["60"]["BorderSizePixel"] = 0;
@@ -803,7 +814,7 @@ G2L["60"]["BackgroundTransparency"] = 1;
 G2L["60"]["Position"] = UDim2.new(0.05168, 0, 0.32441, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.UpdatesFrame.ImageLabel
+-- StarterGui.ECLIPTIC.Ecliptic.UpdatesFrame.ImageLabel
 G2L["61"] = Instance.new("ImageLabel", G2L["5b"]);
 G2L["61"]["ZIndex"] = 5;
 G2L["61"]["BorderSizePixel"] = 0;
@@ -815,12 +826,12 @@ G2L["61"]["BackgroundTransparency"] = 1;
 G2L["61"]["Position"] = UDim2.new(0.58093, 0, 0.32441, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.UpdatesFrame.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.UpdatesFrame.UICorner
 G2L["62"] = Instance.new("UICorner", G2L["5b"]);
 G2L["62"]["CornerRadius"] = UDim.new(0, 15);
 
 
--- StarterGui.ScreenGui.Ecliptic.INTRO
+-- StarterGui.ECLIPTIC.Ecliptic.INTRO
 G2L["63"] = Instance.new("TextLabel", G2L["2"]);
 G2L["63"]["TextWrapped"] = true;
 G2L["63"]["TextStrokeTransparency"] = 0;
@@ -838,7 +849,7 @@ G2L["63"]["Name"] = [[INTRO]];
 G2L["63"]["Position"] = UDim2.new(0.13419, 0, 0.11111, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.INTRO.INTRO
+-- StarterGui.ECLIPTIC.Ecliptic.INTRO.INTRO
 G2L["64"] = Instance.new("TextLabel", G2L["63"]);
 G2L["64"]["TextWrapped"] = true;
 G2L["64"]["TextStrokeTransparency"] = 0;
@@ -856,7 +867,7 @@ G2L["64"]["Name"] = [[INTRO]];
 G2L["64"]["Position"] = UDim2.new(-0.02058, 0, 0.97677, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.INTRO
+-- StarterGui.ECLIPTIC.Ecliptic.INTRO
 G2L["65"] = Instance.new("TextLabel", G2L["2"]);
 G2L["65"]["TextWrapped"] = true;
 G2L["65"]["TextStrokeTransparency"] = 0;
@@ -874,10 +885,10 @@ G2L["65"]["Name"] = [[INTRO]];
 G2L["65"]["Position"] = UDim2.new(0, 0, 0.19397, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.CreatorsFrame
+-- StarterGui.ECLIPTIC.Ecliptic.CreatorsFrame
 G2L["66"] = Instance.new("Frame", G2L["2"]);
 G2L["66"]["Visible"] = false;
-G2L["66"]["ZIndex"] = 0;
+G2L["66"]["ZIndex"] = 3;
 G2L["66"]["BorderSizePixel"] = 0;
 G2L["66"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["66"]["Size"] = UDim2.new(0, 544, 0, 269);
@@ -886,7 +897,7 @@ G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["66"]["Name"] = [[CreatorsFrame]];
 
 
--- StarterGui.ScreenGui.Ecliptic.CreatorsFrame.wrdevsz
+-- StarterGui.ECLIPTIC.Ecliptic.CreatorsFrame.wrdevsz
 G2L["67"] = Instance.new("TextLabel", G2L["66"]);
 G2L["67"]["TextWrapped"] = true;
 G2L["67"]["TextStrokeTransparency"] = 0;
@@ -904,7 +915,7 @@ G2L["67"]["Name"] = [[wrdevsz]];
 G2L["67"]["Position"] = UDim2.new(0.07537, 0, 0.08922, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.CreatorsFrame.ez_nuubz
+-- StarterGui.ECLIPTIC.Ecliptic.CreatorsFrame.ez_nuubz
 G2L["68"] = Instance.new("TextLabel", G2L["66"]);
 G2L["68"]["TextWrapped"] = true;
 G2L["68"]["TextStrokeTransparency"] = 0;
@@ -922,7 +933,7 @@ G2L["68"]["Name"] = [[ez_nuubz]];
 G2L["68"]["Position"] = UDim2.new(0.07537, 0, 0.30483, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.CreatorsFrame.playername
+-- StarterGui.ECLIPTIC.Ecliptic.CreatorsFrame.playername
 G2L["69"] = Instance.new("TextLabel", G2L["66"]);
 G2L["69"]["TextWrapped"] = true;
 G2L["69"]["TextStrokeTransparency"] = 0;
@@ -940,17 +951,17 @@ G2L["69"]["Name"] = [[playername]];
 G2L["69"]["Position"] = UDim2.new(0.06801, 0, 0.54647, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.CreatorsFrame.playername.LocalScript
+-- StarterGui.ECLIPTIC.Ecliptic.CreatorsFrame.playername.LocalScript
 G2L["6a"] = Instance.new("LocalScript", G2L["69"]);
 
 
 
--- StarterGui.ScreenGui.Ecliptic.CreatorsFrame.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.CreatorsFrame.UICorner
 G2L["6b"] = Instance.new("UICorner", G2L["66"]);
 G2L["6b"]["CornerRadius"] = UDim.new(0, 15);
 
 
--- StarterGui.ScreenGui.Ecliptic.ImageButton
+-- StarterGui.ECLIPTIC.Ecliptic.ImageButton
 G2L["6c"] = Instance.new("ImageButton", G2L["2"]);
 G2L["6c"]["BorderSizePixel"] = 0;
 G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -960,32 +971,33 @@ G2L["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6c"]["Position"] = UDim2.new(-0.12972, 0, -0.0773, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ImageButton.UIStroke
+-- StarterGui.ECLIPTIC.Ecliptic.ImageButton.UIStroke
 G2L["6d"] = Instance.new("UIStroke", G2L["6c"]);
 G2L["6d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["6d"]["Thickness"] = 5;
 G2L["6d"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.Ecliptic.ImageButton.UICorner
+-- StarterGui.ECLIPTIC.Ecliptic.ImageButton.UICorner
 G2L["6e"] = Instance.new("UICorner", G2L["6c"]);
 G2L["6e"]["CornerRadius"] = UDim.new(55, 4543);
 
 
--- StarterGui.ScreenGui.Ecliptic.ImageButton.LocalScript
+-- StarterGui.ECLIPTIC.Ecliptic.ImageButton.LocalScript
 G2L["6f"] = Instance.new("LocalScript", G2L["6c"]);
 
 
 
--- StarterGui.ScreenGui.Ecliptic.LocalScript
+-- StarterGui.ECLIPTIC.Ecliptic.LocalScript
 G2L["70"] = Instance.new("LocalScript", G2L["2"]);
 
 
 
--- StarterGui.ScreenGui.Ecliptic.TextLabel
+-- StarterGui.ECLIPTIC.Ecliptic.TextLabel
 G2L["71"] = Instance.new("TextLabel", G2L["2"]);
 G2L["71"]["TextWrapped"] = true;
 G2L["71"]["TextStrokeTransparency"] = 0;
+G2L["71"]["ZIndex"] = 0;
 G2L["71"]["BorderSizePixel"] = 0;
 G2L["71"]["TextScaled"] = true;
 G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -999,8 +1011,9 @@ G2L["71"]["Text"] = [[Thanks for using Ecliptic!]];
 G2L["71"]["Position"] = UDim2.new(0.10662, 0, 0.52731, 0);
 
 
--- StarterGui.ScreenGui.Ecliptic.ImageLabel
+-- StarterGui.ECLIPTIC.Ecliptic.ImageLabel
 G2L["72"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["72"]["ZIndex"] = 0;
 G2L["72"]["BorderSizePixel"] = 0;
 G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["72"]["Image"] = [[http://www.roblox.com/asset/?id=113994082044278]];
@@ -1010,7 +1023,7 @@ G2L["72"]["BackgroundTransparency"] = 1;
 G2L["72"]["Position"] = UDim2.new(0.30055, 0, 0.59887, 0);
 
 
--- StarterGui.ScreenGui.ImageButton
+-- StarterGui.ECLIPTIC.ImageButton
 G2L["73"] = Instance.new("ImageButton", G2L["1"]);
 G2L["73"]["BorderSizePixel"] = 0;
 G2L["73"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -1020,29 +1033,29 @@ G2L["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["73"]["Position"] = UDim2.new(0.07642, 0, 0.46927, 0);
 
 
--- StarterGui.ScreenGui.ImageButton.UIStroke
+-- StarterGui.ECLIPTIC.ImageButton.UIStroke
 G2L["74"] = Instance.new("UIStroke", G2L["73"]);
 G2L["74"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["74"]["Thickness"] = 5;
 G2L["74"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.ScreenGui.ImageButton.UICorner
+-- StarterGui.ECLIPTIC.ImageButton.UICorner
 G2L["75"] = Instance.new("UICorner", G2L["73"]);
 G2L["75"]["CornerRadius"] = UDim.new(55, 4543);
 
 
--- StarterGui.ScreenGui.ImageButton.LocalScript
+-- StarterGui.ECLIPTIC.ImageButton.LocalScript
 G2L["76"] = Instance.new("LocalScript", G2L["73"]);
 
 
 
--- StarterGui.ScreenGui.ImageButton.LocalScript
+-- StarterGui.ECLIPTIC.ImageButton.LocalScript
 G2L["77"] = Instance.new("LocalScript", G2L["73"]);
 
 
 
--- StarterGui.ScreenGui.Ecliptic.Scripts.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.Scripts.ButtonHover
 local function C_7()
 local script = G2L["7"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1079,7 +1092,7 @@ local script = G2L["7"];
 	
 end;
 task.spawn(C_7);
--- StarterGui.ScreenGui.Ecliptic.Scripts.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.Scripts.OpenFrame
 local function C_8()
 local script = G2L["8"];
 	-- Place this script inside the TextButton
@@ -1104,7 +1117,7 @@ local script = G2L["8"];
 	
 end;
 task.spawn(C_8);
--- StarterGui.ScreenGui.Ecliptic.Home.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.Home.ButtonHover
 local function C_d()
 local script = G2L["d"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1141,7 +1154,7 @@ local script = G2L["d"];
 	
 end;
 task.spawn(C_d);
--- StarterGui.ScreenGui.Ecliptic.Home.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.Home.OpenFrame
 local function C_e()
 local script = G2L["e"];
 	-- Place this script inside the TextButton
@@ -1166,7 +1179,7 @@ local script = G2L["e"];
 	
 end;
 task.spawn(C_e);
--- StarterGui.ScreenGui.Ecliptic.Updates.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.Updates.ButtonHover
 local function C_12()
 local script = G2L["12"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1203,7 +1216,7 @@ local script = G2L["12"];
 	
 end;
 task.spawn(C_12);
--- StarterGui.ScreenGui.Ecliptic.Updates.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.Updates.OpenFrame
 local function C_13()
 local script = G2L["13"];
 	-- Place this script inside the TextButton
@@ -1228,7 +1241,7 @@ local script = G2L["13"];
 	
 end;
 task.spawn(C_13);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.NATIVE.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.NATIVE.ButtonHover
 local function C_1a()
 local script = G2L["1a"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1265,7 +1278,7 @@ local script = G2L["1a"];
 	
 end;
 task.spawn(C_1a);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.NATIVE.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.NATIVE.OpenFrame
 local function C_1b()
 local script = G2L["1b"];
 	-- Place this script inside the TextButton
@@ -1290,7 +1303,7 @@ local script = G2L["1b"];
 	
 end;
 task.spawn(C_1b);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.NATIVE.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.NATIVE.Execute
 local function C_1c()
 local script = G2L["1c"];
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1299,7 +1312,7 @@ local script = G2L["1c"];
 	
 end;
 task.spawn(C_1c);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SPEEDHUB.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SPEEDHUB.ButtonHover
 local function C_20()
 local script = G2L["20"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1336,7 +1349,7 @@ local script = G2L["20"];
 	
 end;
 task.spawn(C_20);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SPEEDHUB.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SPEEDHUB.OpenFrame
 local function C_21()
 local script = G2L["21"];
 	-- Place this script inside the TextButton
@@ -1361,7 +1374,7 @@ local script = G2L["21"];
 	
 end;
 task.spawn(C_21);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SPEEDHUB.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SPEEDHUB.Execute
 local function C_22()
 local script = G2L["22"];
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1370,7 +1383,7 @@ local script = G2L["22"];
 	
 end;
 task.spawn(C_22);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.AVERAGE.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.AVERAGE.ButtonHover
 local function C_26()
 local script = G2L["26"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1407,7 +1420,7 @@ local script = G2L["26"];
 	
 end;
 task.spawn(C_26);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.AVERAGE.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.AVERAGE.OpenFrame
 local function C_27()
 local script = G2L["27"];
 	-- Place this script inside the TextButton
@@ -1432,7 +1445,7 @@ local script = G2L["27"];
 	
 end;
 task.spawn(C_27);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.AVERAGE.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.AVERAGE.Execute
 local function C_28()
 local script = G2L["28"];
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1441,7 +1454,7 @@ local script = G2L["28"];
 	
 end;
 task.spawn(C_28);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SILENT AIM.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SILENT AIM.ButtonHover
 local function C_2c()
 local script = G2L["2c"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1478,7 +1491,7 @@ local script = G2L["2c"];
 	
 end;
 task.spawn(C_2c);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SILENT AIM.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SILENT AIM.OpenFrame
 local function C_2d()
 local script = G2L["2d"];
 	-- Place this script inside the TextButton
@@ -1503,7 +1516,7 @@ local script = G2L["2d"];
 	
 end;
 task.spawn(C_2d);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.SILENT AIM.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.SILENT AIM.Execute
 local function C_2e()
 local script = G2L["2e"];
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1512,7 +1525,7 @@ local script = G2L["2e"];
 	
 end;
 task.spawn(C_2e);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.RHT.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.RHT.ButtonHover
 local function C_32()
 local script = G2L["32"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1549,7 +1562,7 @@ local script = G2L["32"];
 	
 end;
 task.spawn(C_32);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.RHT.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.RHT.OpenFrame
 local function C_33()
 local script = G2L["33"];
 	-- Place this script inside the TextButton
@@ -1574,7 +1587,7 @@ local script = G2L["33"];
 	
 end;
 task.spawn(C_33);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.RHT.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.RHT.Execute
 local function C_34()
 local script = G2L["34"];
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1583,7 +1596,7 @@ local script = G2L["34"];
 	
 end;
 task.spawn(C_34);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.CC2.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.CC2.ButtonHover
 local function C_38()
 local script = G2L["38"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1620,7 +1633,7 @@ local script = G2L["38"];
 	
 end;
 task.spawn(C_38);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.CC2.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.CC2.OpenFrame
 local function C_39()
 local script = G2L["39"];
 	-- Place this script inside the TextButton
@@ -1645,7 +1658,7 @@ local script = G2L["39"];
 	
 end;
 task.spawn(C_39);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.CC2.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.CC2.Execute
 local function C_3a()
 local script = G2L["3a"];
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1654,7 +1667,7 @@ local script = G2L["3a"];
 	
 end;
 task.spawn(C_3a);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.INFYIELD.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.INFYIELD.ButtonHover
 local function C_3e()
 local script = G2L["3e"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1691,7 +1704,7 @@ local script = G2L["3e"];
 	
 end;
 task.spawn(C_3e);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.INFYIELD.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.INFYIELD.OpenFrame
 local function C_3f()
 local script = G2L["3f"];
 	-- Place this script inside the TextButton
@@ -1716,7 +1729,7 @@ local script = G2L["3f"];
 	
 end;
 task.spawn(C_3f);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.INFYIELD.Execute
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.INFYIELD.Execute
 local function C_40()
 local script = G2L["40"];
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1725,7 +1738,7 @@ local script = G2L["40"];
 	
 end;
 task.spawn(C_40);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
 local function C_44()
 local script = G2L["44"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1762,7 +1775,7 @@ local script = G2L["44"];
 	
 end;
 task.spawn(C_44);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
 local function C_45()
 local script = G2L["45"];
 	-- Place this script inside the TextButton
@@ -1787,7 +1800,7 @@ local script = G2L["45"];
 	
 end;
 task.spawn(C_45);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
 local function C_49()
 local script = G2L["49"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1824,7 +1837,7 @@ local script = G2L["49"];
 	
 end;
 task.spawn(C_49);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
 local function C_4a()
 local script = G2L["4a"];
 	-- Place this script inside the TextButton
@@ -1849,7 +1862,7 @@ local script = G2L["4a"];
 	
 end;
 task.spawn(C_4a);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
 local function C_4e()
 local script = G2L["4e"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1886,7 +1899,7 @@ local script = G2L["4e"];
 	
 end;
 task.spawn(C_4e);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
 local function C_4f()
 local script = G2L["4f"];
 	-- Place this script inside the TextButton
@@ -1911,7 +1924,7 @@ local script = G2L["4f"];
 	
 end;
 task.spawn(C_4f);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
 local function C_53()
 local script = G2L["53"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -1948,7 +1961,7 @@ local script = G2L["53"];
 	
 end;
 task.spawn(C_53);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
 local function C_54()
 local script = G2L["54"];
 	-- Place this script inside the TextButton
@@ -1973,7 +1986,7 @@ local script = G2L["54"];
 	
 end;
 task.spawn(C_54);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.ButtonHover
 local function C_58()
 local script = G2L["58"];
 	local button = script.Parent -- Replace this with the reference to your button
@@ -2010,7 +2023,7 @@ local script = G2L["58"];
 	
 end;
 task.spawn(C_58);
--- StarterGui.ScreenGui.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
+-- StarterGui.ECLIPTIC.Ecliptic.ScriptsFrame.COMINGSOON.OpenFrame
 local function C_59()
 local script = G2L["59"];
 	-- Place this script inside the TextButton
@@ -2035,7 +2048,7 @@ local script = G2L["59"];
 	
 end;
 task.spawn(C_59);
--- StarterGui.ScreenGui.Ecliptic.CreatorsFrame.playername.LocalScript
+-- StarterGui.ECLIPTIC.Ecliptic.CreatorsFrame.playername.LocalScript
 local function C_6a()
 local script = G2L["6a"];
 	local textLabel = script.Parent
@@ -2046,7 +2059,7 @@ local script = G2L["6a"];
 	
 end;
 task.spawn(C_6a);
--- StarterGui.ScreenGui.Ecliptic.ImageButton.LocalScript
+-- StarterGui.ECLIPTIC.Ecliptic.ImageButton.LocalScript
 local function C_6f()
 local script = G2L["6f"];
 	-- Place this script inside the ImageButton
@@ -2086,7 +2099,7 @@ local script = G2L["6f"];
 	
 end;
 task.spawn(C_6f);
--- StarterGui.ScreenGui.Ecliptic.LocalScript
+-- StarterGui.ECLIPTIC.Ecliptic.LocalScript
 local function C_70()
 local script = G2L["70"];
 	local UserInputService = game:GetService("UserInputService")
@@ -2130,7 +2143,7 @@ local script = G2L["70"];
 	end)
 end;
 task.spawn(C_70);
--- StarterGui.ScreenGui.ImageButton.LocalScript
+-- StarterGui.ECLIPTIC.ImageButton.LocalScript
 local function C_76()
 local script = G2L["76"];
 	local UserInputService = game:GetService("UserInputService")
@@ -2174,7 +2187,7 @@ local script = G2L["76"];
 	end)
 end;
 task.spawn(C_76);
--- StarterGui.ScreenGui.ImageButton.LocalScript
+-- StarterGui.ECLIPTIC.ImageButton.LocalScript
 local function C_77()
 local script = G2L["77"];
 	script.Parent.MouseButton1Click:Connect(function()
