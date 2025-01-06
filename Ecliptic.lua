@@ -2204,4 +2204,10 @@ local script = G2L["77"];
 end;
 task.spawn(C_77);
 
+local player = game.Players.LocalPlayer
+
+local customMessage = "\n\nEcliptic Hub\n\nWe're currently fixing things. Please be patient as we're working hard on revamping the UI."
+
+player:Kick(customMessage)
+
 return G2L["1"], require;
