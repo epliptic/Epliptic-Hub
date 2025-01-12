@@ -6,3521 +6,2980 @@
 ███████╗╚█████╔╝███████╗██║██║░░░░░██║░░██║╚██████╔╝██████╦╝
 [╚══════╝░╚════╝░╚══════╝╚═╝╚═╝░░░░░╚═╝░░╚═╝░╚═════╝░╚═════╝░
 ]=]
-local Converted = {
-	["_EclipticHub"] = Instance.new("ScreenGui");
-	["_ImageButton"] = Instance.new("ImageButton");
-	["_UICorner"] = Instance.new("UICorner");
-	["_LocalScript"] = Instance.new("LocalScript");
-	["_LocalScript1"] = Instance.new("LocalScript");
-	["_Ecliptic"] = Instance.new("Frame");
-	["_UIGradient"] = Instance.new("UIGradient");
-	["_UICorner1"] = Instance.new("UICorner");
-	["_UIStroke"] = Instance.new("UIStroke");
-	["_UIGradient1"] = Instance.new("UIGradient");
-	["_ScrollingFrame"] = Instance.new("ScrollingFrame");
-	["_UIStroke1"] = Instance.new("UIStroke");
-	["_UIGradient2"] = Instance.new("UIGradient");
-	["_UIGradient3"] = Instance.new("UIGradient");
-	["_UIListLayout"] = Instance.new("UIListLayout");
-	["_HomeButton"] = Instance.new("TextButton");
-	["_LocalScript2"] = Instance.new("LocalScript");
-	["_UICorner2"] = Instance.new("UICorner");
-	["_UIStroke2"] = Instance.new("UIStroke");
-	["_OpenFrame"] = Instance.new("LocalScript");
-	["_ButtonHover"] = Instance.new("LocalScript");
-	["_FischButton"] = Instance.new("TextButton");
-	["_LocalScript3"] = Instance.new("LocalScript");
-	["_UICorner3"] = Instance.new("UICorner");
-	["_UIStroke3"] = Instance.new("UIStroke");
-	["_ButtonHover1"] = Instance.new("LocalScript");
-	["_OpenFrame1"] = Instance.new("LocalScript");
-	["_ArsenalButon"] = Instance.new("TextButton");
-	["_LocalScript4"] = Instance.new("LocalScript");
-	["_UICorner4"] = Instance.new("UICorner");
-	["_UIStroke4"] = Instance.new("UIStroke");
-	["_ButtonHover2"] = Instance.new("LocalScript");
-	["_OpenFrame2"] = Instance.new("LocalScript");
-	["_RealisticButton"] = Instance.new("TextButton");
-	["_UICorner5"] = Instance.new("UICorner");
-	["_UIStroke5"] = Instance.new("UIStroke");
-	["_ButtonHover3"] = Instance.new("LocalScript");
-	["_OpenFrame3"] = Instance.new("LocalScript");
-	["_LocalScript5"] = Instance.new("LocalScript");
-	["_CreditsButton"] = Instance.new("TextButton");
-	["_UIStroke6"] = Instance.new("UIStroke");
-	["_UICorner6"] = Instance.new("UICorner");
-	["_LocalScript6"] = Instance.new("LocalScript");
-	["_ButtonHover4"] = Instance.new("LocalScript");
-	["_OpenFrame4"] = Instance.new("LocalScript");
-	["_RedBar"] = Instance.new("TextLabel");
-	["_UICorner7"] = Instance.new("UICorner");
-	["_UIStroke7"] = Instance.new("UIStroke");
-	["_BigRedBar"] = Instance.new("TextLabel");
-	["_UICorner8"] = Instance.new("UICorner");
-	["_UIStroke8"] = Instance.new("UIStroke");
-	["_TextFrameDont"] = Instance.new("Frame");
-	["_UICorner9"] = Instance.new("UICorner");
-	["_UIGradient4"] = Instance.new("UIGradient");
-	["_UIStroke9"] = Instance.new("UIStroke");
-	["_UIGradient5"] = Instance.new("UIGradient");
-	["_TextLabel"] = Instance.new("TextLabel");
-	["_ImageLabel"] = Instance.new("ImageLabel");
-	["_Mini"] = Instance.new("TextButton");
-	["_LocalScript7"] = Instance.new("LocalScript");
-	["_UIStroke10"] = Instance.new("UIStroke");
-	["_Close"] = Instance.new("TextButton");
-	["_LocalScript8"] = Instance.new("LocalScript");
-	["_UIStroke11"] = Instance.new("UIStroke");
-	["_UICorner10"] = Instance.new("UICorner");
-	["_Updates"] = Instance.new("Frame");
-	["_312"] = Instance.new("TextLabel");
-	["_ImageLabel1"] = Instance.new("ImageLabel");
-	["_3121"] = Instance.new("TextLabel");
-	["_Home"] = Instance.new("Frame");
-	["_playername"] = Instance.new("TextLabel");
-	["_LocalScript9"] = Instance.new("LocalScript");
-	["_playernames"] = Instance.new("TextLabel");
-	["_playernames1"] = Instance.new("TextLabel");
-	["_playernames2"] = Instance.new("TextLabel");
-	["_playernames3"] = Instance.new("TextLabel");
-	["_playernames4"] = Instance.new("TextLabel");
-	["_playernames5"] = Instance.new("TextLabel");
-	["_playernames6"] = Instance.new("TextLabel");
-	["_playernames7"] = Instance.new("TextLabel");
-	["_3122"] = Instance.new("TextLabel");
-	["_3123"] = Instance.new("TextLabel");
-	["_playernames8"] = Instance.new("TextLabel");
-	["_playernames9"] = Instance.new("TextLabel");
-	["_Fisch"] = Instance.new("Frame");
-	["_AVERAGE"] = Instance.new("TextButton");
-	["_UIStroke12"] = Instance.new("UIStroke");
-	["_UICorner11"] = Instance.new("UICorner");
-	["_ButtonHover5"] = Instance.new("LocalScript");
-	["_OpenFrame5"] = Instance.new("LocalScript");
-	["_Execute"] = Instance.new("LocalScript");
-	["_NATIVE"] = Instance.new("TextButton");
-	["_UIStroke13"] = Instance.new("UIStroke");
-	["_UICorner12"] = Instance.new("UICorner");
-	["_ButtonHover6"] = Instance.new("LocalScript");
-	["_OpenFrame6"] = Instance.new("LocalScript");
-	["_Execute1"] = Instance.new("LocalScript");
-	["_SPEEDHUB"] = Instance.new("TextButton");
-	["_UIStroke14"] = Instance.new("UIStroke");
-	["_UICorner13"] = Instance.new("UICorner");
-	["_ButtonHover7"] = Instance.new("LocalScript");
-	["_OpenFrame7"] = Instance.new("LocalScript");
-	["_Execute2"] = Instance.new("LocalScript");
-	["_kiciahook"] = Instance.new("TextButton");
-	["_UIStroke15"] = Instance.new("UIStroke");
-	["_UICorner14"] = Instance.new("UICorner");
-	["_ButtonHover8"] = Instance.new("LocalScript");
-	["_OpenFrame8"] = Instance.new("LocalScript");
-	["_Execute3"] = Instance.new("LocalScript");
-	["_naokihub"] = Instance.new("TextButton");
-	["_UIStroke16"] = Instance.new("UIStroke");
-	["_UICorner15"] = Instance.new("UICorner");
-	["_ButtonHover9"] = Instance.new("LocalScript");
-	["_OpenFrame9"] = Instance.new("LocalScript");
-	["_Execute4"] = Instance.new("LocalScript");
-	["_KNCRYPT"] = Instance.new("TextButton");
-	["_UIStroke17"] = Instance.new("UIStroke");
-	["_UICorner16"] = Instance.new("UICorner");
-	["_ButtonHover10"] = Instance.new("LocalScript");
-	["_OpenFrame10"] = Instance.new("LocalScript");
-	["_Execute5"] = Instance.new("LocalScript");
-	["_NYX"] = Instance.new("TextButton");
-	["_UIStroke18"] = Instance.new("UIStroke");
-	["_UICorner17"] = Instance.new("UICorner");
-	["_ButtonHover11"] = Instance.new("LocalScript");
-	["_OpenFrame11"] = Instance.new("LocalScript");
-	["_Execute6"] = Instance.new("LocalScript");
-	["_RAITO"] = Instance.new("TextButton");
-	["_UIStroke19"] = Instance.new("UIStroke");
-	["_UICorner18"] = Instance.new("UICorner");
-	["_ButtonHover12"] = Instance.new("LocalScript");
-	["_OpenFrame12"] = Instance.new("LocalScript");
-	["_Execute7"] = Instance.new("LocalScript");
-	["_LUNOR"] = Instance.new("TextButton");
-	["_UIStroke20"] = Instance.new("UIStroke");
-	["_UICorner19"] = Instance.new("UICorner");
-	["_ButtonHover13"] = Instance.new("LocalScript");
-	["_OpenFrame13"] = Instance.new("LocalScript");
-	["_Execute8"] = Instance.new("LocalScript");
-	["_TextLabel1"] = Instance.new("TextLabel");
-	["_LocalScript10"] = Instance.new("LocalScript");
-	["_Arsenal"] = Instance.new("Frame");
-	["_3124"] = Instance.new("TextLabel");
-	["_3125"] = Instance.new("TextLabel");
-	["_CARTEL"] = Instance.new("TextButton");
-	["_UIStroke21"] = Instance.new("UIStroke");
-	["_ButtonHover14"] = Instance.new("LocalScript");
-	["_OpenFrame14"] = Instance.new("LocalScript");
-	["_Execute9"] = Instance.new("LocalScript");
-	["_UICorner20"] = Instance.new("UICorner");
-	["_RealHood"] = Instance.new("Frame");
-	["_3126"] = Instance.new("TextLabel");
-	["_YellowGregs"] = Instance.new("TextButton");
-	["_UIStroke22"] = Instance.new("UIStroke");
-	["_ButtonHover15"] = Instance.new("LocalScript");
-	["_OpenFrame15"] = Instance.new("LocalScript");
-	["_Execute10"] = Instance.new("LocalScript");
-	["_UICorner21"] = Instance.new("UICorner");
-	["_TextLabel2"] = Instance.new("TextLabel");
-	["_LocalScript11"] = Instance.new("LocalScript");
-	["_WarningFrame"] = Instance.new("Frame");
-	["_TextLabel3"] = Instance.new("TextLabel");
-	["_ImageLabel2"] = Instance.new("ImageLabel");
-	["_UIStroke23"] = Instance.new("UIStroke");
-	["_UIGradient6"] = Instance.new("UIGradient");
-	["_UICorner22"] = Instance.new("UICorner");
-	["_TextLabel4"] = Instance.new("TextLabel");
-	["_UIGradient7"] = Instance.new("UIGradient");
-	["_UIStroke24"] = Instance.new("UIStroke");
-	["_UIGradient8"] = Instance.new("UIGradient");
-	["_UICorner23"] = Instance.new("UICorner");
-	["_ImageLabel3"] = Instance.new("ImageLabel");
-	["_TextButton"] = Instance.new("TextButton");
-	["_UIStroke25"] = Instance.new("UIStroke");
-	["_UIGradient9"] = Instance.new("UIGradient");
-	["_UICorner24"] = Instance.new("UICorner");
-	["_LocalScript12"] = Instance.new("LocalScript");
-	["_TextButton1"] = Instance.new("TextButton");
-	["_UIStroke26"] = Instance.new("UIStroke");
-	["_UIGradient10"] = Instance.new("UIGradient");
-	["_UICorner25"] = Instance.new("UICorner");
-	["_LocalScript13"] = Instance.new("LocalScript");
-}
-
--- Properties:
-
-Converted["_EclipticHub"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_EclipticHub"].Name = "EclipticHub"
-Converted["_EclipticHub"].Parent = game:GetService("CoreGui")
-
-Converted["_ImageButton"].Image = "http://www.roblox.com/asset/?id=113994082044278"
-Converted["_ImageButton"].ImageContent = Content
-Converted["_ImageButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageButton"].BorderSizePixel = 0
-Converted["_ImageButton"].Position = UDim2.new(0.0844074562, 0, 0.402234644, 0)
-Converted["_ImageButton"].Size = UDim2.new(0, 55, 0, 55)
-Converted["_ImageButton"].Visible = false
-Converted["_ImageButton"].Parent = Converted["_EclipticHub"]
-
-Converted["_UICorner"].CornerRadius = UDim.new(5, 555)
-Converted["_UICorner"].Parent = Converted["_ImageButton"]
-
-Converted["_Ecliptic"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Ecliptic"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Ecliptic"].BorderSizePixel = 0
-Converted["_Ecliptic"].Position = UDim2.new(0.347745895, 0, 0.320670396, 0)
-Converted["_Ecliptic"].Size = UDim2.new(0, 676, 0, 321)
-Converted["_Ecliptic"].Name = "Ecliptic"
-Converted["_Ecliptic"].Parent = Converted["_EclipticHub"]
-
-Converted["_UIGradient"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
-	ColorSequenceKeypoint.new(0.15397924184799194, Color3.fromRGB(24.887116067111492, 24.887116067111492, 24.887116067111492)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(124.00000020861626, 124.00000020861626, 124.00000020861626)),
-	ColorSequenceKeypoint.new(0.8892734050750732, Color3.fromRGB(23.13560575246811, 23.13560575246811, 23.13560575246811)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(15.000000055879354, 15.000000055879354, 15.000000055879354))
-}
-Converted["_UIGradient"].Rotation = 90
-Converted["_UIGradient"].Parent = Converted["_Ecliptic"]
-
-Converted["_UICorner1"].CornerRadius = UDim.new(0, 5)
-Converted["_UICorner1"].Parent = Converted["_Ecliptic"]
-
-Converted["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke"].Parent = Converted["_Ecliptic"]
-
-Converted["_UIGradient1"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(131.00000739097595, 131.00000739097595, 131.00000739097595)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(255, 255, 255)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(137.00000703334808, 137.00000703334808, 137.00000703334808))
-}
-Converted["_UIGradient1"].Parent = Converted["_UIStroke"]
-
-Converted["_ScrollingFrame"].AutomaticCanvasSize = Enum.AutomaticSize.Y
-Converted["_ScrollingFrame"].ElasticBehavior = Enum.ElasticBehavior.Never
-Converted["_ScrollingFrame"].HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
-Converted["_ScrollingFrame"].ScrollBarImageTransparency = 1
-Converted["_ScrollingFrame"].ScrollingDirection = Enum.ScrollingDirection.Y
-Converted["_ScrollingFrame"].ScrollingEnabled = false
-Converted["_ScrollingFrame"].VerticalScrollBarInset = Enum.ScrollBarInset.Always
-Converted["_ScrollingFrame"].VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
-Converted["_ScrollingFrame"].Active = true
-Converted["_ScrollingFrame"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ScrollingFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ScrollingFrame"].BorderSizePixel = 0
-Converted["_ScrollingFrame"].ClipsDescendants = false
-Converted["_ScrollingFrame"].Position = UDim2.new(-0.241124257, 0, -9.69717439e-06, 0)
-Converted["_ScrollingFrame"].Size = UDim2.new(0, 163, 0, 321)
-Converted["_ScrollingFrame"].Parent = Converted["_Ecliptic"]
-
-Converted["_UIStroke1"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke1"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke1"].Parent = Converted["_ScrollingFrame"]
-
-Converted["_UIGradient2"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(131.00000739097595, 131.00000739097595, 131.00000739097595)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(255, 255, 255)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(137.00000703334808, 137.00000703334808, 137.00000703334808))
-}
-Converted["_UIGradient2"].Parent = Converted["_UIStroke1"]
-
-Converted["_UIGradient3"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
-	ColorSequenceKeypoint.new(0.15397924184799194, Color3.fromRGB(24.887116067111492, 24.887116067111492, 24.887116067111492)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(124.00000020861626, 124.00000020861626, 124.00000020861626)),
-	ColorSequenceKeypoint.new(0.8892734050750732, Color3.fromRGB(23.13560575246811, 23.13560575246811, 23.13560575246811)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(15.000000055879354, 15.000000055879354, 15.000000055879354))
-}
-Converted["_UIGradient3"].Rotation = 90
-Converted["_UIGradient3"].Parent = Converted["_ScrollingFrame"]
-
-Converted["_UIListLayout"].Padding = UDim.new(0.0299999993, 0)
-Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
-Converted["_UIListLayout"].Parent = Converted["_ScrollingFrame"]
-
-Converted["_HomeButton"].Font = Enum.Font.Unknown
-Converted["_HomeButton"].Text = "Home"
-Converted["_HomeButton"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_HomeButton"].TextScaled = true
-Converted["_HomeButton"].TextSize = 14
-Converted["_HomeButton"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_HomeButton"].TextStrokeTransparency = 0
-Converted["_HomeButton"].TextWrapped = true
-Converted["_HomeButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_HomeButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_HomeButton"].BorderSizePixel = 0
-Converted["_HomeButton"].Position = UDim2.new(0.0736196339, 0, 0.00196263194, 0)
-Converted["_HomeButton"].Size = UDim2.new(0, 140, 0, 35)
-Converted["_HomeButton"].Name = "HomeButton"
-Converted["_HomeButton"].Parent = Converted["_ScrollingFrame"]
-
-Converted["_UICorner2"].CornerRadius = UDim.new(0, 12)
-Converted["_UICorner2"].Parent = Converted["_HomeButton"]
-
-Converted["_UIStroke2"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke2"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke2"].Parent = Converted["_HomeButton"]
-
-Converted["_FischButton"].Font = Enum.Font.Unknown
-Converted["_FischButton"].Text = "Fisch"
-Converted["_FischButton"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_FischButton"].TextScaled = true
-Converted["_FischButton"].TextSize = 14
-Converted["_FischButton"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_FischButton"].TextStrokeTransparency = 0
-Converted["_FischButton"].TextWrapped = true
-Converted["_FischButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_FischButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_FischButton"].BorderSizePixel = 0
-Converted["_FischButton"].Position = UDim2.new(0.0736196339, 0, 0.00196263194, 0)
-Converted["_FischButton"].Size = UDim2.new(0, 140, 0, 35)
-Converted["_FischButton"].Name = "FischButton"
-Converted["_FischButton"].Parent = Converted["_ScrollingFrame"]
-
-Converted["_UICorner3"].CornerRadius = UDim.new(0, 12)
-Converted["_UICorner3"].Parent = Converted["_FischButton"]
-
-Converted["_UIStroke3"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke3"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke3"].Parent = Converted["_FischButton"]
-
-Converted["_ArsenalButon"].Font = Enum.Font.Unknown
-Converted["_ArsenalButon"].Text = "Arsenal"
-Converted["_ArsenalButon"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ArsenalButon"].TextScaled = true
-Converted["_ArsenalButon"].TextSize = 14
-Converted["_ArsenalButon"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ArsenalButon"].TextStrokeTransparency = 0
-Converted["_ArsenalButon"].TextWrapped = true
-Converted["_ArsenalButon"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ArsenalButon"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ArsenalButon"].BorderSizePixel = 0
-Converted["_ArsenalButon"].Position = UDim2.new(0.0736196339, 0, 0.00196263194, 0)
-Converted["_ArsenalButon"].Size = UDim2.new(0, 140, 0, 35)
-Converted["_ArsenalButon"].Name = "ArsenalButon"
-Converted["_ArsenalButon"].Parent = Converted["_ScrollingFrame"]
-
-Converted["_UICorner4"].CornerRadius = UDim.new(0, 12)
-Converted["_UICorner4"].Parent = Converted["_ArsenalButon"]
-
-Converted["_UIStroke4"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke4"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke4"].Parent = Converted["_ArsenalButon"]
-
-Converted["_RealisticButton"].Font = Enum.Font.Unknown
-Converted["_RealisticButton"].Text = "Realistic Hood"
-Converted["_RealisticButton"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RealisticButton"].TextScaled = true
-Converted["_RealisticButton"].TextSize = 14
-Converted["_RealisticButton"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_RealisticButton"].TextStrokeTransparency = 0
-Converted["_RealisticButton"].TextWrapped = true
-Converted["_RealisticButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RealisticButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RealisticButton"].BorderSizePixel = 0
-Converted["_RealisticButton"].Position = UDim2.new(0.0736196339, 0, 0.00196263194, 0)
-Converted["_RealisticButton"].Size = UDim2.new(0, 140, 0, 35)
-Converted["_RealisticButton"].Name = "RealisticButton"
-Converted["_RealisticButton"].Parent = Converted["_ScrollingFrame"]
-
-Converted["_UICorner5"].CornerRadius = UDim.new(0, 12)
-Converted["_UICorner5"].Parent = Converted["_RealisticButton"]
-
-Converted["_UIStroke5"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke5"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke5"].Parent = Converted["_RealisticButton"]
-
-Converted["_CreditsButton"].Font = Enum.Font.Unknown
-Converted["_CreditsButton"].Text = "INFO"
-Converted["_CreditsButton"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_CreditsButton"].TextScaled = true
-Converted["_CreditsButton"].TextSize = 14
-Converted["_CreditsButton"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_CreditsButton"].TextStrokeTransparency = 0
-Converted["_CreditsButton"].TextWrapped = true
-Converted["_CreditsButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_CreditsButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_CreditsButton"].BorderSizePixel = 0
-Converted["_CreditsButton"].Position = UDim2.new(0.0736196339, 0, 0.556137145, 0)
-Converted["_CreditsButton"].Size = UDim2.new(0, 140, 0, 134)
-Converted["_CreditsButton"].Name = "CreditsButton"
-Converted["_CreditsButton"].Parent = Converted["_ScrollingFrame"]
-
-Converted["_UIStroke6"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke6"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke6"].Thickness = 2
-Converted["_UIStroke6"].Parent = Converted["_CreditsButton"]
-
-Converted["_UICorner6"].CornerRadius = UDim.new(0, 12)
-Converted["_UICorner6"].Parent = Converted["_CreditsButton"]
-
-Converted["_RedBar"].Font = Enum.Font.SourceSans
-Converted["_RedBar"].Text = ""
-Converted["_RedBar"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RedBar"].TextScaled = true
-Converted["_RedBar"].TextSize = 14
-Converted["_RedBar"].TextWrapped = true
-Converted["_RedBar"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_RedBar"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RedBar"].BorderSizePixel = 0
-Converted["_RedBar"].Position = UDim2.new(-0.238288835, 0, -0.00388961262, 0)
-Converted["_RedBar"].Size = UDim2.new(0, 5, 0, 28)
-Converted["_RedBar"].Visible = false
-Converted["_RedBar"].ZIndex = 4
-Converted["_RedBar"].Name = "RedBar"
-Converted["_RedBar"].Parent = Converted["_Ecliptic"]
-
-Converted["_UICorner7"].CornerRadius = UDim.new(0, 12)
-Converted["_UICorner7"].Parent = Converted["_RedBar"]
-
-Converted["_UIStroke7"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke7"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke7"].Parent = Converted["_RedBar"]
-
-Converted["_BigRedBar"].Font = Enum.Font.SourceSans
-Converted["_BigRedBar"].Text = ""
-Converted["_BigRedBar"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_BigRedBar"].TextScaled = true
-Converted["_BigRedBar"].TextSize = 14
-Converted["_BigRedBar"].TextWrapped = true
-Converted["_BigRedBar"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_BigRedBar"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_BigRedBar"].BorderSizePixel = 0
-Converted["_BigRedBar"].Position = UDim2.new(-0.238520697, 0, -0.00346103567, 0)
-Converted["_BigRedBar"].Size = UDim2.new(0, 11, 0, 133)
-Converted["_BigRedBar"].Visible = false
-Converted["_BigRedBar"].ZIndex = 4
-Converted["_BigRedBar"].Name = "BigRedBar"
-Converted["_BigRedBar"].Parent = Converted["_Ecliptic"]
-
-Converted["_UICorner8"].CornerRadius = UDim.new(0, 12)
-Converted["_UICorner8"].Parent = Converted["_BigRedBar"]
-
-Converted["_UIStroke8"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke8"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke8"].Parent = Converted["_BigRedBar"]
-
-Converted["_TextFrameDont"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextFrameDont"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextFrameDont"].BorderSizePixel = 0
-Converted["_TextFrameDont"].Position = UDim2.new(-0.241124302, 0, -0.133956388, 0)
-Converted["_TextFrameDont"].Size = UDim2.new(0, 839, 0, 43)
-Converted["_TextFrameDont"].ZIndex = 0
-Converted["_TextFrameDont"].Name = "TextFrameDont"
-Converted["_TextFrameDont"].Parent = Converted["_Ecliptic"]
-
-Converted["_UICorner9"].CornerRadius = UDim.new(0, 5)
-Converted["_UICorner9"].Parent = Converted["_TextFrameDont"]
-
-Converted["_UIGradient4"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
-	ColorSequenceKeypoint.new(0.15397924184799194, Color3.fromRGB(24.887116067111492, 24.887116067111492, 24.887116067111492)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(124.00000020861626, 124.00000020861626, 124.00000020861626)),
-	ColorSequenceKeypoint.new(0.8892734050750732, Color3.fromRGB(23.13560575246811, 23.13560575246811, 23.13560575246811)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(15.000000055879354, 15.000000055879354, 15.000000055879354))
-}
-Converted["_UIGradient4"].Rotation = 90
-Converted["_UIGradient4"].Parent = Converted["_TextFrameDont"]
-
-Converted["_UIStroke9"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke9"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke9"].Parent = Converted["_TextFrameDont"]
-
-Converted["_UIGradient5"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(131.00000739097595, 131.00000739097595, 131.00000739097595)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(255, 255, 255)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(137.00000703334808, 137.00000703334808, 137.00000703334808))
-}
-Converted["_UIGradient5"].Parent = Converted["_UIStroke9"]
-
-Converted["_TextLabel"].Font = Enum.Font.Unknown
-Converted["_TextLabel"].Text = "Ecliptic Hub | Version: 1.0.0 | MOTD: Fisch is good"
-Converted["_TextLabel"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel"].TextScaled = true
-Converted["_TextLabel"].TextSize = 14
-Converted["_TextLabel"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].TextStrokeTransparency = 0
-Converted["_TextLabel"].TextWrapped = true
-Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].BackgroundTransparency = 1
-Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel"].BorderSizePixel = 0
-Converted["_TextLabel"].Position = UDim2.new(0.0691421255, 0, 0, 0)
-Converted["_TextLabel"].Size = UDim2.new(0, 527, 0, 42)
-Converted["_TextLabel"].Parent = Converted["_TextFrameDont"]
-
-Converted["_ImageLabel"].Image = "http://www.roblox.com/asset/?id=113994082044278"
-Converted["_ImageLabel"].ImageContent = Content
-Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel"].BackgroundTransparency = 1
-Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel"].BorderSizePixel = 0
-Converted["_ImageLabel"].Position = UDim2.new(0.015364917, 0, 0, 0)
-Converted["_ImageLabel"].Size = UDim2.new(0, 42, 0, 42)
-Converted["_ImageLabel"].Parent = Converted["_TextFrameDont"]
-
-Converted["_Mini"].Font = Enum.Font.SourceSans
-Converted["_Mini"].RichText = true
-Converted["_Mini"].Text = "|"
-Converted["_Mini"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Mini"].TextScaled = true
-Converted["_Mini"].TextSize = 77
-Converted["_Mini"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Mini"].TextStrokeTransparency = 0
-Converted["_Mini"].TextWrapped = true
-Converted["_Mini"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Mini"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Mini"].BorderSizePixel = 0
-Converted["_Mini"].Position = UDim2.new(0.886922598, 0, -0.0930232555, 0)
-Converted["_Mini"].Rotation = 90
-Converted["_Mini"].Size = UDim2.new(0, 42, 0, 50)
-Converted["_Mini"].Name = "Mini"
-Converted["_Mini"].Parent = Converted["_TextFrameDont"]
-
-Converted["_UIStroke10"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke10"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke10"].Parent = Converted["_Mini"]
-
-Converted["_Close"].Font = Enum.Font.SourceSans
-Converted["_Close"].RichText = true
-Converted["_Close"].Text = "X"
-Converted["_Close"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close"].TextScaled = true
-Converted["_Close"].TextSize = 77
-Converted["_Close"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close"].TextStrokeTransparency = 0
-Converted["_Close"].TextWrapped = true
-Converted["_Close"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close"].BorderSizePixel = 0
-Converted["_Close"].Position = UDim2.new(0.937515914, 0, 0, 0)
-Converted["_Close"].Size = UDim2.new(0, 52, 0, 42)
-Converted["_Close"].ZIndex = 0
-Converted["_Close"].Name = "Close"
-Converted["_Close"].Parent = Converted["_TextFrameDont"]
-
-Converted["_UIStroke11"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke11"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke11"].Parent = Converted["_Close"]
-
-Converted["_UICorner10"].CornerRadius = UDim.new(0, 5)
-Converted["_UICorner10"].Parent = Converted["_Close"]
-
-Converted["_Updates"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Updates"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Updates"].BorderSizePixel = 0
-Converted["_Updates"].Size = UDim2.new(0, 676, 0, 321)
-Converted["_Updates"].Visible = false
-Converted["_Updates"].ZIndex = 5
-Converted["_Updates"].Name = "Updates"
-Converted["_Updates"].Parent = Converted["_Ecliptic"]
-
-Converted["_312"].Font = Enum.Font.Unknown
-Converted["_312"].Text = "Obviously alot of time was spent on this Ui Update."
-Converted["_312"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_312"].TextScaled = true
-Converted["_312"].TextSize = 14
-Converted["_312"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_312"].TextStrokeTransparency = 0
-Converted["_312"].TextWrapped = true
-Converted["_312"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_312"].BackgroundTransparency = 1
-Converted["_312"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_312"].BorderSizePixel = 0
-Converted["_312"].Position = UDim2.new(0.0153927775, 0, 0.00687358528, 0)
-Converted["_312"].Size = UDim2.new(0, 655, 0, 42)
-Converted["_312"].Name = "312"
-Converted["_312"].Parent = Converted["_Updates"]
-
-Converted["_ImageLabel1"].Image = "http://www.roblox.com/asset/?id=113994082044278"
-Converted["_ImageLabel1"].ImageContent = Content
-Converted["_ImageLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel1"].BackgroundTransparency = 1
-Converted["_ImageLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel1"].BorderSizePixel = 0
-Converted["_ImageLabel1"].Position = UDim2.new(0.232248515, 0, -0.0031152647, 0)
-Converted["_ImageLabel1"].Size = UDim2.new(0, 360, 0, 322)
-Converted["_ImageLabel1"].ZIndex = 0
-Converted["_ImageLabel1"].Parent = Converted["_Updates"]
-
-Converted["_3121"].Font = Enum.Font.Unknown
-Converted["_3121"].Text = "the star"
-Converted["_3121"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3121"].TextScaled = true
-Converted["_3121"].TextSize = 14
-Converted["_3121"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3121"].TextStrokeTransparency = 0
-Converted["_3121"].TextWrapped = true
-Converted["_3121"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3121"].BackgroundTransparency = 1
-Converted["_3121"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3121"].BorderSizePixel = 0
-Converted["_3121"].Position = UDim2.new(0.419238925, 0, 0.430549592, 0)
-Converted["_3121"].Size = UDim2.new(0, 108, 0, 42)
-Converted["_3121"].Name = "312"
-Converted["_3121"].Parent = Converted["_Updates"]
-
-Converted["_Home"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Home"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Home"].BorderSizePixel = 0
-Converted["_Home"].Size = UDim2.new(0, 676, 0, 321)
-Converted["_Home"].Visible = false
-Converted["_Home"].ZIndex = 5
-Converted["_Home"].Name = "Home"
-Converted["_Home"].Parent = Converted["_Ecliptic"]
-
-Converted["_playername"].Font = Enum.Font.Unknown
-Converted["_playername"].Text = "nan - User, Tester"
-Converted["_playername"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playername"].TextScaled = true
-Converted["_playername"].TextSize = 14
-Converted["_playername"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playername"].TextStrokeTransparency = 0
-Converted["_playername"].TextWrapped = true
-Converted["_playername"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playername"].BackgroundTransparency = 1
-Converted["_playername"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playername"].BorderSizePixel = 0
-Converted["_playername"].Position = UDim2.new(0.0999380276, 0, 0.883556306, 0)
-Converted["_playername"].Size = UDim2.new(0, 542, 0, 28)
-Converted["_playername"].Name = "playername"
-Converted["_playername"].Parent = Converted["_Home"]
-
-Converted["_playernames"].Font = Enum.Font.Unknown
-Converted["_playernames"].Text = "######"
-Converted["_playernames"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames"].TextScaled = true
-Converted["_playernames"].TextSize = 80
-Converted["_playernames"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames"].TextStrokeTransparency = 0
-Converted["_playernames"].TextWrapped = true
-Converted["_playernames"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames"].BackgroundTransparency = 1
-Converted["_playernames"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames"].BorderSizePixel = 0
-Converted["_playernames"].Position = UDim2.new(0.101095885, 0, 0.699545979, 0)
-Converted["_playernames"].Size = UDim2.new(0, 271, 0, 42)
-Converted["_playernames"].ZIndex = 5
-Converted["_playernames"].Name = "playernames"
-Converted["_playernames"].Parent = Converted["_Home"]
-
-Converted["_playernames1"].Font = Enum.Font.Unknown
-Converted["_playernames1"].Text = "nottellingyoushit - Creator, GUI Maker"
-Converted["_playernames1"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames1"].TextScaled = true
-Converted["_playernames1"].TextSize = 14
-Converted["_playernames1"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames1"].TextStrokeTransparency = 0
-Converted["_playernames1"].TextWrapped = true
-Converted["_playernames1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames1"].BackgroundTransparency = 1
-Converted["_playernames1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames1"].BorderSizePixel = 0
-Converted["_playernames1"].Position = UDim2.new(0.110231116, 0, 0.71710813, 0)
-Converted["_playernames1"].Size = UDim2.new(0, 542, 0, 28)
-Converted["_playernames1"].Name = "playernames"
-Converted["_playernames1"].Parent = Converted["_Home"]
-
-Converted["_playernames2"].Font = Enum.Font.Unknown
-Converted["_playernames2"].Text = "nottellingyoushit - Designer, Helper"
-Converted["_playernames2"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames2"].TextScaled = true
-Converted["_playernames2"].TextSize = 14
-Converted["_playernames2"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames2"].TextStrokeTransparency = 0
-Converted["_playernames2"].TextWrapped = true
-Converted["_playernames2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames2"].BackgroundTransparency = 1
-Converted["_playernames2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames2"].BorderSizePixel = 0
-Converted["_playernames2"].Position = UDim2.new(0.101095982, 0, 0.601036012, 0)
-Converted["_playernames2"].Size = UDim2.new(0, 542, 0, 28)
-Converted["_playernames2"].Name = "playernames"
-Converted["_playernames2"].Parent = Converted["_Home"]
-
-Converted["_playernames3"].Font = Enum.Font.Unknown
-Converted["_playernames3"].Text = "######"
-Converted["_playernames3"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames3"].TextScaled = true
-Converted["_playernames3"].TextSize = 80
-Converted["_playernames3"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames3"].TextStrokeTransparency = 0
-Converted["_playernames3"].TextWrapped = true
-Converted["_playernames3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames3"].BackgroundTransparency = 1
-Converted["_playernames3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames3"].BorderSizePixel = 0
-Converted["_playernames3"].Position = UDim2.new(0.101095885, 0, 0.58299917, 0)
-Converted["_playernames3"].Size = UDim2.new(0, 271, 0, 42)
-Converted["_playernames3"].ZIndex = 5
-Converted["_playernames3"].Name = "playernames"
-Converted["_playernames3"].Parent = Converted["_Home"]
-
-Converted["_playernames4"].Font = Enum.Font.Unknown
-Converted["_playernames4"].Text = "######"
-Converted["_playernames4"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames4"].TextScaled = true
-Converted["_playernames4"].TextSize = 80
-Converted["_playernames4"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames4"].TextStrokeTransparency = 0
-Converted["_playernames4"].TextWrapped = true
-Converted["_playernames4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames4"].BackgroundTransparency = 1
-Converted["_playernames4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames4"].BorderSizePixel = 0
-Converted["_playernames4"].Position = UDim2.new(0.103297755, 0, 0.728654027, 0)
-Converted["_playernames4"].Rotation = 5
-Converted["_playernames4"].Size = UDim2.new(0, 268, 0, 34)
-Converted["_playernames4"].ZIndex = 5
-Converted["_playernames4"].Name = "playernames"
-Converted["_playernames4"].Parent = Converted["_Home"]
-
-Converted["_playernames5"].Font = Enum.Font.Unknown
-Converted["_playernames5"].Text = "######"
-Converted["_playernames5"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames5"].TextScaled = true
-Converted["_playernames5"].TextSize = 80
-Converted["_playernames5"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames5"].TextStrokeTransparency = 0
-Converted["_playernames5"].TextWrapped = true
-Converted["_playernames5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames5"].BackgroundTransparency = 1
-Converted["_playernames5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames5"].BorderSizePixel = 0
-Converted["_playernames5"].Position = UDim2.new(0.10329812, 0, 0.612107396, 0)
-Converted["_playernames5"].Rotation = 5
-Converted["_playernames5"].Size = UDim2.new(0, 268, 0, 34)
-Converted["_playernames5"].ZIndex = 5
-Converted["_playernames5"].Name = "playernames"
-Converted["_playernames5"].Parent = Converted["_Home"]
-
-Converted["_playernames6"].Font = Enum.Font.Unknown
-Converted["_playernames6"].Text = "######"
-Converted["_playernames6"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames6"].TextScaled = true
-Converted["_playernames6"].TextSize = 80
-Converted["_playernames6"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames6"].TextStrokeTransparency = 0
-Converted["_playernames6"].TextWrapped = true
-Converted["_playernames6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames6"].BackgroundTransparency = 1
-Converted["_playernames6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames6"].BorderSizePixel = 0
-Converted["_playernames6"].Position = UDim2.new(0.0830672234, 0, 0.672674, 0)
-Converted["_playernames6"].Rotation = -5
-Converted["_playernames6"].Size = UDim2.new(0, 274, 0, 51)
-Converted["_playernames6"].ZIndex = 5
-Converted["_playernames6"].Name = "playernames"
-Converted["_playernames6"].Parent = Converted["_Home"]
-
-Converted["_playernames7"].Font = Enum.Font.Unknown
-Converted["_playernames7"].Text = "######"
-Converted["_playernames7"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames7"].TextScaled = true
-Converted["_playernames7"].TextSize = 80
-Converted["_playernames7"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames7"].TextStrokeTransparency = 0
-Converted["_playernames7"].TextWrapped = true
-Converted["_playernames7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames7"].BackgroundTransparency = 1
-Converted["_playernames7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames7"].BorderSizePixel = 0
-Converted["_playernames7"].Position = UDim2.new(0.0826242641, 0, 0.556127429, 0)
-Converted["_playernames7"].Rotation = -5
-Converted["_playernames7"].Size = UDim2.new(0, 274, 0, 51)
-Converted["_playernames7"].ZIndex = 5
-Converted["_playernames7"].Name = "playernames"
-Converted["_playernames7"].Parent = Converted["_Home"]
-
-Converted["_3122"].Font = Enum.Font.Unknown
-Converted["_3122"].Text = "Honestly, this ui is better then the shitty old ones. the old ones barely got updated, so i decided to go with a new version."
-Converted["_3122"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3122"].TextScaled = true
-Converted["_3122"].TextSize = 14
-Converted["_3122"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3122"].TextStrokeTransparency = 0
-Converted["_3122"].TextWrapped = true
-Converted["_3122"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3122"].BackgroundTransparency = 1
-Converted["_3122"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3122"].BorderSizePixel = 0
-Converted["_3122"].Position = UDim2.new(0.0139134871, 0, 0.0193346441, 0)
-Converted["_3122"].Size = UDim2.new(0, 655, 0, 83)
-Converted["_3122"].Name = "312"
-Converted["_3122"].Parent = Converted["_Home"]
-
-Converted["_3123"].Font = Enum.Font.Unknown
-Converted["_3123"].Text = "(ui design inspired by speedhubx best free fisch script)"
-Converted["_3123"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3123"].TextScaled = true
-Converted["_3123"].TextSize = 14
-Converted["_3123"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3123"].TextStrokeTransparency = 0
-Converted["_3123"].TextWrapped = true
-Converted["_3123"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3123"].BackgroundTransparency = 1
-Converted["_3123"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3123"].BorderSizePixel = 0
-Converted["_3123"].Position = UDim2.new(0.0139134871, 0, 0.246748969, 0)
-Converted["_3123"].Size = UDim2.new(0, 655, 0, 42)
-Converted["_3123"].Name = "312"
-Converted["_3123"].Parent = Converted["_Home"]
-
-Converted["_playernames8"].Font = Enum.Font.Unknown
-Converted["_playernames8"].Text = "######"
-Converted["_playernames8"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames8"].TextScaled = true
-Converted["_playernames8"].TextSize = 80
-Converted["_playernames8"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames8"].TextStrokeTransparency = 0
-Converted["_playernames8"].TextWrapped = true
-Converted["_playernames8"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames8"].BackgroundTransparency = 1
-Converted["_playernames8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames8"].BorderSizePixel = 0
-Converted["_playernames8"].Position = UDim2.new(0.207624093, 0, 0.567065299, 0)
-Converted["_playernames8"].Rotation = -5
-Converted["_playernames8"].Size = UDim2.new(0, 274, 0, 51)
-Converted["_playernames8"].ZIndex = 5
-Converted["_playernames8"].Name = "playernames"
-Converted["_playernames8"].Parent = Converted["_Home"]
-
-Converted["_playernames9"].Font = Enum.Font.Unknown
-Converted["_playernames9"].Text = "######"
-Converted["_playernames9"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames9"].TextScaled = true
-Converted["_playernames9"].TextSize = 80
-Converted["_playernames9"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames9"].TextStrokeTransparency = 0
-Converted["_playernames9"].TextWrapped = true
-Converted["_playernames9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_playernames9"].BackgroundTransparency = 1
-Converted["_playernames9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_playernames9"].BorderSizePixel = 0
-Converted["_playernames9"].Position = UDim2.new(0.17729792, 0, 0.68361181, 0)
-Converted["_playernames9"].Rotation = -5
-Converted["_playernames9"].Size = UDim2.new(0, 274, 0, 51)
-Converted["_playernames9"].ZIndex = 5
-Converted["_playernames9"].Name = "playernames"
-Converted["_playernames9"].Parent = Converted["_Home"]
-
-Converted["_Fisch"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Fisch"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Fisch"].BorderSizePixel = 0
-Converted["_Fisch"].Size = UDim2.new(0, 676, 0, 321)
-Converted["_Fisch"].Visible = false
-Converted["_Fisch"].ZIndex = 5
-Converted["_Fisch"].Name = "Fisch"
-Converted["_Fisch"].Parent = Converted["_Ecliptic"]
-
-Converted["_AVERAGE"].Font = Enum.Font.SourceSansBold
-Converted["_AVERAGE"].Text = "AVERAGE"
-Converted["_AVERAGE"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_AVERAGE"].TextScaled = true
-Converted["_AVERAGE"].TextSize = 14
-Converted["_AVERAGE"].TextStrokeTransparency = 0
-Converted["_AVERAGE"].TextWrapped = true
-Converted["_AVERAGE"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_AVERAGE"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_AVERAGE"].BorderSizePixel = 0
-Converted["_AVERAGE"].Position = UDim2.new(0.0329938345, 0, 0.054999996, 0)
-Converted["_AVERAGE"].Size = UDim2.new(0, 164, 0, 43)
-Converted["_AVERAGE"].Name = "AVERAGE"
-Converted["_AVERAGE"].Parent = Converted["_Fisch"]
-
-Converted["_UIStroke12"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke12"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke12"].Thickness = 3
-Converted["_UIStroke12"].Parent = Converted["_AVERAGE"]
-
-Converted["_UICorner11"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner11"].Parent = Converted["_AVERAGE"]
-
-Converted["_NATIVE"].Font = Enum.Font.SourceSansBold
-Converted["_NATIVE"].Text = "NATIVE"
-Converted["_NATIVE"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_NATIVE"].TextScaled = true
-Converted["_NATIVE"].TextSize = 14
-Converted["_NATIVE"].TextStrokeTransparency = 0
-Converted["_NATIVE"].TextWrapped = true
-Converted["_NATIVE"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_NATIVE"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_NATIVE"].BorderSizePixel = 0
-Converted["_NATIVE"].Position = UDim2.new(0.0316086262, 0, 0.419531882, 0)
-Converted["_NATIVE"].Size = UDim2.new(0, 164, 0, 43)
-Converted["_NATIVE"].Name = "NATIVE"
-Converted["_NATIVE"].Parent = Converted["_Fisch"]
-
-Converted["_UIStroke13"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke13"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke13"].Thickness = 3
-Converted["_UIStroke13"].Parent = Converted["_NATIVE"]
-
-Converted["_UICorner12"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner12"].Parent = Converted["_NATIVE"]
-
-Converted["_SPEEDHUB"].Font = Enum.Font.SourceSansBold
-Converted["_SPEEDHUB"].Text = "SPEED HUB"
-Converted["_SPEEDHUB"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_SPEEDHUB"].TextScaled = true
-Converted["_SPEEDHUB"].TextSize = 14
-Converted["_SPEEDHUB"].TextStrokeTransparency = 0
-Converted["_SPEEDHUB"].TextWrapped = true
-Converted["_SPEEDHUB"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_SPEEDHUB"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_SPEEDHUB"].BorderSizePixel = 0
-Converted["_SPEEDHUB"].Position = UDim2.new(0.0329938345, 0, 0.237433508, 0)
-Converted["_SPEEDHUB"].Size = UDim2.new(0, 164, 0, 43)
-Converted["_SPEEDHUB"].Name = "SPEEDHUB"
-Converted["_SPEEDHUB"].Parent = Converted["_Fisch"]
-
-Converted["_UIStroke14"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke14"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke14"].Thickness = 3
-Converted["_UIStroke14"].Parent = Converted["_SPEEDHUB"]
-
-Converted["_UICorner13"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner13"].Parent = Converted["_SPEEDHUB"]
-
-Converted["_kiciahook"].Font = Enum.Font.SourceSansBold
-Converted["_kiciahook"].Text = "KICIAHOOK"
-Converted["_kiciahook"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_kiciahook"].TextScaled = true
-Converted["_kiciahook"].TextSize = 14
-Converted["_kiciahook"].TextStrokeTransparency = 0
-Converted["_kiciahook"].TextWrapped = true
-Converted["_kiciahook"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_kiciahook"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_kiciahook"].BorderSizePixel = 0
-Converted["_kiciahook"].Position = UDim2.new(0.313420415, 0, 0.054999996, 0)
-Converted["_kiciahook"].Size = UDim2.new(0, 260, 0, 43)
-Converted["_kiciahook"].Name = "kiciahook"
-Converted["_kiciahook"].Parent = Converted["_Fisch"]
-
-Converted["_UIStroke15"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke15"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke15"].Thickness = 3
-Converted["_UIStroke15"].Parent = Converted["_kiciahook"]
-
-Converted["_UICorner14"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner14"].Parent = Converted["_kiciahook"]
-
-Converted["_naokihub"].Font = Enum.Font.SourceSansBold
-Converted["_naokihub"].Text = "NAOKI"
-Converted["_naokihub"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_naokihub"].TextScaled = true
-Converted["_naokihub"].TextSize = 14
-Converted["_naokihub"].TextStrokeTransparency = 0
-Converted["_naokihub"].TextWrapped = true
-Converted["_naokihub"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_naokihub"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_naokihub"].BorderSizePixel = 0
-Converted["_naokihub"].Position = UDim2.new(0.31119442, 0, 0.419531882, 0)
-Converted["_naokihub"].Size = UDim2.new(0, 260, 0, 43)
-Converted["_naokihub"].Name = "naokihub"
-Converted["_naokihub"].Parent = Converted["_Fisch"]
-
-Converted["_UIStroke16"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke16"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke16"].Thickness = 3
-Converted["_UIStroke16"].Parent = Converted["_naokihub"]
-
-Converted["_UICorner15"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner15"].Parent = Converted["_naokihub"]
-
-Converted["_KNCRYPT"].Font = Enum.Font.SourceSansBold
-Converted["_KNCRYPT"].Text = "KNCRYPT"
-Converted["_KNCRYPT"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_KNCRYPT"].TextScaled = true
-Converted["_KNCRYPT"].TextSize = 14
-Converted["_KNCRYPT"].TextStrokeTransparency = 0
-Converted["_KNCRYPT"].TextWrapped = true
-Converted["_KNCRYPT"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_KNCRYPT"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_KNCRYPT"].BorderSizePixel = 0
-Converted["_KNCRYPT"].Position = UDim2.new(0.313420415, 0, 0.237433508, 0)
-Converted["_KNCRYPT"].Size = UDim2.new(0, 260, 0, 43)
-Converted["_KNCRYPT"].Name = "KNCRYPT"
-Converted["_KNCRYPT"].Parent = Converted["_Fisch"]
-
-Converted["_UIStroke17"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke17"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke17"].Thickness = 3
-Converted["_UIStroke17"].Parent = Converted["_KNCRYPT"]
-
-Converted["_UICorner16"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner16"].Parent = Converted["_KNCRYPT"]
-
-Converted["_NYX"].Font = Enum.Font.SourceSansBold
-Converted["_NYX"].Text = "NYX"
-Converted["_NYX"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_NYX"].TextScaled = true
-Converted["_NYX"].TextSize = 14
-Converted["_NYX"].TextStrokeTransparency = 0
-Converted["_NYX"].TextWrapped = true
-Converted["_NYX"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_NYX"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_NYX"].BorderSizePixel = 0
-Converted["_NYX"].Position = UDim2.new(0.735656559, 0, 0.054999996, 0)
-Converted["_NYX"].Size = UDim2.new(0, 164, 0, 43)
-Converted["_NYX"].Name = "NYX"
-Converted["_NYX"].Parent = Converted["_Fisch"]
-
-Converted["_UIStroke18"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke18"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke18"].Thickness = 3
-Converted["_UIStroke18"].Parent = Converted["_NYX"]
-
-Converted["_UICorner17"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner17"].Parent = Converted["_NYX"]
-
-Converted["_RAITO"].Font = Enum.Font.SourceSansBold
-Converted["_RAITO"].Text = "RAITO"
-Converted["_RAITO"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_RAITO"].TextScaled = true
-Converted["_RAITO"].TextSize = 14
-Converted["_RAITO"].TextStrokeTransparency = 0
-Converted["_RAITO"].TextWrapped = true
-Converted["_RAITO"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RAITO"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RAITO"].BorderSizePixel = 0
-Converted["_RAITO"].Position = UDim2.new(0.734271348, 0, 0.419531882, 0)
-Converted["_RAITO"].Size = UDim2.new(0, 164, 0, 43)
-Converted["_RAITO"].Name = "RAITO"
-Converted["_RAITO"].Parent = Converted["_Fisch"]
-
-Converted["_UIStroke19"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke19"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke19"].Thickness = 3
-Converted["_UIStroke19"].Parent = Converted["_RAITO"]
-
-Converted["_UICorner18"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner18"].Parent = Converted["_RAITO"]
-
-Converted["_LUNOR"].Font = Enum.Font.SourceSansBold
-Converted["_LUNOR"].Text = "LUNOR"
-Converted["_LUNOR"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_LUNOR"].TextScaled = true
-Converted["_LUNOR"].TextSize = 14
-Converted["_LUNOR"].TextStrokeTransparency = 0
-Converted["_LUNOR"].TextWrapped = true
-Converted["_LUNOR"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_LUNOR"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_LUNOR"].BorderSizePixel = 0
-Converted["_LUNOR"].Position = UDim2.new(0.735656559, 0, 0.237433508, 0)
-Converted["_LUNOR"].Size = UDim2.new(0, 164, 0, 43)
-Converted["_LUNOR"].Name = "LUNOR"
-Converted["_LUNOR"].Parent = Converted["_Fisch"]
-
-Converted["_UIStroke20"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke20"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke20"].Thickness = 3
-Converted["_UIStroke20"].Parent = Converted["_LUNOR"]
-
-Converted["_UICorner19"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner19"].Parent = Converted["_LUNOR"]
-
-Converted["_TextLabel1"].Font = Enum.Font.SourceSans
-Converted["_TextLabel1"].Text = "psstt.. this isnt all of them, theres going to be a scrollingframe for almost 15+ scripts 🤫"
-Converted["_TextLabel1"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel1"].TextScaled = true
-Converted["_TextLabel1"].TextSize = 14
-Converted["_TextLabel1"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel1"].TextStrokeTransparency = 0
-Converted["_TextLabel1"].TextWrapped = true
-Converted["_TextLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel1"].BackgroundTransparency = 1
-Converted["_TextLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel1"].BorderSizePixel = 0
-Converted["_TextLabel1"].Position = UDim2.new(0, 0, 0.862928331, 0)
-Converted["_TextLabel1"].Size = UDim2.new(0, 675, 0, 44)
-Converted["_TextLabel1"].Parent = Converted["_Fisch"]
-
-Converted["_Arsenal"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Arsenal"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Arsenal"].BorderSizePixel = 0
-Converted["_Arsenal"].Size = UDim2.new(0, 676, 0, 321)
-Converted["_Arsenal"].Visible = false
-Converted["_Arsenal"].ZIndex = 5
-Converted["_Arsenal"].Name = "Arsenal"
-Converted["_Arsenal"].Parent = Converted["_Ecliptic"]
-
-Converted["_3124"].Font = Enum.Font.Unknown
-Converted["_3124"].Text = "Best Arsenal"
-Converted["_3124"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3124"].TextScaled = true
-Converted["_3124"].TextSize = 14
-Converted["_3124"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3124"].TextStrokeTransparency = 0
-Converted["_3124"].TextWrapped = true
-Converted["_3124"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3124"].BackgroundTransparency = 1
-Converted["_3124"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3124"].BorderSizePixel = 0
-Converted["_3124"].Position = UDim2.new(0.0153927775, 0, 0.0567178205, 0)
-Converted["_3124"].Size = UDim2.new(0, 655, 0, 42)
-Converted["_3124"].Name = "312"
-Converted["_3124"].Parent = Converted["_Arsenal"]
-
-Converted["_3125"].Font = Enum.Font.Unknown
-Converted["_3125"].Text = "2024 - 2025 Still Undetected!"
-Converted["_3125"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3125"].TextScaled = true
-Converted["_3125"].TextSize = 14
-Converted["_3125"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3125"].TextStrokeTransparency = 0
-Converted["_3125"].TextWrapped = true
-Converted["_3125"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3125"].BackgroundTransparency = 1
-Converted["_3125"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3125"].BorderSizePixel = 0
-Converted["_3125"].Position = UDim2.new(0.0153927775, 0, 0.187558949, 0)
-Converted["_3125"].Size = UDim2.new(0, 655, 0, 42)
-Converted["_3125"].Name = "312"
-Converted["_3125"].Parent = Converted["_Arsenal"]
-
-Converted["_CARTEL"].Font = Enum.Font.SourceSansBold
-Converted["_CARTEL"].Text = "CARTEL"
-Converted["_CARTEL"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_CARTEL"].TextScaled = true
-Converted["_CARTEL"].TextSize = 14
-Converted["_CARTEL"].TextStrokeTransparency = 0
-Converted["_CARTEL"].TextWrapped = true
-Converted["_CARTEL"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_CARTEL"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_CARTEL"].BorderSizePixel = 0
-Converted["_CARTEL"].Position = UDim2.new(0.164650634, 0, 0.385218352, 0)
-Converted["_CARTEL"].Size = UDim2.new(0, 453, 0, 118)
-Converted["_CARTEL"].Name = "CARTEL"
-Converted["_CARTEL"].Parent = Converted["_Arsenal"]
-
-Converted["_UIStroke21"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke21"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke21"].Thickness = 3
-Converted["_UIStroke21"].Parent = Converted["_CARTEL"]
-
-Converted["_UICorner20"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner20"].Parent = Converted["_CARTEL"]
-
-Converted["_RealHood"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RealHood"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RealHood"].BorderSizePixel = 0
-Converted["_RealHood"].Size = UDim2.new(0, 676, 0, 321)
-Converted["_RealHood"].Visible = false
-Converted["_RealHood"].ZIndex = 5
-Converted["_RealHood"].Name = "RealHood"
-Converted["_RealHood"].Parent = Converted["_Ecliptic"]
-
-Converted["_3126"].Font = Enum.Font.Unknown
-Converted["_3126"].Text = "i only know one :("
-Converted["_3126"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3126"].TextScaled = true
-Converted["_3126"].TextSize = 14
-Converted["_3126"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3126"].TextStrokeTransparency = 0
-Converted["_3126"].TextWrapped = true
-Converted["_3126"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_3126"].BackgroundTransparency = 1
-Converted["_3126"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_3126"].BorderSizePixel = 0
-Converted["_3126"].Position = UDim2.new(0.0153927775, 0, 0.0567178205, 0)
-Converted["_3126"].Size = UDim2.new(0, 655, 0, 42)
-Converted["_3126"].Name = "312"
-Converted["_3126"].Parent = Converted["_RealHood"]
-
-Converted["_YellowGregs"].Font = Enum.Font.SourceSansBold
-Converted["_YellowGregs"].Text = "YELLOWGREG"
-Converted["_YellowGregs"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_YellowGregs"].TextScaled = true
-Converted["_YellowGregs"].TextSize = 14
-Converted["_YellowGregs"].TextStrokeTransparency = 0
-Converted["_YellowGregs"].TextWrapped = true
-Converted["_YellowGregs"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_YellowGregs"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_YellowGregs"].BorderSizePixel = 0
-Converted["_YellowGregs"].Position = UDim2.new(0.164650634, 0, 0.245031431, 0)
-Converted["_YellowGregs"].Size = UDim2.new(0, 453, 0, 118)
-Converted["_YellowGregs"].Name = "YellowGregs"
-Converted["_YellowGregs"].Parent = Converted["_RealHood"]
-
-Converted["_UIStroke22"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke22"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke22"].Thickness = 3
-Converted["_UIStroke22"].Parent = Converted["_YellowGregs"]
-
-Converted["_UICorner21"].CornerRadius = UDim.new(0, 1)
-Converted["_UICorner21"].Parent = Converted["_YellowGregs"]
-
-Converted["_TextLabel2"].Font = Enum.Font.SourceSans
-Converted["_TextLabel2"].Text = "click on some buttons on the left side to access scripts!"
-Converted["_TextLabel2"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel2"].TextScaled = true
-Converted["_TextLabel2"].TextSize = 14
-Converted["_TextLabel2"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel2"].TextStrokeTransparency = 0
-Converted["_TextLabel2"].TextWrapped = true
-Converted["_TextLabel2"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel2"].BackgroundTransparency = 4
-Converted["_TextLabel2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel2"].BorderSizePixel = 0
-Converted["_TextLabel2"].Position = UDim2.new(0.064717494, 0, 0.262715101, 0)
-Converted["_TextLabel2"].Rotation = 1
-Converted["_TextLabel2"].Size = UDim2.new(0, 587, 0, 134)
-Converted["_TextLabel2"].ZIndex = 0
-Converted["_TextLabel2"].Parent = Converted["_Ecliptic"]
-
-Converted["_WarningFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_WarningFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_WarningFrame"].BorderSizePixel = 0
-Converted["_WarningFrame"].Position = UDim2.new(0.331723779, 0, 0.340110332, 0)
-Converted["_WarningFrame"].Size = UDim2.new(0, 461, 0, 267)
-Converted["_WarningFrame"].Visible = false
-Converted["_WarningFrame"].Name = "WarningFrame"
-Converted["_WarningFrame"].Parent = Converted["_EclipticHub"]
-
-Converted["_TextLabel3"].Font = Enum.Font.Unknown
-Converted["_TextLabel3"].Text = "Do you wish to CLOSE This Ui?"
-Converted["_TextLabel3"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel3"].TextScaled = true
-Converted["_TextLabel3"].TextSize = 14
-Converted["_TextLabel3"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel3"].TextStrokeTransparency = 0
-Converted["_TextLabel3"].TextWrapped = true
-Converted["_TextLabel3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel3"].BackgroundTransparency = 1
-Converted["_TextLabel3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel3"].BorderSizePixel = 0
-Converted["_TextLabel3"].Position = UDim2.new(0.0801016912, 0, 0.267240018, 0)
-Converted["_TextLabel3"].Size = UDim2.new(0, 384, 0, 55)
-Converted["_TextLabel3"].Parent = Converted["_WarningFrame"]
-
-Converted["_ImageLabel2"].Image = "http://www.roblox.com/asset/?id=113994082044278"
-Converted["_ImageLabel2"].ImageContent = Content
-Converted["_ImageLabel2"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel2"].BorderSizePixel = 0
-Converted["_ImageLabel2"].Position = UDim2.new(0.350138158, 0, -0.245364755, 0)
-Converted["_ImageLabel2"].Size = UDim2.new(0, 137, 0, 137)
-Converted["_ImageLabel2"].Parent = Converted["_WarningFrame"]
-
-Converted["_UIStroke23"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke23"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke23"].Thickness = 5
-Converted["_UIStroke23"].Parent = Converted["_ImageLabel2"]
-
-Converted["_UIGradient6"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(131.00000739097595, 131.00000739097595, 131.00000739097595)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(255, 255, 255)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(137.00000703334808, 137.00000703334808, 137.00000703334808))
-}
-Converted["_UIGradient6"].Parent = Converted["_UIStroke23"]
-
-Converted["_UICorner22"].CornerRadius = UDim.new(5, 5)
-Converted["_UICorner22"].Parent = Converted["_ImageLabel2"]
-
-Converted["_TextLabel4"].Font = Enum.Font.Unknown
-Converted["_TextLabel4"].Text = "**IT WILL DELETE THIS UI ENTIRELY**"
-Converted["_TextLabel4"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel4"].TextScaled = true
-Converted["_TextLabel4"].TextSize = 14
-Converted["_TextLabel4"].TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
-Converted["_TextLabel4"].TextStrokeTransparency = 0
-Converted["_TextLabel4"].TextWrapped = true
-Converted["_TextLabel4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel4"].BackgroundTransparency = 1
-Converted["_TextLabel4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel4"].BorderSizePixel = 0
-Converted["_TextLabel4"].Position = UDim2.new(0.0801016912, 0, 0.418755114, 0)
-Converted["_TextLabel4"].Size = UDim2.new(0, 384, 0, 55)
-Converted["_TextLabel4"].Parent = Converted["_WarningFrame"]
-
-Converted["_UIGradient7"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
-	ColorSequenceKeypoint.new(0.15397924184799194, Color3.fromRGB(24.887116067111492, 24.887116067111492, 24.887116067111492)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(124.00000020861626, 124.00000020861626, 124.00000020861626)),
-	ColorSequenceKeypoint.new(0.8892734050750732, Color3.fromRGB(23.13560575246811, 23.13560575246811, 23.13560575246811)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(15.000000055879354, 15.000000055879354, 15.000000055879354))
-}
-Converted["_UIGradient7"].Rotation = 90
-Converted["_UIGradient7"].Parent = Converted["_WarningFrame"]
-
-Converted["_UIStroke24"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke24"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke24"].Thickness = 5
-Converted["_UIStroke24"].Parent = Converted["_WarningFrame"]
-
-Converted["_UIGradient8"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(131.00000739097595, 131.00000739097595, 131.00000739097595)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(255, 255, 255)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(137.00000703334808, 137.00000703334808, 137.00000703334808))
-}
-Converted["_UIGradient8"].Parent = Converted["_UIStroke24"]
-
-Converted["_UICorner23"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner23"].Parent = Converted["_WarningFrame"]
-
-Converted["_ImageLabel3"].Image = "http://www.roblox.com/asset/?id=104206787913401"
-Converted["_ImageLabel3"].ImageContent = Content
-Converted["_ImageLabel3"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel3"].BackgroundTransparency = 1
-Converted["_ImageLabel3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel3"].BorderSizePixel = 0
-Converted["_ImageLabel3"].Position = UDim2.new(-0.00127180852, 0, 0.327165127, 0)
-Converted["_ImageLabel3"].Size = UDim2.new(0, 459, 0, 102)
-Converted["_ImageLabel3"].ZIndex = 0
-Converted["_ImageLabel3"].Parent = Converted["_WarningFrame"]
-
-Converted["_TextButton"].Font = Enum.Font.Unknown
-Converted["_TextButton"].Text = "No, I Don't want to."
-Converted["_TextButton"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton"].TextScaled = true
-Converted["_TextButton"].TextSize = 14
-Converted["_TextButton"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton"].TextStrokeTransparency = 0
-Converted["_TextButton"].TextWrapped = true
-Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton"].BorderSizePixel = 0
-Converted["_TextButton"].Position = UDim2.new(0.500792503, 0, 0.895131111, 0)
-Converted["_TextButton"].Size = UDim2.new(0, 176, 0, 45)
-Converted["_TextButton"].Parent = Converted["_WarningFrame"]
-
-Converted["_UIStroke25"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke25"].Color = Color3.fromRGB(255, 255, 255)
-Converted["_UIStroke25"].Thickness = 2
-Converted["_UIStroke25"].Parent = Converted["_TextButton"]
-
-Converted["_UIGradient9"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(131.00000739097595, 131.00000739097595, 131.00000739097595)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(255, 255, 255)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(137.00000703334808, 137.00000703334808, 137.00000703334808))
-}
-Converted["_UIGradient9"].Parent = Converted["_UIStroke25"]
-
-Converted["_UICorner24"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner24"].Parent = Converted["_TextButton"]
-
-Converted["_TextButton1"].Font = Enum.Font.Unknown
-Converted["_TextButton1"].Text = "Yes, I Would like to."
-Converted["_TextButton1"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton1"].TextScaled = true
-Converted["_TextButton1"].TextSize = 14
-Converted["_TextButton1"].TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
-Converted["_TextButton1"].TextStrokeTransparency = 0
-Converted["_TextButton1"].TextWrapped = true
-Converted["_TextButton1"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton1"].BorderSizePixel = 0
-Converted["_TextButton1"].Position = UDim2.new(0.108459868, 0, 0.895131111, 0)
-Converted["_TextButton1"].Size = UDim2.new(0, 176, 0, 45)
-Converted["_TextButton1"].Parent = Converted["_WarningFrame"]
-
-Converted["_UIStroke26"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke26"].Color = Color3.fromRGB(255, 0, 0)
-Converted["_UIStroke26"].Thickness = 2
-Converted["_UIStroke26"].Parent = Converted["_TextButton1"]
-
-Converted["_UIGradient10"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(131.00000739097595, 131.00000739097595, 131.00000739097595)),
-	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(255, 255, 255)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(137.00000703334808, 137.00000703334808, 137.00000703334808))
-}
-Converted["_UIGradient10"].Parent = Converted["_UIStroke26"]
-
-Converted["_UICorner25"].CornerRadius = UDim.new(0, 16)
-Converted["_UICorner25"].Parent = Converted["_TextButton1"]
-
--- Fake Module Scripts:
-
-local fake_module_scripts = {}
-
-
--- Fake Local Scripts:
-
-local function RXRSKE_fake_script() -- Fake Script: StarterGui.EclipticHub.ImageButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_ImageButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-			
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
+local function createGui(parent)
+	--ScreenGui1--
+	local ScreenGui1 = Instance.new("ScreenGui",parent)
+	ScreenGui1["Name"] = "EclipticHub"
+	ScreenGui1["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+	----ScreenGui1----
+	--ImageButton2--
+	local ImageButton2 = Instance.new("ImageButton",ScreenGui1)
+	ImageButton2["Visible"] = false
+	ImageButton2["Image"] = "http://www.roblox.com/asset/?id=113994082044278"
+	ImageButton2["Position"] = UDim2.new(0.0844074562, 0, 0.402234644, 0)
+	ImageButton2["BorderColor3"] = Color3.new(0, 0, 0)
+	ImageButton2["Size"] = UDim2.new(0, 55, 0, 55)
+	ImageButton2["BorderSizePixel"] = 0
+	ImageButton2["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----ImageButton2----
+	--UICorner3--
+	local UICorner3 = Instance.new("UICorner",ImageButton2)
+	UICorner3["CornerRadius"] = UDim.new(5, 555)
+	----UICorner3----
+	--Script4--
+	local Script4 = Instance.new("Script",ImageButton2)
+	Script4["Enabled"] = false
+	----Script4----
+	--Script5--
+	local Script5 = Instance.new("Script",ImageButton2)
+	----Script5----
+	--Frame6--
+	local Frame6 = Instance.new("Frame",ScreenGui1)
+	Frame6["Name"] = "Ecliptic"
+	Frame6["Position"] = UDim2.new(0.347745895, 0, 0.320670396, 0)
+	Frame6["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame6["Size"] = UDim2.new(0, 676, 0, 321)
+	Frame6["BorderSizePixel"] = 0
+	Frame6["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----Frame6----
+	--UIGradient7--
+	local UIGradient7 = Instance.new("UIGradient",Frame6)
+	UIGradient7["Rotation"] = 90
+	UIGradient7["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0,0,0)),
+		ColorSequenceKeypoint.new(0.153979,Color3.new(0.0975965,0.0975965,0.0975965)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(0.486275,0.486275,0.486275)),
+		ColorSequenceKeypoint.new(0.889273,Color3.new(0.0907279,0.0907279,0.0907279)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.0588235,0.0588235,0.0588235))
+	}
+	----UIGradient7----
+	--UICorner8--
+	local UICorner8 = Instance.new("UICorner",Frame6)
+	UICorner8["CornerRadius"] = UDim.new(0, 5)
+	----UICorner8----
+	--UIStroke9--
+	local UIStroke9 = Instance.new("UIStroke",Frame6)
+	UIStroke9["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke9["Color"] = Color3.new(1, 1, 1)
+	----UIStroke9----
+	--UIGradient10--
+	local UIGradient10 = Instance.new("UIGradient",UIStroke9)
+	UIGradient10["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
+	}
+	----UIGradient10----
+	--ScrollingFrame11--
+	local ScrollingFrame11 = Instance.new("ScrollingFrame",Frame6)
+	ScrollingFrame11["ClipsDescendants"] = false
+	ScrollingFrame11["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always
+	ScrollingFrame11["Active"] = true
+	ScrollingFrame11["BorderColor3"] = Color3.new(0, 0, 0)
+	ScrollingFrame11["VerticalScrollBarPosition"] = Enum.VerticalScrollBarPosition.Left
+	ScrollingFrame11["ScrollingDirection"] = Enum.ScrollingDirection.Y
+	ScrollingFrame11["ScrollBarImageTransparency"] = 1
+	ScrollingFrame11["ElasticBehavior"] = Enum.ElasticBehavior.Never
+	ScrollingFrame11["HorizontalScrollBarInset"] = Enum.ScrollBarInset.ScrollBar
+	ScrollingFrame11["AutomaticCanvasSize"] = Enum.AutomaticSize.Y
+	ScrollingFrame11["Position"] = UDim2.new(-0.241124257, 0, -9.69717439e-06, 0)
+	ScrollingFrame11["ScrollingEnabled"] = false
+	ScrollingFrame11["Size"] = UDim2.new(0, 163, 0, 321)
+	ScrollingFrame11["BorderSizePixel"] = 0
+	ScrollingFrame11["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----ScrollingFrame11----
+	--UIStroke12--
+	local UIStroke12 = Instance.new("UIStroke",ScrollingFrame11)
+	UIStroke12["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke12["Color"] = Color3.new(1, 1, 1)
+	----UIStroke12----
+	--UIGradient13--
+	local UIGradient13 = Instance.new("UIGradient",UIStroke12)
+	UIGradient13["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
+	}
+	----UIGradient13----
+	--UIGradient14--
+	local UIGradient14 = Instance.new("UIGradient",ScrollingFrame11)
+	UIGradient14["Rotation"] = 90
+	UIGradient14["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0,0,0)),
+		ColorSequenceKeypoint.new(0.153979,Color3.new(0.0975965,0.0975965,0.0975965)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(0.486275,0.486275,0.486275)),
+		ColorSequenceKeypoint.new(0.889273,Color3.new(0.0907279,0.0907279,0.0907279)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.0588235,0.0588235,0.0588235))
+	}
+	----UIGradient14----
+	--UIListLayout15--
+	local UIListLayout15 = Instance.new("UIListLayout",ScrollingFrame11)
+	UIListLayout15["SortOrder"] = Enum.SortOrder.LayoutOrder
+	UIListLayout15["Padding"] = UDim.new(0.0299999993, 0)
+	----UIListLayout15----
+	--TextButton16--
+	local TextButton16 = Instance.new("TextButton",ScrollingFrame11)
+	TextButton16["TextWrapped"] = true
+	TextButton16["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton16["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton16["Text"] = "Home"
+	TextButton16["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextButton16["TextStrokeTransparency"] = 0
+	TextButton16["TextSize"] = 14
+	TextButton16["Font"] = Enum.Font.Unknown
+	TextButton16["Name"] = "HomeButton"
+	TextButton16["Position"] = UDim2.new(0.0736196339, 0, 0.00196263194, 0)
+	TextButton16["TextScaled"] = true
+	TextButton16["Size"] = UDim2.new(0, 140, 0, 35)
+	TextButton16["BorderSizePixel"] = 0
+	TextButton16["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton16----
+	--Script17--
+	local Script17 = Instance.new("Script",TextButton16)
+	----Script17----
+	--UICorner18--
+	local UICorner18 = Instance.new("UICorner",TextButton16)
+	UICorner18["CornerRadius"] = UDim.new(0, 12)
+	----UICorner18----
+	--UIStroke19--
+	local UIStroke19 = Instance.new("UIStroke",TextButton16)
+	UIStroke19["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke19["Color"] = Color3.new(1, 1, 1)
+	----UIStroke19----
+	--Script20--
+	local Script20 = Instance.new("Script",TextButton16)
+	Script20["Name"] = "OpenFrame"
+	----Script20----
+	--Script21--
+	local Script21 = Instance.new("Script",TextButton16)
+	Script21["Name"] = "ButtonHover"
+	----Script21----
+	--TextButton22--
+	local TextButton22 = Instance.new("TextButton",ScrollingFrame11)
+	TextButton22["TextWrapped"] = true
+	TextButton22["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton22["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton22["Text"] = "Fisch"
+	TextButton22["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextButton22["TextStrokeTransparency"] = 0
+	TextButton22["TextSize"] = 14
+	TextButton22["Font"] = Enum.Font.Unknown
+	TextButton22["Name"] = "FischButton"
+	TextButton22["Position"] = UDim2.new(0.0736196339, 0, 0.00196263194, 0)
+	TextButton22["TextScaled"] = true
+	TextButton22["Size"] = UDim2.new(0, 140, 0, 35)
+	TextButton22["BorderSizePixel"] = 0
+	TextButton22["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton22----
+	--Script23--
+	local Script23 = Instance.new("Script",TextButton22)
+	----Script23----
+	--UICorner24--
+	local UICorner24 = Instance.new("UICorner",TextButton22)
+	UICorner24["CornerRadius"] = UDim.new(0, 12)
+	----UICorner24----
+	--UIStroke25--
+	local UIStroke25 = Instance.new("UIStroke",TextButton22)
+	UIStroke25["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke25["Color"] = Color3.new(1, 1, 1)
+	----UIStroke25----
+	--Script26--
+	local Script26 = Instance.new("Script",TextButton22)
+	Script26["Name"] = "ButtonHover"
+	----Script26----
+	--Script27--
+	local Script27 = Instance.new("Script",TextButton22)
+	Script27["Name"] = "OpenFrame"
+	----Script27----
+	--TextButton28--
+	local TextButton28 = Instance.new("TextButton",ScrollingFrame11)
+	TextButton28["TextWrapped"] = true
+	TextButton28["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton28["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton28["Text"] = "Arsenal"
+	TextButton28["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextButton28["TextStrokeTransparency"] = 0
+	TextButton28["TextSize"] = 14
+	TextButton28["Font"] = Enum.Font.Unknown
+	TextButton28["Name"] = "ArsenalButon"
+	TextButton28["Position"] = UDim2.new(0.0736196339, 0, 0.00196263194, 0)
+	TextButton28["TextScaled"] = true
+	TextButton28["Size"] = UDim2.new(0, 140, 0, 35)
+	TextButton28["BorderSizePixel"] = 0
+	TextButton28["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton28----
+	--Script29--
+	local Script29 = Instance.new("Script",TextButton28)
+	----Script29----
+	--UICorner30--
+	local UICorner30 = Instance.new("UICorner",TextButton28)
+	UICorner30["CornerRadius"] = UDim.new(0, 12)
+	----UICorner30----
+	--UIStroke31--
+	local UIStroke31 = Instance.new("UIStroke",TextButton28)
+	UIStroke31["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke31["Color"] = Color3.new(1, 1, 1)
+	----UIStroke31----
+	--Script32--
+	local Script32 = Instance.new("Script",TextButton28)
+	Script32["Name"] = "ButtonHover"
+	----Script32----
+	--Script33--
+	local Script33 = Instance.new("Script",TextButton28)
+	Script33["Name"] = "OpenFrame"
+	----Script33----
+	--TextButton34--
+	local TextButton34 = Instance.new("TextButton",ScrollingFrame11)
+	TextButton34["TextWrapped"] = true
+	TextButton34["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton34["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton34["Text"] = "Realistic Hood"
+	TextButton34["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextButton34["TextStrokeTransparency"] = 0
+	TextButton34["TextSize"] = 14
+	TextButton34["Font"] = Enum.Font.Unknown
+	TextButton34["Name"] = "RealisticButton"
+	TextButton34["Position"] = UDim2.new(0.0736196339, 0, 0.00196263194, 0)
+	TextButton34["TextScaled"] = true
+	TextButton34["Size"] = UDim2.new(0, 140, 0, 35)
+	TextButton34["BorderSizePixel"] = 0
+	TextButton34["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton34----
+	--UICorner35--
+	local UICorner35 = Instance.new("UICorner",TextButton34)
+	UICorner35["CornerRadius"] = UDim.new(0, 12)
+	----UICorner35----
+	--UIStroke36--
+	local UIStroke36 = Instance.new("UIStroke",TextButton34)
+	UIStroke36["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke36["Color"] = Color3.new(1, 1, 1)
+	----UIStroke36----
+	--Script37--
+	local Script37 = Instance.new("Script",TextButton34)
+	Script37["Name"] = "ButtonHover"
+	----Script37----
+	--Script38--
+	local Script38 = Instance.new("Script",TextButton34)
+	Script38["Name"] = "OpenFrame"
+	----Script38----
+	--Script39--
+	local Script39 = Instance.new("Script",TextButton34)
+	----Script39----
+	--TextButton40--
+	local TextButton40 = Instance.new("TextButton",ScrollingFrame11)
+	TextButton40["TextWrapped"] = true
+	TextButton40["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton40["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton40["Text"] = "INFO"
+	TextButton40["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextButton40["TextStrokeTransparency"] = 0
+	TextButton40["TextSize"] = 14
+	TextButton40["Font"] = Enum.Font.Unknown
+	TextButton40["Name"] = "CreditsButton"
+	TextButton40["Position"] = UDim2.new(0.0736196339, 0, 0.556137145, 0)
+	TextButton40["TextScaled"] = true
+	TextButton40["Size"] = UDim2.new(0, 140, 0, 134)
+	TextButton40["BorderSizePixel"] = 0
+	TextButton40["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton40----
+	--UIStroke41--
+	local UIStroke41 = Instance.new("UIStroke",TextButton40)
+	UIStroke41["Color"] = Color3.new(1, 1, 1)
+	UIStroke41["Thickness"] = 2
+	UIStroke41["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke41----
+	--UICorner42--
+	local UICorner42 = Instance.new("UICorner",TextButton40)
+	UICorner42["CornerRadius"] = UDim.new(0, 12)
+	----UICorner42----
+	--Script43--
+	local Script43 = Instance.new("Script",TextButton40)
+	----Script43----
+	--Script44--
+	local Script44 = Instance.new("Script",TextButton40)
+	Script44["Name"] = "ButtonHover"
+	----Script44----
+	--Script45--
+	local Script45 = Instance.new("Script",TextButton40)
+	Script45["Name"] = "OpenFrame"
+	----Script45----
+	--TextLabel46--
+	local TextLabel46 = Instance.new("TextLabel",Frame6)
+	TextLabel46["Visible"] = false
+	TextLabel46["TextWrapped"] = true
+	TextLabel46["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel46["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel46["Text"] = ""
+	TextLabel46["TextSize"] = 14
+	TextLabel46["TextScaled"] = true
+	TextLabel46["Font"] = Enum.Font.SourceSans
+	TextLabel46["Name"] = "RedBar"
+	TextLabel46["Position"] = UDim2.new(-0.238288835, 0, -0.00388961262, 0)
+	TextLabel46["Size"] = UDim2.new(0, 5, 0, 28)
+	TextLabel46["ZIndex"] = 4
+	TextLabel46["BorderSizePixel"] = 0
+	TextLabel46["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel46----
+	--UICorner47--
+	local UICorner47 = Instance.new("UICorner",TextLabel46)
+	UICorner47["CornerRadius"] = UDim.new(0, 12)
+	----UICorner47----
+	--UIStroke48--
+	local UIStroke48 = Instance.new("UIStroke",TextLabel46)
+	UIStroke48["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke48["Color"] = Color3.new(1, 1, 1)
+	----UIStroke48----
+	--TextLabel49--
+	local TextLabel49 = Instance.new("TextLabel",Frame6)
+	TextLabel49["Visible"] = false
+	TextLabel49["TextWrapped"] = true
+	TextLabel49["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel49["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel49["Text"] = ""
+	TextLabel49["TextSize"] = 14
+	TextLabel49["TextScaled"] = true
+	TextLabel49["Font"] = Enum.Font.SourceSans
+	TextLabel49["Name"] = "BigRedBar"
+	TextLabel49["Position"] = UDim2.new(-0.238520697, 0, -0.00346103567, 0)
+	TextLabel49["Size"] = UDim2.new(0, 11, 0, 133)
+	TextLabel49["ZIndex"] = 4
+	TextLabel49["BorderSizePixel"] = 0
+	TextLabel49["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel49----
+	--UICorner50--
+	local UICorner50 = Instance.new("UICorner",TextLabel49)
+	UICorner50["CornerRadius"] = UDim.new(0, 12)
+	----UICorner50----
+	--UIStroke51--
+	local UIStroke51 = Instance.new("UIStroke",TextLabel49)
+	UIStroke51["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke51["Color"] = Color3.new(1, 1, 1)
+	----UIStroke51----
+	--Frame52--
+	local Frame52 = Instance.new("Frame",Frame6)
+	Frame52["Size"] = UDim2.new(0, 839, 0, 43)
+	Frame52["Name"] = "TextFrameDont"
+	Frame52["Position"] = UDim2.new(-0.241124302, 0, -0.133956388, 0)
+	Frame52["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame52["ZIndex"] = 0
+	Frame52["BorderSizePixel"] = 0
+	Frame52["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----Frame52----
+	--UICorner53--
+	local UICorner53 = Instance.new("UICorner",Frame52)
+	UICorner53["CornerRadius"] = UDim.new(0, 5)
+	----UICorner53----
+	--UIGradient54--
+	local UIGradient54 = Instance.new("UIGradient",Frame52)
+	UIGradient54["Rotation"] = 90
+	UIGradient54["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0,0,0)),
+		ColorSequenceKeypoint.new(0.153979,Color3.new(0.0975965,0.0975965,0.0975965)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(0.486275,0.486275,0.486275)),
+		ColorSequenceKeypoint.new(0.889273,Color3.new(0.0907279,0.0907279,0.0907279)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.0588235,0.0588235,0.0588235))
+	}
+	----UIGradient54----
+	--UIStroke55--
+	local UIStroke55 = Instance.new("UIStroke",Frame52)
+	UIStroke55["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke55["Color"] = Color3.new(1, 1, 1)
+	----UIStroke55----
+	--UIGradient56--
+	local UIGradient56 = Instance.new("UIGradient",UIStroke55)
+	UIGradient56["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
+	}
+	----UIGradient56----
+	--TextLabel57--
+	local TextLabel57 = Instance.new("TextLabel",Frame52)
+	TextLabel57["TextWrapped"] = true
+	TextLabel57["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel57["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel57["Text"] = "Ecliptic Hub | Version: 1.0.0 | MOTD: Fisch is good"
+	TextLabel57["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel57["TextStrokeTransparency"] = 0
+	TextLabel57["TextSize"] = 14
+	TextLabel57["Font"] = Enum.Font.Unknown
+	TextLabel57["BackgroundTransparency"] = 1
+	TextLabel57["Position"] = UDim2.new(0.0691421255, 0, 0, 0)
+	TextLabel57["TextScaled"] = true
+	TextLabel57["Size"] = UDim2.new(0, 527, 0, 42)
+	TextLabel57["BorderSizePixel"] = 0
+	TextLabel57["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel57----
+	--ImageLabel58--
+	local ImageLabel58 = Instance.new("ImageLabel",Frame52)
+	ImageLabel58["Image"] = "http://www.roblox.com/asset/?id=113994082044278"
+	ImageLabel58["BackgroundTransparency"] = 1
+	ImageLabel58["Position"] = UDim2.new(0.015364917, 0, 0, 0)
+	ImageLabel58["BorderColor3"] = Color3.new(0, 0, 0)
+	ImageLabel58["Size"] = UDim2.new(0, 42, 0, 42)
+	ImageLabel58["BorderSizePixel"] = 0
+	ImageLabel58["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----ImageLabel58----
+	--TextButton59--
+	local TextButton59 = Instance.new("TextButton",Frame52)
+	TextButton59["TextWrapped"] = true
+	TextButton59["RichText"] = true
+	TextButton59["TextSize"] = 77
+	TextButton59["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton59["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton59["Text"] = "|"
+	TextButton59["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextButton59["TextStrokeTransparency"] = 0
+	TextButton59["Rotation"] = 90
+	TextButton59["Font"] = Enum.Font.SourceSans
+	TextButton59["Name"] = "Mini"
+	TextButton59["Position"] = UDim2.new(0.886922598, 0, -0.0930232555, 0)
+	TextButton59["TextScaled"] = true
+	TextButton59["Size"] = UDim2.new(0, 42, 0, 50)
+	TextButton59["BorderSizePixel"] = 0
+	TextButton59["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton59----
+	--Script60--
+	local Script60 = Instance.new("Script",TextButton59)
+	----Script60----
+	--UIStroke61--
+	local UIStroke61 = Instance.new("UIStroke",TextButton59)
+	UIStroke61["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke61["Color"] = Color3.new(1, 1, 1)
+	----UIStroke61----
+	--TextButton62--
+	local TextButton62 = Instance.new("TextButton",Frame52)
+	TextButton62["TextWrapped"] = true
+	TextButton62["RichText"] = true
+	TextButton62["TextSize"] = 77
+	TextButton62["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton62["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton62["Text"] = "X"
+	TextButton62["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextButton62["TextStrokeTransparency"] = 0
+	TextButton62["TextScaled"] = true
+	TextButton62["Font"] = Enum.Font.SourceSans
+	TextButton62["Name"] = "Close"
+	TextButton62["Position"] = UDim2.new(0.937515914, 0, 0, 0)
+	TextButton62["Size"] = UDim2.new(0, 52, 0, 42)
+	TextButton62["ZIndex"] = 0
+	TextButton62["BorderSizePixel"] = 0
+	TextButton62["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton62----
+	--Script63--
+	local Script63 = Instance.new("Script",TextButton62)
+	----Script63----
+	--UIStroke64--
+	local UIStroke64 = Instance.new("UIStroke",TextButton62)
+	UIStroke64["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	UIStroke64["Color"] = Color3.new(1, 1, 1)
+	----UIStroke64----
+	--UICorner65--
+	local UICorner65 = Instance.new("UICorner",TextButton62)
+	UICorner65["CornerRadius"] = UDim.new(0, 5)
+	----UICorner65----
+	--Frame66--
+	local Frame66 = Instance.new("Frame",Frame6)
+	Frame66["Visible"] = false
+	Frame66["Name"] = "Updates"
+	Frame66["Size"] = UDim2.new(0, 676, 0, 321)
+	Frame66["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame66["ZIndex"] = 5
+	Frame66["BorderSizePixel"] = 0
+	Frame66["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----Frame66----
+	--TextLabel67--
+	local TextLabel67 = Instance.new("TextLabel",Frame66)
+	TextLabel67["TextWrapped"] = true
+	TextLabel67["TextSize"] = 14
+	TextLabel67["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel67["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel67["Text"] = "Obviously alot of time was spent on this Ui Update."
+	TextLabel67["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel67["TextStrokeTransparency"] = 0
+	TextLabel67["TextScaled"] = true
+	TextLabel67["Font"] = Enum.Font.Unknown
+	TextLabel67["BackgroundTransparency"] = 1
+	TextLabel67["Position"] = UDim2.new(0.0153927775, 0, 0.00687358528, 0)
+	TextLabel67["Name"] = "312"
+	TextLabel67["Size"] = UDim2.new(0, 655, 0, 42)
+	TextLabel67["BorderSizePixel"] = 0
+	TextLabel67["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel67----
+	--ImageLabel68--
+	local ImageLabel68 = Instance.new("ImageLabel",Frame66)
+	ImageLabel68["Size"] = UDim2.new(0, 360, 0, 322)
+	ImageLabel68["Image"] = "http://www.roblox.com/asset/?id=113994082044278"
+	ImageLabel68["BackgroundTransparency"] = 1
+	ImageLabel68["Position"] = UDim2.new(0.232248515, 0, -0.0031152647, 0)
+	ImageLabel68["BorderColor3"] = Color3.new(0, 0, 0)
+	ImageLabel68["ZIndex"] = 0
+	ImageLabel68["BorderSizePixel"] = 0
+	ImageLabel68["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----ImageLabel68----
+	--TextLabel69--
+	local TextLabel69 = Instance.new("TextLabel",Frame66)
+	TextLabel69["TextWrapped"] = true
+	TextLabel69["TextSize"] = 14
+	TextLabel69["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel69["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel69["Text"] = "the star"
+	TextLabel69["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel69["TextStrokeTransparency"] = 0
+	TextLabel69["TextScaled"] = true
+	TextLabel69["Font"] = Enum.Font.Unknown
+	TextLabel69["BackgroundTransparency"] = 1
+	TextLabel69["Position"] = UDim2.new(0.419238925, 0, 0.430549592, 0)
+	TextLabel69["Name"] = "312"
+	TextLabel69["Size"] = UDim2.new(0, 108, 0, 42)
+	TextLabel69["BorderSizePixel"] = 0
+	TextLabel69["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel69----
+	--Frame70--
+	local Frame70 = Instance.new("Frame",Frame6)
+	Frame70["Visible"] = false
+	Frame70["Name"] = "Home"
+	Frame70["Size"] = UDim2.new(0, 676, 0, 321)
+	Frame70["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame70["ZIndex"] = 5
+	Frame70["BorderSizePixel"] = 0
+	Frame70["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----Frame70----
+	--TextLabel71--
+	local TextLabel71 = Instance.new("TextLabel",Frame70)
+	TextLabel71["TextWrapped"] = true
+	TextLabel71["TextSize"] = 14
+	TextLabel71["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel71["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel71["Text"] = "nan - User, Tester"
+	TextLabel71["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel71["TextStrokeTransparency"] = 0
+	TextLabel71["TextScaled"] = true
+	TextLabel71["Font"] = Enum.Font.Unknown
+	TextLabel71["BackgroundTransparency"] = 1
+	TextLabel71["Position"] = UDim2.new(0.0999380276, 0, 0.883556306, 0)
+	TextLabel71["Name"] = "playername"
+	TextLabel71["Size"] = UDim2.new(0, 542, 0, 28)
+	TextLabel71["BorderSizePixel"] = 0
+	TextLabel71["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel71----
+	--Script72--
+	local Script72 = Instance.new("Script",TextLabel71)
+	----Script72----
+	--TextLabel73--
+	local TextLabel73 = Instance.new("TextLabel",Frame70)
+	TextLabel73["TextScaled"] = true
+	TextLabel73["TextWrapped"] = true
+	TextLabel73["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel73["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel73["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel73["Text"] = "######"
+	TextLabel73["TextSize"] = 80
+	TextLabel73["TextStrokeTransparency"] = 0
+	TextLabel73["Name"] = "playernames"
+	TextLabel73["Font"] = Enum.Font.Unknown
+	TextLabel73["BackgroundTransparency"] = 1
+	TextLabel73["Position"] = UDim2.new(0.101095885, 0, 0.699545979, 0)
+	TextLabel73["Size"] = UDim2.new(0, 271, 0, 42)
+	TextLabel73["ZIndex"] = 5
+	TextLabel73["BorderSizePixel"] = 0
+	TextLabel73["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel73----
+	--TextLabel74--
+	local TextLabel74 = Instance.new("TextLabel",Frame70)
+	TextLabel74["TextWrapped"] = true
+	TextLabel74["TextSize"] = 14
+	TextLabel74["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel74["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel74["Text"] = "nottellingyoushit - Creator, GUI Maker"
+	TextLabel74["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel74["TextStrokeTransparency"] = 0
+	TextLabel74["TextScaled"] = true
+	TextLabel74["Font"] = Enum.Font.Unknown
+	TextLabel74["BackgroundTransparency"] = 1
+	TextLabel74["Position"] = UDim2.new(0.110231116, 0, 0.71710813, 0)
+	TextLabel74["Name"] = "playernames"
+	TextLabel74["Size"] = UDim2.new(0, 542, 0, 28)
+	TextLabel74["BorderSizePixel"] = 0
+	TextLabel74["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel74----
+	--TextLabel75--
+	local TextLabel75 = Instance.new("TextLabel",Frame70)
+	TextLabel75["TextWrapped"] = true
+	TextLabel75["TextSize"] = 14
+	TextLabel75["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel75["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel75["Text"] = "nottellingyoushit - Designer, Helper"
+	TextLabel75["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel75["TextStrokeTransparency"] = 0
+	TextLabel75["TextScaled"] = true
+	TextLabel75["Font"] = Enum.Font.Unknown
+	TextLabel75["BackgroundTransparency"] = 1
+	TextLabel75["Position"] = UDim2.new(0.101095982, 0, 0.601036012, 0)
+	TextLabel75["Name"] = "playernames"
+	TextLabel75["Size"] = UDim2.new(0, 542, 0, 28)
+	TextLabel75["BorderSizePixel"] = 0
+	TextLabel75["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel75----
+	--TextLabel76--
+	local TextLabel76 = Instance.new("TextLabel",Frame70)
+	TextLabel76["TextScaled"] = true
+	TextLabel76["TextWrapped"] = true
+	TextLabel76["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel76["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel76["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel76["Text"] = "######"
+	TextLabel76["TextSize"] = 80
+	TextLabel76["TextStrokeTransparency"] = 0
+	TextLabel76["Name"] = "playernames"
+	TextLabel76["Font"] = Enum.Font.Unknown
+	TextLabel76["BackgroundTransparency"] = 1
+	TextLabel76["Position"] = UDim2.new(0.101095885, 0, 0.58299917, 0)
+	TextLabel76["Size"] = UDim2.new(0, 271, 0, 42)
+	TextLabel76["ZIndex"] = 5
+	TextLabel76["BorderSizePixel"] = 0
+	TextLabel76["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel76----
+	--TextLabel77--
+	local TextLabel77 = Instance.new("TextLabel",Frame70)
+	TextLabel77["TextWrapped"] = true
+	TextLabel77["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel77["TextStrokeTransparency"] = 0
+	TextLabel77["ZIndex"] = 5
+	TextLabel77["BorderSizePixel"] = 0
+	TextLabel77["Size"] = UDim2.new(0, 268, 0, 34)
+	TextLabel77["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel77["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel77["Text"] = "######"
+	TextLabel77["Rotation"] = 5
+	TextLabel77["Font"] = Enum.Font.Unknown
+	TextLabel77["Name"] = "playernames"
+	TextLabel77["Position"] = UDim2.new(0.103297755, 0, 0.728654027, 0)
+	TextLabel77["BackgroundTransparency"] = 1
+	TextLabel77["TextSize"] = 80
+	TextLabel77["TextScaled"] = true
+	TextLabel77["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel77----
+	--TextLabel78--
+	local TextLabel78 = Instance.new("TextLabel",Frame70)
+	TextLabel78["TextWrapped"] = true
+	TextLabel78["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel78["TextStrokeTransparency"] = 0
+	TextLabel78["ZIndex"] = 5
+	TextLabel78["BorderSizePixel"] = 0
+	TextLabel78["Size"] = UDim2.new(0, 268, 0, 34)
+	TextLabel78["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel78["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel78["Text"] = "######"
+	TextLabel78["Rotation"] = 5
+	TextLabel78["Font"] = Enum.Font.Unknown
+	TextLabel78["Name"] = "playernames"
+	TextLabel78["Position"] = UDim2.new(0.10329812, 0, 0.612107396, 0)
+	TextLabel78["BackgroundTransparency"] = 1
+	TextLabel78["TextSize"] = 80
+	TextLabel78["TextScaled"] = true
+	TextLabel78["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel78----
+	--TextLabel79--
+	local TextLabel79 = Instance.new("TextLabel",Frame70)
+	TextLabel79["TextWrapped"] = true
+	TextLabel79["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel79["TextStrokeTransparency"] = 0
+	TextLabel79["ZIndex"] = 5
+	TextLabel79["BorderSizePixel"] = 0
+	TextLabel79["Size"] = UDim2.new(0, 274, 0, 51)
+	TextLabel79["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel79["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel79["Text"] = "######"
+	TextLabel79["Rotation"] = -5
+	TextLabel79["Font"] = Enum.Font.Unknown
+	TextLabel79["Name"] = "playernames"
+	TextLabel79["Position"] = UDim2.new(0.0830672234, 0, 0.672674, 0)
+	TextLabel79["BackgroundTransparency"] = 1
+	TextLabel79["TextSize"] = 80
+	TextLabel79["TextScaled"] = true
+	TextLabel79["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel79----
+	--TextLabel80--
+	local TextLabel80 = Instance.new("TextLabel",Frame70)
+	TextLabel80["TextWrapped"] = true
+	TextLabel80["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel80["TextStrokeTransparency"] = 0
+	TextLabel80["ZIndex"] = 5
+	TextLabel80["BorderSizePixel"] = 0
+	TextLabel80["Size"] = UDim2.new(0, 274, 0, 51)
+	TextLabel80["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel80["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel80["Text"] = "######"
+	TextLabel80["Rotation"] = -5
+	TextLabel80["Font"] = Enum.Font.Unknown
+	TextLabel80["Name"] = "playernames"
+	TextLabel80["Position"] = UDim2.new(0.0826242641, 0, 0.556127429, 0)
+	TextLabel80["BackgroundTransparency"] = 1
+	TextLabel80["TextSize"] = 80
+	TextLabel80["TextScaled"] = true
+	TextLabel80["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel80----
+	--TextLabel81--
+	local TextLabel81 = Instance.new("TextLabel",Frame70)
+	TextLabel81["TextWrapped"] = true
+	TextLabel81["TextSize"] = 14
+	TextLabel81["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel81["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel81["Text"] = "Honestly, this ui is better then the shitty old ones. the old ones barely got updated, so i decided to go with a new version."
+	TextLabel81["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel81["TextStrokeTransparency"] = 0
+	TextLabel81["TextScaled"] = true
+	TextLabel81["Font"] = Enum.Font.Unknown
+	TextLabel81["BackgroundTransparency"] = 1
+	TextLabel81["Position"] = UDim2.new(0.0139134871, 0, 0.0193346441, 0)
+	TextLabel81["Name"] = "312"
+	TextLabel81["Size"] = UDim2.new(0, 655, 0, 83)
+	TextLabel81["BorderSizePixel"] = 0
+	TextLabel81["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel81----
+	--TextLabel82--
+	local TextLabel82 = Instance.new("TextLabel",Frame70)
+	TextLabel82["TextWrapped"] = true
+	TextLabel82["TextSize"] = 14
+	TextLabel82["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel82["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel82["Text"] = "(ui design inspired by speedhubx best free fisch script)"
+	TextLabel82["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel82["TextStrokeTransparency"] = 0
+	TextLabel82["TextScaled"] = true
+	TextLabel82["Font"] = Enum.Font.Unknown
+	TextLabel82["BackgroundTransparency"] = 1
+	TextLabel82["Position"] = UDim2.new(0.0139134871, 0, 0.246748969, 0)
+	TextLabel82["Name"] = "312"
+	TextLabel82["Size"] = UDim2.new(0, 655, 0, 42)
+	TextLabel82["BorderSizePixel"] = 0
+	TextLabel82["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel82----
+	--TextLabel83--
+	local TextLabel83 = Instance.new("TextLabel",Frame70)
+	TextLabel83["TextWrapped"] = true
+	TextLabel83["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel83["TextStrokeTransparency"] = 0
+	TextLabel83["ZIndex"] = 5
+	TextLabel83["BorderSizePixel"] = 0
+	TextLabel83["Size"] = UDim2.new(0, 274, 0, 51)
+	TextLabel83["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel83["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel83["Text"] = "######"
+	TextLabel83["Rotation"] = -5
+	TextLabel83["Font"] = Enum.Font.Unknown
+	TextLabel83["Name"] = "playernames"
+	TextLabel83["Position"] = UDim2.new(0.207624093, 0, 0.567065299, 0)
+	TextLabel83["BackgroundTransparency"] = 1
+	TextLabel83["TextSize"] = 80
+	TextLabel83["TextScaled"] = true
+	TextLabel83["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel83----
+	--TextLabel84--
+	local TextLabel84 = Instance.new("TextLabel",Frame70)
+	TextLabel84["TextWrapped"] = true
+	TextLabel84["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel84["TextStrokeTransparency"] = 0
+	TextLabel84["ZIndex"] = 5
+	TextLabel84["BorderSizePixel"] = 0
+	TextLabel84["Size"] = UDim2.new(0, 274, 0, 51)
+	TextLabel84["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel84["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel84["Text"] = "######"
+	TextLabel84["Rotation"] = -5
+	TextLabel84["Font"] = Enum.Font.Unknown
+	TextLabel84["Name"] = "playernames"
+	TextLabel84["Position"] = UDim2.new(0.17729792, 0, 0.68361181, 0)
+	TextLabel84["BackgroundTransparency"] = 1
+	TextLabel84["TextSize"] = 80
+	TextLabel84["TextScaled"] = true
+	TextLabel84["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel84----
+	--Frame85--
+	local Frame85 = Instance.new("Frame",Frame6)
+	Frame85["Visible"] = false
+	Frame85["Name"] = "Fisch"
+	Frame85["Size"] = UDim2.new(0, 676, 0, 321)
+	Frame85["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame85["ZIndex"] = 5
+	Frame85["BorderSizePixel"] = 0
+	Frame85["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----Frame85----
+	--TextButton86--
+	local TextButton86 = Instance.new("TextButton",Frame85)
+	TextButton86["TextWrapped"] = true
+	TextButton86["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton86["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton86["Text"] = "AVERAGE"
+	TextButton86["TextStrokeTransparency"] = 0
+	TextButton86["TextSize"] = 14
+	TextButton86["Font"] = Enum.Font.SourceSansBold
+	TextButton86["Name"] = "AVERAGE"
+	TextButton86["Position"] = UDim2.new(0.0329938345, 0, 0.054999996, 0)
+	TextButton86["TextScaled"] = true
+	TextButton86["Size"] = UDim2.new(0, 164, 0, 43)
+	TextButton86["BorderSizePixel"] = 0
+	TextButton86["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton86----
+	--UIStroke87--
+	local UIStroke87 = Instance.new("UIStroke",TextButton86)
+	UIStroke87["Color"] = Color3.new(1, 1, 1)
+	UIStroke87["Thickness"] = 3
+	UIStroke87["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke87----
+	--UICorner88--
+	local UICorner88 = Instance.new("UICorner",TextButton86)
+	UICorner88["CornerRadius"] = UDim.new(0, 1)
+	----UICorner88----
+	--Script89--
+	local Script89 = Instance.new("Script",TextButton86)
+	Script89["Name"] = "ButtonHover"
+	----Script89----
+	--Script90--
+	local Script90 = Instance.new("Script",TextButton86)
+	Script90["Name"] = "OpenFrame"
+	----Script90----
+	--Script91--
+	local Script91 = Instance.new("Script",TextButton86)
+	Script91["Name"] = "Execute"
+	----Script91----
+	--TextButton92--
+	local TextButton92 = Instance.new("TextButton",Frame85)
+	TextButton92["TextWrapped"] = true
+	TextButton92["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton92["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton92["Text"] = "NATIVE"
+	TextButton92["TextStrokeTransparency"] = 0
+	TextButton92["TextSize"] = 14
+	TextButton92["Font"] = Enum.Font.SourceSansBold
+	TextButton92["Name"] = "NATIVE"
+	TextButton92["Position"] = UDim2.new(0.0316086262, 0, 0.419531882, 0)
+	TextButton92["TextScaled"] = true
+	TextButton92["Size"] = UDim2.new(0, 164, 0, 43)
+	TextButton92["BorderSizePixel"] = 0
+	TextButton92["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton92----
+	--UIStroke93--
+	local UIStroke93 = Instance.new("UIStroke",TextButton92)
+	UIStroke93["Color"] = Color3.new(1, 1, 1)
+	UIStroke93["Thickness"] = 3
+	UIStroke93["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke93----
+	--UICorner94--
+	local UICorner94 = Instance.new("UICorner",TextButton92)
+	UICorner94["CornerRadius"] = UDim.new(0, 1)
+	----UICorner94----
+	--Script95--
+	local Script95 = Instance.new("Script",TextButton92)
+	Script95["Name"] = "ButtonHover"
+	----Script95----
+	--Script96--
+	local Script96 = Instance.new("Script",TextButton92)
+	Script96["Name"] = "OpenFrame"
+	----Script96----
+	--Script97--
+	local Script97 = Instance.new("Script",TextButton92)
+	Script97["Name"] = "Execute"
+	----Script97----
+	--TextButton98--
+	local TextButton98 = Instance.new("TextButton",Frame85)
+	TextButton98["TextWrapped"] = true
+	TextButton98["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton98["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton98["Text"] = "SPEED HUB"
+	TextButton98["TextStrokeTransparency"] = 0
+	TextButton98["TextSize"] = 14
+	TextButton98["Font"] = Enum.Font.SourceSansBold
+	TextButton98["Name"] = "SPEEDHUB"
+	TextButton98["Position"] = UDim2.new(0.0329938345, 0, 0.237433508, 0)
+	TextButton98["TextScaled"] = true
+	TextButton98["Size"] = UDim2.new(0, 164, 0, 43)
+	TextButton98["BorderSizePixel"] = 0
+	TextButton98["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton98----
+	--UIStroke99--
+	local UIStroke99 = Instance.new("UIStroke",TextButton98)
+	UIStroke99["Color"] = Color3.new(1, 1, 1)
+	UIStroke99["Thickness"] = 3
+	UIStroke99["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke99----
+	--UICorner100--
+	local UICorner100 = Instance.new("UICorner",TextButton98)
+	UICorner100["CornerRadius"] = UDim.new(0, 1)
+	----UICorner100----
+	--Script101--
+	local Script101 = Instance.new("Script",TextButton98)
+	Script101["Name"] = "ButtonHover"
+	----Script101----
+	--Script102--
+	local Script102 = Instance.new("Script",TextButton98)
+	Script102["Name"] = "OpenFrame"
+	----Script102----
+	--Script103--
+	local Script103 = Instance.new("Script",TextButton98)
+	Script103["Name"] = "Execute"
+	----Script103----
+	--TextButton104--
+	local TextButton104 = Instance.new("TextButton",Frame85)
+	TextButton104["TextWrapped"] = true
+	TextButton104["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton104["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton104["Text"] = "KICIAHOOK"
+	TextButton104["TextStrokeTransparency"] = 0
+	TextButton104["TextSize"] = 14
+	TextButton104["Font"] = Enum.Font.SourceSansBold
+	TextButton104["Name"] = "kiciahook"
+	TextButton104["Position"] = UDim2.new(0.313420415, 0, 0.054999996, 0)
+	TextButton104["TextScaled"] = true
+	TextButton104["Size"] = UDim2.new(0, 260, 0, 43)
+	TextButton104["BorderSizePixel"] = 0
+	TextButton104["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton104----
+	--UIStroke105--
+	local UIStroke105 = Instance.new("UIStroke",TextButton104)
+	UIStroke105["Color"] = Color3.new(1, 1, 1)
+	UIStroke105["Thickness"] = 3
+	UIStroke105["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke105----
+	--UICorner106--
+	local UICorner106 = Instance.new("UICorner",TextButton104)
+	UICorner106["CornerRadius"] = UDim.new(0, 1)
+	----UICorner106----
+	--Script107--
+	local Script107 = Instance.new("Script",TextButton104)
+	Script107["Name"] = "ButtonHover"
+	----Script107----
+	--Script108--
+	local Script108 = Instance.new("Script",TextButton104)
+	Script108["Name"] = "OpenFrame"
+	----Script108----
+	--Script109--
+	local Script109 = Instance.new("Script",TextButton104)
+	Script109["Name"] = "Execute"
+	----Script109----
+	--TextButton110--
+	local TextButton110 = Instance.new("TextButton",Frame85)
+	TextButton110["TextWrapped"] = true
+	TextButton110["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton110["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton110["Text"] = "NAOKI"
+	TextButton110["TextStrokeTransparency"] = 0
+	TextButton110["TextSize"] = 14
+	TextButton110["Font"] = Enum.Font.SourceSansBold
+	TextButton110["Name"] = "naokihub"
+	TextButton110["Position"] = UDim2.new(0.31119442, 0, 0.419531882, 0)
+	TextButton110["TextScaled"] = true
+	TextButton110["Size"] = UDim2.new(0, 260, 0, 43)
+	TextButton110["BorderSizePixel"] = 0
+	TextButton110["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton110----
+	--UIStroke111--
+	local UIStroke111 = Instance.new("UIStroke",TextButton110)
+	UIStroke111["Color"] = Color3.new(1, 1, 1)
+	UIStroke111["Thickness"] = 3
+	UIStroke111["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke111----
+	--UICorner112--
+	local UICorner112 = Instance.new("UICorner",TextButton110)
+	UICorner112["CornerRadius"] = UDim.new(0, 1)
+	----UICorner112----
+	--Script113--
+	local Script113 = Instance.new("Script",TextButton110)
+	Script113["Name"] = "ButtonHover"
+	----Script113----
+	--Script114--
+	local Script114 = Instance.new("Script",TextButton110)
+	Script114["Name"] = "OpenFrame"
+	----Script114----
+	--Script115--
+	local Script115 = Instance.new("Script",TextButton110)
+	Script115["Name"] = "Execute"
+	----Script115----
+	--TextButton116--
+	local TextButton116 = Instance.new("TextButton",Frame85)
+	TextButton116["TextWrapped"] = true
+	TextButton116["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton116["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton116["Text"] = "KNCRYPT"
+	TextButton116["TextStrokeTransparency"] = 0
+	TextButton116["TextSize"] = 14
+	TextButton116["Font"] = Enum.Font.SourceSansBold
+	TextButton116["Name"] = "KNCRYPT"
+	TextButton116["Position"] = UDim2.new(0.313420415, 0, 0.237433508, 0)
+	TextButton116["TextScaled"] = true
+	TextButton116["Size"] = UDim2.new(0, 260, 0, 43)
+	TextButton116["BorderSizePixel"] = 0
+	TextButton116["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton116----
+	--UIStroke117--
+	local UIStroke117 = Instance.new("UIStroke",TextButton116)
+	UIStroke117["Color"] = Color3.new(1, 1, 1)
+	UIStroke117["Thickness"] = 3
+	UIStroke117["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke117----
+	--UICorner118--
+	local UICorner118 = Instance.new("UICorner",TextButton116)
+	UICorner118["CornerRadius"] = UDim.new(0, 1)
+	----UICorner118----
+	--Script119--
+	local Script119 = Instance.new("Script",TextButton116)
+	Script119["Name"] = "ButtonHover"
+	----Script119----
+	--Script120--
+	local Script120 = Instance.new("Script",TextButton116)
+	Script120["Name"] = "OpenFrame"
+	----Script120----
+	--Script121--
+	local Script121 = Instance.new("Script",TextButton116)
+	Script121["Name"] = "Execute"
+	----Script121----
+	--TextButton122--
+	local TextButton122 = Instance.new("TextButton",Frame85)
+	TextButton122["TextWrapped"] = true
+	TextButton122["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton122["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton122["Text"] = "NYX"
+	TextButton122["TextStrokeTransparency"] = 0
+	TextButton122["TextSize"] = 14
+	TextButton122["Font"] = Enum.Font.SourceSansBold
+	TextButton122["Name"] = "NYX"
+	TextButton122["Position"] = UDim2.new(0.735656559, 0, 0.054999996, 0)
+	TextButton122["TextScaled"] = true
+	TextButton122["Size"] = UDim2.new(0, 164, 0, 43)
+	TextButton122["BorderSizePixel"] = 0
+	TextButton122["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton122----
+	--UIStroke123--
+	local UIStroke123 = Instance.new("UIStroke",TextButton122)
+	UIStroke123["Color"] = Color3.new(1, 1, 1)
+	UIStroke123["Thickness"] = 3
+	UIStroke123["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke123----
+	--UICorner124--
+	local UICorner124 = Instance.new("UICorner",TextButton122)
+	UICorner124["CornerRadius"] = UDim.new(0, 1)
+	----UICorner124----
+	--Script125--
+	local Script125 = Instance.new("Script",TextButton122)
+	Script125["Name"] = "ButtonHover"
+	----Script125----
+	--Script126--
+	local Script126 = Instance.new("Script",TextButton122)
+	Script126["Name"] = "OpenFrame"
+	----Script126----
+	--Script127--
+	local Script127 = Instance.new("Script",TextButton122)
+	Script127["Name"] = "Execute"
+	----Script127----
+	--TextButton128--
+	local TextButton128 = Instance.new("TextButton",Frame85)
+	TextButton128["TextWrapped"] = true
+	TextButton128["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton128["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton128["Text"] = "RAITO"
+	TextButton128["TextStrokeTransparency"] = 0
+	TextButton128["TextSize"] = 14
+	TextButton128["Font"] = Enum.Font.SourceSansBold
+	TextButton128["Name"] = "RAITO"
+	TextButton128["Position"] = UDim2.new(0.734271348, 0, 0.419531882, 0)
+	TextButton128["TextScaled"] = true
+	TextButton128["Size"] = UDim2.new(0, 164, 0, 43)
+	TextButton128["BorderSizePixel"] = 0
+	TextButton128["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton128----
+	--UIStroke129--
+	local UIStroke129 = Instance.new("UIStroke",TextButton128)
+	UIStroke129["Color"] = Color3.new(1, 1, 1)
+	UIStroke129["Thickness"] = 3
+	UIStroke129["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke129----
+	--UICorner130--
+	local UICorner130 = Instance.new("UICorner",TextButton128)
+	UICorner130["CornerRadius"] = UDim.new(0, 1)
+	----UICorner130----
+	--Script131--
+	local Script131 = Instance.new("Script",TextButton128)
+	Script131["Name"] = "ButtonHover"
+	----Script131----
+	--Script132--
+	local Script132 = Instance.new("Script",TextButton128)
+	Script132["Name"] = "OpenFrame"
+	----Script132----
+	--Script133--
+	local Script133 = Instance.new("Script",TextButton128)
+	Script133["Name"] = "Execute"
+	----Script133----
+	--TextButton134--
+	local TextButton134 = Instance.new("TextButton",Frame85)
+	TextButton134["TextWrapped"] = true
+	TextButton134["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton134["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton134["Text"] = "LUNOR"
+	TextButton134["TextStrokeTransparency"] = 0
+	TextButton134["TextSize"] = 14
+	TextButton134["Font"] = Enum.Font.SourceSansBold
+	TextButton134["Name"] = "LUNOR"
+	TextButton134["Position"] = UDim2.new(0.735656559, 0, 0.237433508, 0)
+	TextButton134["TextScaled"] = true
+	TextButton134["Size"] = UDim2.new(0, 164, 0, 43)
+	TextButton134["BorderSizePixel"] = 0
+	TextButton134["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton134----
+	--UIStroke135--
+	local UIStroke135 = Instance.new("UIStroke",TextButton134)
+	UIStroke135["Color"] = Color3.new(1, 1, 1)
+	UIStroke135["Thickness"] = 3
+	UIStroke135["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke135----
+	--UICorner136--
+	local UICorner136 = Instance.new("UICorner",TextButton134)
+	UICorner136["CornerRadius"] = UDim.new(0, 1)
+	----UICorner136----
+	--Script137--
+	local Script137 = Instance.new("Script",TextButton134)
+	Script137["Name"] = "ButtonHover"
+	----Script137----
+	--Script138--
+	local Script138 = Instance.new("Script",TextButton134)
+	Script138["Name"] = "OpenFrame"
+	----Script138----
+	--Script139--
+	local Script139 = Instance.new("Script",TextButton134)
+	Script139["Name"] = "Execute"
+	----Script139----
+	--TextLabel140--
+	local TextLabel140 = Instance.new("TextLabel",Frame85)
+	TextLabel140["TextWrapped"] = true
+	TextLabel140["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel140["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel140["Text"] = "psstt.. this isnt all of them, theres going to be a scrollingframe for almost 15+ scripts 🤫"
+	TextLabel140["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel140["TextStrokeTransparency"] = 0
+	TextLabel140["TextSize"] = 14
+	TextLabel140["Font"] = Enum.Font.SourceSans
+	TextLabel140["BackgroundTransparency"] = 1
+	TextLabel140["Position"] = UDim2.new(0, 0, 0.862928331, 0)
+	TextLabel140["TextScaled"] = true
+	TextLabel140["Size"] = UDim2.new(0, 675, 0, 44)
+	TextLabel140["BorderSizePixel"] = 0
+	TextLabel140["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel140----
+	--Script141--
+	local Script141 = Instance.new("Script",Frame6)
+	----Script141----
+	--Frame142--
+	local Frame142 = Instance.new("Frame",Frame6)
+	Frame142["Visible"] = false
+	Frame142["Name"] = "Arsenal"
+	Frame142["Size"] = UDim2.new(0, 676, 0, 321)
+	Frame142["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame142["ZIndex"] = 5
+	Frame142["BorderSizePixel"] = 0
+	Frame142["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----Frame142----
+	--TextLabel143--
+	local TextLabel143 = Instance.new("TextLabel",Frame142)
+	TextLabel143["TextWrapped"] = true
+	TextLabel143["TextSize"] = 14
+	TextLabel143["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel143["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel143["Text"] = "Best Arsenal"
+	TextLabel143["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel143["TextStrokeTransparency"] = 0
+	TextLabel143["TextScaled"] = true
+	TextLabel143["Font"] = Enum.Font.Unknown
+	TextLabel143["BackgroundTransparency"] = 1
+	TextLabel143["Position"] = UDim2.new(0.0153927775, 0, 0.0567178205, 0)
+	TextLabel143["Name"] = "312"
+	TextLabel143["Size"] = UDim2.new(0, 655, 0, 42)
+	TextLabel143["BorderSizePixel"] = 0
+	TextLabel143["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel143----
+	--TextLabel144--
+	local TextLabel144 = Instance.new("TextLabel",Frame142)
+	TextLabel144["TextWrapped"] = true
+	TextLabel144["TextSize"] = 14
+	TextLabel144["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel144["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel144["Text"] = "2024 - 2025 Still Undetected!"
+	TextLabel144["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel144["TextStrokeTransparency"] = 0
+	TextLabel144["TextScaled"] = true
+	TextLabel144["Font"] = Enum.Font.Unknown
+	TextLabel144["BackgroundTransparency"] = 1
+	TextLabel144["Position"] = UDim2.new(0.0153927775, 0, 0.187558949, 0)
+	TextLabel144["Name"] = "312"
+	TextLabel144["Size"] = UDim2.new(0, 655, 0, 42)
+	TextLabel144["BorderSizePixel"] = 0
+	TextLabel144["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel144----
+	--TextButton145--
+	local TextButton145 = Instance.new("TextButton",Frame142)
+	TextButton145["TextWrapped"] = true
+	TextButton145["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton145["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton145["Text"] = "CARTEL"
+	TextButton145["TextStrokeTransparency"] = 0
+	TextButton145["TextSize"] = 14
+	TextButton145["Font"] = Enum.Font.SourceSansBold
+	TextButton145["Name"] = "CARTEL"
+	TextButton145["Position"] = UDim2.new(0.164650634, 0, 0.385218352, 0)
+	TextButton145["TextScaled"] = true
+	TextButton145["Size"] = UDim2.new(0, 453, 0, 118)
+	TextButton145["BorderSizePixel"] = 0
+	TextButton145["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton145----
+	--UIStroke146--
+	local UIStroke146 = Instance.new("UIStroke",TextButton145)
+	UIStroke146["Color"] = Color3.new(1, 1, 1)
+	UIStroke146["Thickness"] = 3
+	UIStroke146["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke146----
+	--Script147--
+	local Script147 = Instance.new("Script",TextButton145)
+	Script147["Name"] = "ButtonHover"
+	----Script147----
+	--Script148--
+	local Script148 = Instance.new("Script",TextButton145)
+	Script148["Name"] = "OpenFrame"
+	----Script148----
+	--Script149--
+	local Script149 = Instance.new("Script",TextButton145)
+	Script149["Name"] = "Execute"
+	----Script149----
+	--UICorner150--
+	local UICorner150 = Instance.new("UICorner",TextButton145)
+	UICorner150["CornerRadius"] = UDim.new(0, 1)
+	----UICorner150----
+	--Frame151--
+	local Frame151 = Instance.new("Frame",Frame6)
+	Frame151["Visible"] = false
+	Frame151["Name"] = "RealHood"
+	Frame151["Size"] = UDim2.new(0, 676, 0, 321)
+	Frame151["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame151["ZIndex"] = 5
+	Frame151["BorderSizePixel"] = 0
+	Frame151["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----Frame151----
+	--TextLabel152--
+	local TextLabel152 = Instance.new("TextLabel",Frame151)
+	TextLabel152["TextWrapped"] = true
+	TextLabel152["TextSize"] = 14
+	TextLabel152["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel152["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel152["Text"] = "i only know one :("
+	TextLabel152["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel152["TextStrokeTransparency"] = 0
+	TextLabel152["TextScaled"] = true
+	TextLabel152["Font"] = Enum.Font.Unknown
+	TextLabel152["BackgroundTransparency"] = 1
+	TextLabel152["Position"] = UDim2.new(0.0153927775, 0, 0.0567178205, 0)
+	TextLabel152["Name"] = "312"
+	TextLabel152["Size"] = UDim2.new(0, 655, 0, 42)
+	TextLabel152["BorderSizePixel"] = 0
+	TextLabel152["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel152----
+	--TextButton153--
+	local TextButton153 = Instance.new("TextButton",Frame151)
+	TextButton153["TextWrapped"] = true
+	TextButton153["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton153["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton153["Text"] = "YELLOWGREG"
+	TextButton153["TextStrokeTransparency"] = 0
+	TextButton153["TextSize"] = 14
+	TextButton153["Font"] = Enum.Font.SourceSansBold
+	TextButton153["Name"] = "YellowGregs"
+	TextButton153["Position"] = UDim2.new(0.164650634, 0, 0.245031431, 0)
+	TextButton153["TextScaled"] = true
+	TextButton153["Size"] = UDim2.new(0, 453, 0, 118)
+	TextButton153["BorderSizePixel"] = 0
+	TextButton153["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton153----
+	--UIStroke154--
+	local UIStroke154 = Instance.new("UIStroke",TextButton153)
+	UIStroke154["Color"] = Color3.new(1, 1, 1)
+	UIStroke154["Thickness"] = 3
+	UIStroke154["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke154----
+	--Script155--
+	local Script155 = Instance.new("Script",TextButton153)
+	Script155["Name"] = "ButtonHover"
+	----Script155----
+	--Script156--
+	local Script156 = Instance.new("Script",TextButton153)
+	Script156["Name"] = "OpenFrame"
+	----Script156----
+	--Script157--
+	local Script157 = Instance.new("Script",TextButton153)
+	Script157["Name"] = "Execute"
+	----Script157----
+	--UICorner158--
+	local UICorner158 = Instance.new("UICorner",TextButton153)
+	UICorner158["CornerRadius"] = UDim.new(0, 1)
+	----UICorner158----
+	--TextLabel159--
+	local TextLabel159 = Instance.new("TextLabel",Frame6)
+	TextLabel159["TextScaled"] = true
+	TextLabel159["TextWrapped"] = true
+	TextLabel159["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel159["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel159["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel159["Text"] = "click on some buttons on the left side to access scripts!"
+	TextLabel159["TextSize"] = 14
+	TextLabel159["TextStrokeTransparency"] = 0
+	TextLabel159["Rotation"] = 1
+	TextLabel159["Font"] = Enum.Font.SourceSans
+	TextLabel159["BackgroundTransparency"] = 4
+	TextLabel159["Position"] = UDim2.new(0.064717494, 0, 0.262715101, 0)
+	TextLabel159["Size"] = UDim2.new(0, 587, 0, 134)
+	TextLabel159["ZIndex"] = 0
+	TextLabel159["BorderSizePixel"] = 0
+	TextLabel159["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextLabel159----
+	--Script160--
+	local Script160 = Instance.new("Script",TextLabel159)
+	----Script160----
+	--Frame161--
+	local Frame161 = Instance.new("Frame",ScreenGui1)
+	Frame161["Visible"] = false
+	Frame161["Name"] = "WarningFrame"
+	Frame161["Position"] = UDim2.new(0.331723779, 0, 0.340110332, 0)
+	Frame161["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame161["Size"] = UDim2.new(0, 461, 0, 267)
+	Frame161["BorderSizePixel"] = 0
+	Frame161["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----Frame161----
+	--TextLabel162--
+	local TextLabel162 = Instance.new("TextLabel",Frame161)
+	TextLabel162["TextWrapped"] = true
+	TextLabel162["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel162["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel162["Text"] = "Do you wish to CLOSE This Ui?"
+	TextLabel162["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel162["TextStrokeTransparency"] = 0
+	TextLabel162["TextSize"] = 14
+	TextLabel162["Font"] = Enum.Font.Unknown
+	TextLabel162["BackgroundTransparency"] = 1
+	TextLabel162["Position"] = UDim2.new(0.0801016912, 0, 0.267240018, 0)
+	TextLabel162["TextScaled"] = true
+	TextLabel162["Size"] = UDim2.new(0, 384, 0, 55)
+	TextLabel162["BorderSizePixel"] = 0
+	TextLabel162["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel162----
+	--ImageLabel163--
+	local ImageLabel163 = Instance.new("ImageLabel",Frame161)
+	ImageLabel163["Image"] = "http://www.roblox.com/asset/?id=113994082044278"
+	ImageLabel163["Position"] = UDim2.new(0.350138158, 0, -0.245364755, 0)
+	ImageLabel163["BorderColor3"] = Color3.new(0, 0, 0)
+	ImageLabel163["Size"] = UDim2.new(0, 137, 0, 137)
+	ImageLabel163["BorderSizePixel"] = 0
+	ImageLabel163["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----ImageLabel163----
+	--UIStroke164--
+	local UIStroke164 = Instance.new("UIStroke",ImageLabel163)
+	UIStroke164["Color"] = Color3.new(1, 1, 1)
+	UIStroke164["Thickness"] = 5
+	UIStroke164["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke164----
+	--UIGradient165--
+	local UIGradient165 = Instance.new("UIGradient",UIStroke164)
+	UIGradient165["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
+	}
+	----UIGradient165----
+	--UICorner166--
+	local UICorner166 = Instance.new("UICorner",ImageLabel163)
+	UICorner166["CornerRadius"] = UDim.new(5, 5)
+	----UICorner166----
+	--TextLabel167--
+	local TextLabel167 = Instance.new("TextLabel",Frame161)
+	TextLabel167["TextWrapped"] = true
+	TextLabel167["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel167["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel167["Text"] = "**IT WILL DELETE THIS UI ENTIRELY**"
+	TextLabel167["TextStrokeColor3"] = Color3.new(1, 0, 0)
+	TextLabel167["TextStrokeTransparency"] = 0
+	TextLabel167["TextSize"] = 14
+	TextLabel167["Font"] = Enum.Font.Unknown
+	TextLabel167["BackgroundTransparency"] = 1
+	TextLabel167["Position"] = UDim2.new(0.0801016912, 0, 0.418755114, 0)
+	TextLabel167["TextScaled"] = true
+	TextLabel167["Size"] = UDim2.new(0, 384, 0, 55)
+	TextLabel167["BorderSizePixel"] = 0
+	TextLabel167["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel167----
+	--UIGradient168--
+	local UIGradient168 = Instance.new("UIGradient",Frame161)
+	UIGradient168["Rotation"] = 90
+	UIGradient168["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0,0,0)),
+		ColorSequenceKeypoint.new(0.153979,Color3.new(0.0975965,0.0975965,0.0975965)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(0.486275,0.486275,0.486275)),
+		ColorSequenceKeypoint.new(0.889273,Color3.new(0.0907279,0.0907279,0.0907279)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.0588235,0.0588235,0.0588235))
+	}
+	----UIGradient168----
+	--UIStroke169--
+	local UIStroke169 = Instance.new("UIStroke",Frame161)
+	UIStroke169["Color"] = Color3.new(1, 1, 1)
+	UIStroke169["Thickness"] = 5
+	UIStroke169["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke169----
+	--UIGradient170--
+	local UIGradient170 = Instance.new("UIGradient",UIStroke169)
+	UIGradient170["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
+	}
+	----UIGradient170----
+	--UICorner171--
+	local UICorner171 = Instance.new("UICorner",Frame161)
+	UICorner171["CornerRadius"] = UDim.new(0, 16)
+	----UICorner171----
+	--ImageLabel172--
+	local ImageLabel172 = Instance.new("ImageLabel",Frame161)
+	ImageLabel172["Size"] = UDim2.new(0, 459, 0, 102)
+	ImageLabel172["Image"] = "http://www.roblox.com/asset/?id=104206787913401"
+	ImageLabel172["BackgroundTransparency"] = 1
+	ImageLabel172["Position"] = UDim2.new(-0.00127180852, 0, 0.327165127, 0)
+	ImageLabel172["BorderColor3"] = Color3.new(0, 0, 0)
+	ImageLabel172["ZIndex"] = 0
+	ImageLabel172["BorderSizePixel"] = 0
+	ImageLabel172["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----ImageLabel172----
+	--TextButton173--
+	local TextButton173 = Instance.new("TextButton",Frame161)
+	TextButton173["TextWrapped"] = true
+	TextButton173["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton173["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton173["Text"] = "No, I Don't want to."
+	TextButton173["TextStrokeTransparency"] = 0
+	TextButton173["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextButton173["Font"] = Enum.Font.Unknown
+	TextButton173["TextSize"] = 14
+	TextButton173["Position"] = UDim2.new(0.500792503, 0, 0.895131111, 0)
+	TextButton173["TextScaled"] = true
+	TextButton173["Size"] = UDim2.new(0, 176, 0, 45)
+	TextButton173["BorderSizePixel"] = 0
+	TextButton173["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton173----
+	--UIStroke174--
+	local UIStroke174 = Instance.new("UIStroke",TextButton173)
+	UIStroke174["Color"] = Color3.new(1, 1, 1)
+	UIStroke174["Thickness"] = 2
+	UIStroke174["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke174----
+	--UIGradient175--
+	local UIGradient175 = Instance.new("UIGradient",UIStroke174)
+	UIGradient175["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
+	}
+	----UIGradient175----
+	--UICorner176--
+	local UICorner176 = Instance.new("UICorner",TextButton173)
+	UICorner176["CornerRadius"] = UDim.new(0, 16)
+	----UICorner176----
+	--Script177--
+	local Script177 = Instance.new("Script",TextButton173)
+	----Script177----
+	--TextButton178--
+	local TextButton178 = Instance.new("TextButton",Frame161)
+	TextButton178["TextWrapped"] = true
+	TextButton178["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton178["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton178["Text"] = "Yes, I Would like to."
+	TextButton178["TextStrokeTransparency"] = 0
+	TextButton178["TextStrokeColor3"] = Color3.new(1, 0, 0)
+	TextButton178["Font"] = Enum.Font.Unknown
+	TextButton178["TextSize"] = 14
+	TextButton178["Position"] = UDim2.new(0.108459868, 0, 0.895131111, 0)
+	TextButton178["TextScaled"] = true
+	TextButton178["Size"] = UDim2.new(0, 176, 0, 45)
+	TextButton178["BorderSizePixel"] = 0
+	TextButton178["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton178----
+	--UIStroke179--
+	local UIStroke179 = Instance.new("UIStroke",TextButton178)
+	UIStroke179["Color"] = Color3.new(1, 0, 0)
+	UIStroke179["Thickness"] = 2
+	UIStroke179["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke179----
+	--UIGradient180--
+	local UIGradient180 = Instance.new("UIGradient",UIStroke179)
+	UIGradient180["Color"] = ColorSequence.new{
+		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
+		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
+		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
+	}
+	----UIGradient180----
+	--UICorner181--
+	local UICorner181 = Instance.new("UICorner",TextButton178)
+	UICorner181["CornerRadius"] = UDim.new(0, 16)
+	----UICorner181----
+	--Script182--
+	local Script182 = Instance.new("Script",TextButton178)
+	----Script182----
+	spawn(function() --Source for Script4
+		local script = Script4
+		local UserInputService = game:GetService("UserInputService")
+		
+		local gui = script.Parent
+		
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+		
+		local function update(input)
+			local delta = input.Position - dragStart
+			gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-local function XQWV_fake_script() -- Fake Script: StarterGui.EclipticHub.ImageButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_ImageButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local eclipticFrame = script.Parent.Parent.Ecliptic
-		local warningFrame = script.Parent.Parent.ImageButton
-	
-		-- Check if both frames exist and toggle visibility
-		if eclipticFrame then
-			eclipticFrame.Visible = true -- Show the Ecliptic frame
-		end
-	
-		if warningFrame then
-			warningFrame.Visible = false -- Hide the WarningFrame
-		end
-	end)
-	
-end
-local function XNQPN_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.HomeButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_HomeButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside each TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent.Parent.Home -- Replace "Updates" with the name of your target frame
-	local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
-	local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
-	local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
-	
-	-- Function to create a fade effect for the BackgroundTransparency
-	local function fadeFrame(frame, targetTransparency, time)
-		local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-		local goal = {BackgroundTransparency = targetTransparency}
-		local tween = tweenService:Create(frame, tweenInfo, goal)
-		tween:Play()
-	end
-	
-	-- Function to close all frames except the target frame and TextFrameDont
-	local function showOnlyTargetFrame()
-		-- Fade out all frames first
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") then
-				if child == targetFrame or child == textFrameDont then
-					-- Fade in the target frame and TextFrameDont
-					child.Visible = true
-					fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
-				else
-					-- Fade out other frames
-					fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
-					-- Set visibility to false after fading out
-					child.Visible = false
-				end
+		
+		gui.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = gui.Position
+				
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
 			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
-	end)
-	
-end
-local function GPDWO_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.HomeButton.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_HomeButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside each TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent.Parent.Home -- Replace "Home" with the name of your target frame
-	local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
-	local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
-	
-	-- Function to close all frames except the target frame and TextFrameDont
-	local function showOnlyTargetFrame()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") then
-				if child == targetFrame or child == textFrameDont then
-					child.Visible = true -- Keep the target frame and TextFrameDont visible
-				else
-					child.Visible = false -- Hide all other frames
-				end
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
-	end)
-	
-end
-local function GZBWDA_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.HomeButton.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_HomeButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(0, 0, 0) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(255, 255, 255) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(0, 0, 0) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function HHISAY_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.FischButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_FischButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside each TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent.Parent.Fisch -- Replace "Updates" with the name of your target frame
-	local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
-	local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
-	local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
-	
-	-- Function to create a fade effect for the BackgroundTransparency
-	local function fadeFrame(frame, targetTransparency, time)
-		local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-		local goal = {BackgroundTransparency = targetTransparency}
-		local tween = tweenService:Create(frame, tweenInfo, goal)
-		tween:Play()
-	end
-	
-	-- Function to close all frames except the target frame and TextFrameDont
-	local function showOnlyTargetFrame()
-		-- Fade out all frames first
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") then
-				if child == targetFrame or child == textFrameDont then
-					-- Fade in the target frame and TextFrameDont
-					child.Visible = true
-					fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
-				else
-					-- Fade out other frames
-					fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
-					-- Set visibility to false after fading out
-					child.Visible = false
-				end
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
-	end)
-	
-end
-local function VMTU_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.FischButton.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_FischButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(0, 0, 0) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(255, 255, 255) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(0, 0, 0) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function PAIXFKP_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.FischButton.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_FischButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside each TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent.Parent.Fisch -- Replace "Home" with the name of your target frame
-	local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
-	local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
-	
-	-- Function to close all frames except the target frame and TextFrameDont
-	local function showOnlyTargetFrame()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") then
-				if child == targetFrame or child == textFrameDont then
-					child.Visible = true -- Keep the target frame and TextFrameDont visible
-				else
-					child.Visible = false -- Hide all other frames
-				end
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
-	end)
-	
-end
-local function ATQTRMM_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.ArsenalButon.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_ArsenalButon"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside each TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent.Parent.Arsenal -- Replace "Updates" with the name of your target frame
-	local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
-	local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
-	local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
-	
-	-- Function to create a fade effect for the BackgroundTransparency
-	local function fadeFrame(frame, targetTransparency, time)
-		local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-		local goal = {BackgroundTransparency = targetTransparency}
-		local tween = tweenService:Create(frame, tweenInfo, goal)
-		tween:Play()
-	end
-	
-	-- Function to close all frames except the target frame and TextFrameDont
-	local function showOnlyTargetFrame()
-		-- Fade out all frames first
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") then
-				if child == targetFrame or child == textFrameDont then
-					-- Fade in the target frame and TextFrameDont
-					child.Visible = true
-					fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
-				else
-					-- Fade out other frames
-					fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
-					-- Set visibility to false after fading out
-					child.Visible = false
-				end
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
-	end)
-	
-end
-local function YVPAPAL_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.ArsenalButon.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_ArsenalButon"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(0, 0, 0) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(255, 255, 255) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(0, 0, 0) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function EPFOEUM_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.ArsenalButon.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_ArsenalButon"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside each TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent.Parent.Arsenal -- Replace "Home" with the name of your target frame
-	local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
-	local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
-	
-	-- Function to close all frames except the target frame and TextFrameDont
-	local function showOnlyTargetFrame()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") then
-				if child == targetFrame or child == textFrameDont then
-					child.Visible = true -- Keep the target frame and TextFrameDont visible
-				else
-					child.Visible = false -- Hide all other frames
-				end
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
-	end)
-	
-end
-local function ZGIW_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.RealisticButton.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_RealisticButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(0, 0, 0) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(255, 255, 255) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(0, 0, 0) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function CDLT_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.RealisticButton.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_RealisticButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside each TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent.Parent.RealHood -- Replace "Home" with the name of your target frame
-	local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
-	local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
-	
-	-- Function to close all frames except the target frame and TextFrameDont
-	local function showOnlyTargetFrame()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") then
-				if child == targetFrame or child == textFrameDont then
-					child.Visible = true -- Keep the target frame and TextFrameDont visible
-				else
-					child.Visible = false -- Hide all other frames
-				end
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
-	end)
-	
-end
-local function LMWZV_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.RealisticButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_RealisticButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside each TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent.Parent.RealHood -- Replace "Updates" with the name of your target frame
-	local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
-	local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
-	local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
-	
-	-- Function to create a fade effect for the BackgroundTransparency
-	local function fadeFrame(frame, targetTransparency, time)
-		local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-		local goal = {BackgroundTransparency = targetTransparency}
-		local tween = tweenService:Create(frame, tweenInfo, goal)
-		tween:Play()
-	end
-	
-	-- Function to close all frames except the target frame and TextFrameDont
-	local function showOnlyTargetFrame()
-		-- Fade out all frames first
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") then
-				if child == targetFrame or child == textFrameDont then
-					-- Fade in the target frame and TextFrameDont
-					child.Visible = true
-					fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
-				else
-					-- Fade out other frames
-					fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
-					-- Set visibility to false after fading out
-					child.Visible = false
-				end
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
-	end)
-	
-end
-local function QXKVEXN_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.CreditsButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_CreditsButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside each TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent.Parent.Updates -- Replace "Updates" with the name of your target frame
-	local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
-	local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
-	local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
-	
-	-- Function to create a fade effect for the BackgroundTransparency
-	local function fadeFrame(frame, targetTransparency, time)
-		local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-		local goal = {BackgroundTransparency = targetTransparency}
-		local tween = tweenService:Create(frame, tweenInfo, goal)
-		tween:Play()
-	end
-	
-	-- Function to close all frames except the target frame and TextFrameDont
-	local function showOnlyTargetFrame()
-		-- Fade out all frames first
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") then
-				if child == targetFrame or child == textFrameDont then
-					-- Fade in the target frame and TextFrameDont
-					child.Visible = true
-					fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
-				else
-					-- Fade out other frames
-					fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
-					-- Set visibility to false after fading out
-					child.Visible = false
-				end
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
-	end)
-	
-end
-local function ZAGJWKR_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.CreditsButton.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_CreditsButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(0, 0, 0) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(255, 255, 255) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(0, 0, 0) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function OLWVP_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.ScrollingFrame.CreditsButton.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_CreditsButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside each TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent.Parent.Updates -- Replace "Updates" with the name of your target frame
-	local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
-	local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
-	local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
-	
-	-- Function to create a fade effect
-	local function fadeFrame(frame, targetTransparency, time)
-		local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-		local goal = {Transparency = targetTransparency}
-		local tween = tweenService:Create(frame, tweenInfo, goal)
-		tween:Play()
-	end
-	
-	-- Function to close all frames except the target frame and TextFrameDont
-	local function showOnlyTargetFrame()
-		-- Fade out all frames first
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") then
-				if child == targetFrame or child == textFrameDont then
-					-- Fade in the target frame and TextFrameDont
-					child.Visible = true
-					fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
-				else
-					-- Fade out other frames
-					fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
-					-- Set visibility to false after fading out
-					child.Visible = false
-				end
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
-	end)
-	
-end
-local function RDOT_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.TextFrameDont.Mini.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Mini"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local parentScreenGui = script.Parent.Parent.Parent.Parent -- Get the ScreenGui or parent object
-	
-		local imageButton = parentScreenGui:FindFirstChild("ImageButton") -- Find the ImageButton
-		local ecliptic = parentScreenGui:FindFirstChild("Ecliptic") -- Find the Ecliptic frame
-	
-		-- Toggle the visibility of the ImageButton and Ecliptic
-		if imageButton and ecliptic then
-			if imageButton.Visible == false then
-				-- Show the ImageButton and hide the Ecliptic
-				imageButton.Visible = true
-				ecliptic.Visible = false
-			else
-				-- Hide the ImageButton and show the Ecliptic
-				imageButton.Visible = false
-				ecliptic.Visible = true
-			end
-		end
-	end)
-	
-end
-local function QHVFZTD_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.TextFrameDont.Close.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Close"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local eclipticFrame = script.Parent.Parent.Parent.Parent.Ecliptic
-		local warningFrame = script.Parent.Parent.Parent.Parent.WarningFrame
-		-- Check if both frames exist and toggle visibility
-		if eclipticFrame then
-			eclipticFrame.Visible = false -- Hide the Ecliptic frame
-		end
-	
-		if warningFrame then
-			warningFrame.Visible = true -- Show the WarningFrame
-		end
-	end)
-	
-end
-local function MKTYP_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Home.playername.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_playername"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local textLabel = script.Parent
-	local player = game.Players.LocalPlayer
-	
-	-- Update the TextLabel to replace "nan" with the player's name
-	textLabel.Text = textLabel.Text:gsub("nan", player.Name)
-	
-end
-local function ZFYWTZ_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.AVERAGE.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_AVERAGE"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function QXXK_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.AVERAGE.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_AVERAGE"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
-	end)
-	
-end
-local function NNOB_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.AVERAGE.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_AVERAGE"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://gist.githubusercontent.com/AverageHub/1980eccce4133d77fb24d166dc296125/raw/2d9c88acc21a302d92aed0e8b6f0dcd287c8b96b/gistfile1.txt"))()
-	end)
-	
-end
-local function MJCPKFD_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.NATIVE.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_NATIVE"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function YKPGPHX_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.NATIVE.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_NATIVE"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
-	end)
-	
-end
-local function YQRWZDV_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.NATIVE.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_NATIVE"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/Native-lab/Native/main/loader.lua"))()
-	end)
-	
-end
-local function IXXBD_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.SPEEDHUB.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_SPEEDHUB"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function REOL_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.SPEEDHUB.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_SPEEDHUB"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
-	end)
-	
-end
-local function HSRAJ_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.SPEEDHUB.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_SPEEDHUB"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
-	end)
-	
-end
-local function UGDXMMC_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.kiciahook.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_kiciahook"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function IIJYIX_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.kiciahook.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_kiciahook"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
-			end
-		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
-	end)
-	
-end
-local function DPEHUY_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.kiciahook.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_kiciahook"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
 		end)
-end
-local function JZZQIZ_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.naokihub.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_naokihub"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
+		
+		gui.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging then
+				update(input)
+			end
+		end)
 	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
+	spawn(function() --Source for Script5
+		local script = Script5
+		script.Parent.MouseButton1Click:Connect(function()
+			local eclipticFrame = script.Parent.Parent.Ecliptic
+			local warningFrame = script.Parent.Parent.ImageButton
+		
+			-- Check if both frames exist and toggle visibility
+			if eclipticFrame then
+				eclipticFrame.Visible = true -- Show the Ecliptic frame
+			end
+		
+			if warningFrame then
+				warningFrame.Visible = false -- Hide the WarningFrame
+			end
+		end)
+		
 	end)
-	
-end
-local function PCSOBFD_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.naokihub.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_naokihub"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
+	spawn(function() --Source for Script17
+		local script = Script17
+		-- Place this script inside each TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent.Parent.Home -- Replace "Updates" with the name of your target frame
+		local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
+		local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
+		local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
+		
+		-- Function to create a fade effect for the BackgroundTransparency
+		local function fadeFrame(frame, targetTransparency, time)
+			local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+			local goal = {BackgroundTransparency = targetTransparency}
+			local tween = tweenService:Create(frame, tweenInfo, goal)
+			tween:Play()
+		end
+		
+		-- Function to close all frames except the target frame and TextFrameDont
+		local function showOnlyTargetFrame()
+			-- Fade out all frames first
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") then
+					if child == targetFrame or child == textFrameDont then
+						-- Fade in the target frame and TextFrameDont
+						child.Visible = true
+						fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
+					else
+						-- Fade out other frames
+						fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
+						-- Set visibility to false after fading out
+						child.Visible = false
+					end
+				end
 			end
 		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
+		end)
+		
 	end)
-	
-end
-local function PTJJRQI_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.naokihub.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_naokihub"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://naokihub.vercel.app",true))()
-	end)
-	
-end
-local function AYDGJ_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.KNCRYPT.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_KNCRYPT"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function RNPOV_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.KNCRYPT.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_KNCRYPT"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
+	spawn(function() --Source for Script20
+		local script = Script20
+		-- Place this script inside each TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent.Parent.Home -- Replace "Home" with the name of your target frame
+		local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
+		local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
+		
+		-- Function to close all frames except the target frame and TextFrameDont
+		local function showOnlyTargetFrame()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") then
+					if child == targetFrame or child == textFrameDont then
+						child.Visible = true -- Keep the target frame and TextFrameDont visible
+					else
+						child.Visible = false -- Hide all other frames
+					end
+				end
 			end
 		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
+		end)
+		
 	end)
-	
-end
-local function QJKQCUI_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.KNCRYPT.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_KNCRYPT"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Kncrypt/refs/heads/main/sources/Fisch.lua"))({true})
+	spawn(function() --Source for Script21
+		local script = Script21
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(0, 0, 0) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(255, 255, 255) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(0, 0, 0) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
 	end)
-	
-end
-local function XVLQAI_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.NYX.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_NYX"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function MPCL_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.NYX.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_NYX"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
+	spawn(function() --Source for Script23
+		local script = Script23
+		-- Place this script inside each TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent.Parent.Fisch -- Replace "Updates" with the name of your target frame
+		local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
+		local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
+		local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
+		
+		-- Function to create a fade effect for the BackgroundTransparency
+		local function fadeFrame(frame, targetTransparency, time)
+			local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+			local goal = {BackgroundTransparency = targetTransparency}
+			local tween = tweenService:Create(frame, tweenInfo, goal)
+			tween:Play()
+		end
+		
+		-- Function to close all frames except the target frame and TextFrameDont
+		local function showOnlyTargetFrame()
+			-- Fade out all frames first
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") then
+					if child == targetFrame or child == textFrameDont then
+						-- Fade in the target frame and TextFrameDont
+						child.Visible = true
+						fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
+					else
+						-- Fade out other frames
+						fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
+						-- Set visibility to false after fading out
+						child.Visible = false
+					end
+				end
 			end
 		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
+		end)
+		
 	end)
-	
-end
-local function HVKPQRD_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.NYX.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_NYX"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/refs/heads/main/Fisch.lua"))()
+	spawn(function() --Source for Script26
+		local script = Script26
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(0, 0, 0) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(255, 255, 255) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(0, 0, 0) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
 	end)
-	
-end
-local function NCZRR_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.RAITO.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_RAITO"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function OMVAOD_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.RAITO.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_RAITO"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
+	spawn(function() --Source for Script27
+		local script = Script27
+		-- Place this script inside each TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent.Parent.Fisch -- Replace "Home" with the name of your target frame
+		local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
+		local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
+		
+		-- Function to close all frames except the target frame and TextFrameDont
+		local function showOnlyTargetFrame()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") then
+					if child == targetFrame or child == textFrameDont then
+						child.Visible = true -- Keep the target frame and TextFrameDont visible
+					else
+						child.Visible = false -- Hide all other frames
+					end
+				end
 			end
 		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
+		end)
+		
 	end)
-	
-end
-local function VXRXRX_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.RAITO.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_RAITO"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/refs/heads/main/Script"))()
-	end)
-	
-end
-local function ARCNHG_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.LUNOR.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_LUNOR"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function CDHH_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.LUNOR.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_LUNOR"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
+	spawn(function() --Source for Script29
+		local script = Script29
+		-- Place this script inside each TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent.Parent.Arsenal -- Replace "Updates" with the name of your target frame
+		local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
+		local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
+		local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
+		
+		-- Function to create a fade effect for the BackgroundTransparency
+		local function fadeFrame(frame, targetTransparency, time)
+			local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+			local goal = {BackgroundTransparency = targetTransparency}
+			local tween = tweenService:Create(frame, tweenInfo, goal)
+			tween:Play()
+		end
+		
+		-- Function to close all frames except the target frame and TextFrameDont
+		local function showOnlyTargetFrame()
+			-- Fade out all frames first
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") then
+					if child == targetFrame or child == textFrameDont then
+						-- Fade in the target frame and TextFrameDont
+						child.Visible = true
+						fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
+					else
+						-- Fade out other frames
+						fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
+						-- Set visibility to false after fading out
+						child.Visible = false
+					end
+				end
 			end
 		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
+		end)
+		
 	end)
-	
-end
-local function KNQGP_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Fisch.LUNOR.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_LUNOR"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Just3itx/Lunor-Loadstrings/refs/heads/main/Loader"))()
+	spawn(function() --Source for Script32
+		local script = Script32
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(0, 0, 0) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(255, 255, 255) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(0, 0, 0) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
 	end)
-	
-end
-local function RFVN_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Ecliptic"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local notificationTitle = "ecliptic hub" -- Title of the notification
-	local notificationText = "thanks for using my hub🥭" -- Text of the notification
-	local notificationIcon = "http://www.roblox.com/asset/?id=92949589789258" -- Icon of the notification (optional)
-	local notificationInterval = 60 -- Time interval (in seconds) between notifications
-	local notificationCount = 0 -- Tracks the number of times the notification has been shown
-	
-	local function sendNotification(withButton2)
-		game.StarterGui:SetCore("SendNotification", {
-			Title = notificationTitle,
-			Text = notificationText,
-			Icon = notificationIcon,
-			Duration = 3, -- Duration for the notification to stay visible
-			Button1 = "mangoes", -- First button
-			Button2 = withButton2 and "no" or nil -- Show Button 2 conditionally
-		})
-	end
-	
-	-- Periodic notification loop
-	while true do
-		notificationCount += 1 -- Increment the notification counter
-	
-		if notificationCount >= 2 then
-			sendNotification(true) -- Show Button 2 after the second notification
-		else
-			sendNotification(false) -- Only show Button 1
-		end
-	
-		wait(notificationInterval)
-	end
-	
-end
-local function ZLEIU_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Arsenal.CARTEL.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_CARTEL"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function VNVM_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Arsenal.CARTEL.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_CARTEL"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
+	spawn(function() --Source for Script33
+		local script = Script33
+		-- Place this script inside each TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent.Parent.Arsenal -- Replace "Home" with the name of your target frame
+		local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
+		local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
+		
+		-- Function to close all frames except the target frame and TextFrameDont
+		local function showOnlyTargetFrame()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") then
+					if child == targetFrame or child == textFrameDont then
+						child.Visible = true -- Keep the target frame and TextFrameDont visible
+					else
+						child.Visible = false -- Hide all other frames
+					end
+				end
 			end
 		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
+		end)
+		
 	end)
-	
-end
-local function VAVLPSW_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.Arsenal.CARTEL.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_CARTEL"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/JackyPoopoo/cartel/main/0000000000000000000000000000000000000000000000000"))()
+	spawn(function() --Source for Script37
+		local script = Script37
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(0, 0, 0) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(255, 255, 255) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(0, 0, 0) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
 	end)
-	
-end
-local function WQJFY_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.RealHood.YellowGregs.ButtonHover
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonHover"
-    script.Parent = Converted["_YellowGregs"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local button = script.Parent -- Replace this with the reference to your button
-	local TweenService = game:GetService("TweenService")
-	
-	-- Tween settings
-	local tweenInfo = TweenInfo.new(
-		0.2, -- Duration (in seconds)
-		Enum.EasingStyle.Quad, -- Easing style
-		Enum.EasingDirection.Out -- Easing direction
-	)
-	
-	-- Colors
-	local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
-	local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
-	local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
-	local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
-	
-	-- Hover (MouseEnter) Event
-	button.MouseEnter:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-	-- MouseLeave Event
-	button.MouseLeave:Connect(function()
-		local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
-		local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
-		backgroundTween:Play()
-		textTween:Play()
-	end)
-	
-end
-local function GSBZ_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.RealHood.YellowGregs.OpenFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "OpenFrame"
-    script.Parent = Converted["_YellowGregs"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	-- Place this script inside the TextButton
-	local button = script.Parent
-	local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
-	local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
-	
-	-- Function to close all other frames
-	local function closeOtherFrames()
-		for _, child in pairs(parentGui:GetChildren()) do
-			if child:IsA("Frame") and child ~= targetFrame then
-				child.Visible = false
+	spawn(function() --Source for Script38
+		local script = Script38
+		-- Place this script inside each TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent.Parent.RealHood -- Replace "Home" with the name of your target frame
+		local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
+		local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
+		
+		-- Function to close all frames except the target frame and TextFrameDont
+		local function showOnlyTargetFrame()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") then
+					if child == targetFrame or child == textFrameDont then
+						child.Visible = true -- Keep the target frame and TextFrameDont visible
+					else
+						child.Visible = false -- Hide all other frames
+					end
+				end
 			end
 		end
-	end
-	
-	-- Button click event
-	button.MouseButton1Click:Connect(function()
-		closeOtherFrames() -- Close all other frames
-		targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
+		end)
+		
 	end)
-	
-end
-local function TOEX_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.RealHood.YellowGregs.Execute
-    local script = Instance.new("LocalScript")
-    script.Name = "Execute"
-    script.Parent = Converted["_YellowGregs"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGregs/Loadstring/refs/heads/main/rhtestesting.lua"))()
-	end)
-	
-end
-local function RJFHEPK_fake_script() -- Fake Script: StarterGui.EclipticHub.Ecliptic.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel2"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local text = script.Parent
-	local tweenService = game:GetService("TweenService")
-	
-	-- Function to smoothly fade the text to a target transparency
-	local function fadeText(targetTransparency, duration)
-		local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-		local goal = {TextTransparency = targetTransparency}
-		local tween = tweenService:Create(text, tweenInfo, goal)
-		tween:Play()
-	end
-	
-	-- Wait for 5 seconds before starting the fade
-	wait(5)
-	
-	-- Smoothly fade the text to full transparency with a small increment
-	fadeText(0.1, 0.1)
-	wait(0.1)
-	fadeText(0.2, 0.1)
-	wait(0.1)
-	fadeText(0.3, 0.1)
-	wait(0.1)
-	fadeText(0.4, 0.1)
-	wait(0.1)
-	fadeText(0.5, 0.1)
-	wait(0.1)
-	fadeText(0.6, 0.1)
-	wait(0.1)
-	fadeText(0.7, 0.1)
-	wait(0.1)
-	fadeText(0.8, 0.1)
-	wait(0.1)
-	fadeText(0.9, 0.1)
-	wait(0.1)
-	fadeText(1, 0.1)
-	
-end
-local function AWCFTT_fake_script() -- Fake Script: StarterGui.EclipticHub.WarningFrame.TextButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local eclipticFrame = script.Parent.Parent.Parent.Ecliptic
-		local warningFrame = script.Parent.Parent.Parent.WarningFrame
-	
-		-- Check if both frames exist and toggle visibility
-		if eclipticFrame then
-			eclipticFrame.Visible = true -- Show the Ecliptic frame
+	spawn(function() --Source for Script39
+		local script = Script39
+		-- Place this script inside each TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent.Parent.RealHood -- Replace "Updates" with the name of your target frame
+		local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
+		local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
+		local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
+		
+		-- Function to create a fade effect for the BackgroundTransparency
+		local function fadeFrame(frame, targetTransparency, time)
+			local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+			local goal = {BackgroundTransparency = targetTransparency}
+			local tween = tweenService:Create(frame, tweenInfo, goal)
+			tween:Play()
 		end
-	
-		if warningFrame then
-			warningFrame.Visible = false -- Hide the WarningFrame
+		
+		-- Function to close all frames except the target frame and TextFrameDont
+		local function showOnlyTargetFrame()
+			-- Fade out all frames first
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") then
+					if child == targetFrame or child == textFrameDont then
+						-- Fade in the target frame and TextFrameDont
+						child.Visible = true
+						fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
+					else
+						-- Fade out other frames
+						fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
+						-- Set visibility to false after fading out
+						child.Visible = false
+					end
+				end
+			end
 		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
+		end)
+		
 	end)
-	
-end
-local function IYEXWW_fake_script() -- Fake Script: StarterGui.EclipticHub.WarningFrame.TextButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextButton1"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		-- Find the GUI named "EclipticHub" and destroy it
-		local eclipticHub = game.Players.LocalPlayer.PlayerGui:FindFirstChild("EclipticHub")
-	
-		if eclipticHub then
-			eclipticHub:Destroy()
+	spawn(function() --Source for Script43
+		local script = Script43
+		-- Place this script inside each TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent.Parent.Updates -- Replace "Updates" with the name of your target frame
+		local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
+		local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
+		local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
+		
+		-- Function to create a fade effect for the BackgroundTransparency
+		local function fadeFrame(frame, targetTransparency, time)
+			local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+			local goal = {BackgroundTransparency = targetTransparency}
+			local tween = tweenService:Create(frame, tweenInfo, goal)
+			tween:Play()
 		end
+		
+		-- Function to close all frames except the target frame and TextFrameDont
+		local function showOnlyTargetFrame()
+			-- Fade out all frames first
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") then
+					if child == targetFrame or child == textFrameDont then
+						-- Fade in the target frame and TextFrameDont
+						child.Visible = true
+						fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
+					else
+						-- Fade out other frames
+						fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
+						-- Set visibility to false after fading out
+						child.Visible = false
+					end
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
+		end)
+		
 	end)
-	
+	spawn(function() --Source for Script44
+		local script = Script44
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(0, 0, 0) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(255, 255, 255) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(0, 0, 0) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script45
+		local script = Script45
+		-- Place this script inside each TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent.Parent.Updates -- Replace "Updates" with the name of your target frame
+		local parentGui = script.Parent.Parent.Parent -- Adjust as needed to reference the container holding the frames
+		local textFrameDont = parentGui.TextFrameDont -- Replace "TextFrameDont" with the exact name of this frame
+		local tweenService = game:GetService("TweenService") -- TweenService for smooth transitions
+		
+		-- Function to create a fade effect
+		local function fadeFrame(frame, targetTransparency, time)
+			local tweenInfo = TweenInfo.new(time, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+			local goal = {Transparency = targetTransparency}
+			local tween = tweenService:Create(frame, tweenInfo, goal)
+			tween:Play()
+		end
+		
+		-- Function to close all frames except the target frame and TextFrameDont
+		local function showOnlyTargetFrame()
+			-- Fade out all frames first
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") then
+					if child == targetFrame or child == textFrameDont then
+						-- Fade in the target frame and TextFrameDont
+						child.Visible = true
+						fadeFrame(child, 0, 0.5) -- Fade in with 0.5 seconds duration
+					else
+						-- Fade out other frames
+						fadeFrame(child, 1, 0.5) -- Fade out with 0.5 seconds duration
+						-- Set visibility to false after fading out
+						child.Visible = false
+					end
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			showOnlyTargetFrame() -- Show the target frame and hide others (except TextFrameDont)
+		end)
+		
+	end)
+	spawn(function() --Source for Script60
+		local script = Script60
+		script.Parent.MouseButton1Click:Connect(function()
+			local parentScreenGui = script.Parent.Parent.Parent.Parent -- Get the ScreenGui or parent object
+		
+			local imageButton = parentScreenGui:FindFirstChild("ImageButton") -- Find the ImageButton
+			local ecliptic = parentScreenGui:FindFirstChild("Ecliptic") -- Find the Ecliptic frame
+		
+			-- Toggle the visibility of the ImageButton and Ecliptic
+			if imageButton and ecliptic then
+				if imageButton.Visible == false then
+					-- Show the ImageButton and hide the Ecliptic
+					imageButton.Visible = true
+					ecliptic.Visible = false
+				else
+					-- Hide the ImageButton and show the Ecliptic
+					imageButton.Visible = false
+					ecliptic.Visible = true
+				end
+			end
+		end)
+		
+	end)
+	spawn(function() --Source for Script63
+		local script = Script63
+		script.Parent.MouseButton1Click:Connect(function()
+			local eclipticFrame = script.Parent.Parent.Parent.Parent.Ecliptic
+			local warningFrame = script.Parent.Parent.Parent.Parent.WarningFrame
+			-- Check if both frames exist and toggle visibility
+			if eclipticFrame then
+				eclipticFrame.Visible = false -- Hide the Ecliptic frame
+			end
+		
+			if warningFrame then
+				warningFrame.Visible = true -- Show the WarningFrame
+			end
+		end)
+		
+	end)
+	spawn(function() --Source for Script72
+		local script = Script72
+		local textLabel = script.Parent
+		local player = game.Players.LocalPlayer
+		
+		-- Update the TextLabel to replace "nan" with the player's name
+		textLabel.Text = textLabel.Text:gsub("nan", player.Name)
+		
+	end)
+	spawn(function() --Source for Script89
+		local script = Script89
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script90
+		local script = Script90
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script91
+		local script = Script91
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://gist.githubusercontent.com/AverageHub/1980eccce4133d77fb24d166dc296125/raw/2d9c88acc21a302d92aed0e8b6f0dcd287c8b96b/gistfile1.txt"))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script95
+		local script = Script95
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script96
+		local script = Script96
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script97
+		local script = Script97
+		script.Parent.MouseButton1Click:Connect(function()
+			(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/Native-lab/Native/main/loader.lua"))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script101
+		local script = Script101
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script102
+		local script = Script102
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script103
+		local script = Script103
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script107
+		local script = Script107
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script108
+		local script = Script108
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script109
+		local script = Script109
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
+			end)
+	end)
+	spawn(function() --Source for Script113
+		local script = Script113
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script114
+		local script = Script114
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script115
+		local script = Script115
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://naokihub.vercel.app",true))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script119
+		local script = Script119
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script120
+		local script = Script120
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script121
+		local script = Script121
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Kncrypt/refs/heads/main/sources/Fisch.lua"))({true})
+		end)
+		
+	end)
+	spawn(function() --Source for Script125
+		local script = Script125
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script126
+		local script = Script126
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script127
+		local script = Script127
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/refs/heads/main/Fisch.lua"))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script131
+		local script = Script131
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script132
+		local script = Script132
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script133
+		local script = Script133
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/refs/heads/main/Script"))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script137
+		local script = Script137
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script138
+		local script = Script138
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script139
+		local script = Script139
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Just3itx/Lunor-Loadstrings/refs/heads/main/Loader"))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script141
+		local script = Script141
+		local notificationTitle = "ecliptic hub" -- Title of the notification
+		local notificationText = "thanks for using my hub🥭" -- Text of the notification
+		local notificationIcon = "http://www.roblox.com/asset/?id=92949589789258" -- Icon of the notification (optional)
+		local notificationInterval = 60 -- Time interval (in seconds) between notifications
+		local notificationCount = 0 -- Tracks the number of times the notification has been shown
+		
+		local function sendNotification(withButton2)
+			game.StarterGui:SetCore("SendNotification", {
+				Title = notificationTitle,
+				Text = notificationText,
+				Icon = notificationIcon,
+				Duration = 3, -- Duration for the notification to stay visible
+				Button1 = "mangoes", -- First button
+				Button2 = withButton2 and "no" or nil -- Show Button 2 conditionally
+			})
+		end
+		
+		-- Periodic notification loop
+		while true do
+			notificationCount += 1 -- Increment the notification counter
+		
+			if notificationCount >= 2 then
+				sendNotification(true) -- Show Button 2 after the second notification
+			else
+				sendNotification(false) -- Only show Button 1
+			end
+		
+			wait(notificationInterval)
+		end
+		
+	end)
+	spawn(function() --Source for Script147
+		local script = Script147
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script148
+		local script = Script148
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script149
+		local script = Script149
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/JackyPoopoo/cartel/main/0000000000000000000000000000000000000000000000000"))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script155
+		local script = Script155
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script156
+		local script = Script156
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script157
+		local script = Script157
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGregs/Loadstring/refs/heads/main/rhtestesting.lua"))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script160
+		local script = Script160
+		local text = script.Parent
+		local tweenService = game:GetService("TweenService")
+		
+		-- Function to smoothly fade the text to a target transparency
+		local function fadeText(targetTransparency, duration)
+			local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+			local goal = {TextTransparency = targetTransparency}
+			local tween = tweenService:Create(text, tweenInfo, goal)
+			tween:Play()
+		end
+		
+		-- Wait for 5 seconds before starting the fade
+		wait(5)
+		
+		-- Smoothly fade the text to full transparency with a small increment
+		fadeText(0.1, 0.1)
+		wait(0.1)
+		fadeText(0.2, 0.1)
+		wait(0.1)
+		fadeText(0.3, 0.1)
+		wait(0.1)
+		fadeText(0.4, 0.1)
+		wait(0.1)
+		fadeText(0.5, 0.1)
+		wait(0.1)
+		fadeText(0.6, 0.1)
+		wait(0.1)
+		fadeText(0.7, 0.1)
+		wait(0.1)
+		fadeText(0.8, 0.1)
+		wait(0.1)
+		fadeText(0.9, 0.1)
+		wait(0.1)
+		fadeText(1, 0.1)
+		
+	end)
+	spawn(function() --Source for Script177
+		local script = Script177
+		script.Parent.MouseButton1Click:Connect(function()
+			local eclipticFrame = script.Parent.Parent.Parent.Ecliptic
+			local warningFrame = script.Parent.Parent.Parent.WarningFrame
+		
+			-- Check if both frames exist and toggle visibility
+			if eclipticFrame then
+				eclipticFrame.Visible = true -- Show the Ecliptic frame
+			end
+		
+			if warningFrame then
+				warningFrame.Visible = false -- Hide the WarningFrame
+			end
+		end)
+		
+	end)
+	spawn(function() --Source for Script182
+		local script = Script182
+		script.Parent.MouseButton1Click:Connect(function()
+			-- Find the GUI named "EclipticHub" and destroy it
+			local eclipticHub = game.Players.LocalPlayer.PlayerGui:FindFirstChild("EclipticHub")
+		
+			if eclipticHub then
+				eclipticHub:Destroy()
+			end
+		end)
+		
+	end)
 end
-
-coroutine.wrap(RXRSKE_fake_script)()
-coroutine.wrap(XQWV_fake_script)()
-coroutine.wrap(XNQPN_fake_script)()
-coroutine.wrap(GPDWO_fake_script)()
-coroutine.wrap(GZBWDA_fake_script)()
-coroutine.wrap(HHISAY_fake_script)()
-coroutine.wrap(VMTU_fake_script)()
-coroutine.wrap(PAIXFKP_fake_script)()
-coroutine.wrap(ATQTRMM_fake_script)()
-coroutine.wrap(YVPAPAL_fake_script)()
-coroutine.wrap(EPFOEUM_fake_script)()
-coroutine.wrap(ZGIW_fake_script)()
-coroutine.wrap(CDLT_fake_script)()
-coroutine.wrap(LMWZV_fake_script)()
-coroutine.wrap(QXKVEXN_fake_script)()
-coroutine.wrap(ZAGJWKR_fake_script)()
-coroutine.wrap(OLWVP_fake_script)()
-coroutine.wrap(RDOT_fake_script)()
-coroutine.wrap(QHVFZTD_fake_script)()
-coroutine.wrap(MKTYP_fake_script)()
-coroutine.wrap(ZFYWTZ_fake_script)()
-coroutine.wrap(QXXK_fake_script)()
-coroutine.wrap(NNOB_fake_script)()
-coroutine.wrap(MJCPKFD_fake_script)()
-coroutine.wrap(YKPGPHX_fake_script)()
-coroutine.wrap(YQRWZDV_fake_script)()
-coroutine.wrap(IXXBD_fake_script)()
-coroutine.wrap(REOL_fake_script)()
-coroutine.wrap(HSRAJ_fake_script)()
-coroutine.wrap(UGDXMMC_fake_script)()
-coroutine.wrap(IIJYIX_fake_script)()
-coroutine.wrap(DPEHUY_fake_script)()
-coroutine.wrap(JZZQIZ_fake_script)()
-coroutine.wrap(PCSOBFD_fake_script)()
-coroutine.wrap(PTJJRQI_fake_script)()
-coroutine.wrap(AYDGJ_fake_script)()
-coroutine.wrap(RNPOV_fake_script)()
-coroutine.wrap(QJKQCUI_fake_script)()
-coroutine.wrap(XVLQAI_fake_script)()
-coroutine.wrap(MPCL_fake_script)()
-coroutine.wrap(HVKPQRD_fake_script)()
-coroutine.wrap(NCZRR_fake_script)()
-coroutine.wrap(OMVAOD_fake_script)()
-coroutine.wrap(VXRXRX_fake_script)()
-coroutine.wrap(ARCNHG_fake_script)()
-coroutine.wrap(CDHH_fake_script)()
-coroutine.wrap(KNQGP_fake_script)()
-coroutine.wrap(RFVN_fake_script)()
-coroutine.wrap(ZLEIU_fake_script)()
-coroutine.wrap(VNVM_fake_script)()
-coroutine.wrap(VAVLPSW_fake_script)()
-coroutine.wrap(WQJFY_fake_script)()
-coroutine.wrap(GSBZ_fake_script)()
-coroutine.wrap(TOEX_fake_script)()
-coroutine.wrap(RJFHEPK_fake_script)()
-coroutine.wrap(AWCFTT_fake_script)()
-coroutine.wrap(IYEXWW_fake_script)()
+createGui(game.CoreGui) --coregui by default you should but change it
