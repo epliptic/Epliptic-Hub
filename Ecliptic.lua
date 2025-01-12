@@ -480,7 +480,6 @@ local function createGui(parent)
 	----UICorner65----
 	--Frame66--
 	local Frame66 = Instance.new("Frame",Frame6)
-	Frame66["Visible"] = false
 	Frame66["Name"] = "Updates"
 	Frame66["Size"] = UDim2.new(0, 676, 0, 321)
 	Frame66["BorderColor3"] = Color3.new(0, 0, 0)
@@ -557,9 +556,9 @@ local function createGui(parent)
 	TextLabel71["TextScaled"] = true
 	TextLabel71["Font"] = Enum.Font.Unknown
 	TextLabel71["BackgroundTransparency"] = 1
-	TextLabel71["Position"] = UDim2.new(0.0999380276, 0, 0.883556306, 0)
+	TextLabel71["Position"] = UDim2.new(0.231505439, 0, 0.888320088, 0)
 	TextLabel71["Name"] = "playername"
-	TextLabel71["Size"] = UDim2.new(0, 542, 0, 28)
+	TextLabel71["Size"] = UDim2.new(0, 353, 0, 27)
 	TextLabel71["BorderSizePixel"] = 0
 	TextLabel71["BackgroundColor3"] = Color3.new(1, 1, 1)
 	----TextLabel71----
@@ -579,8 +578,8 @@ local function createGui(parent)
 	TextLabel73["Name"] = "playernames"
 	TextLabel73["Font"] = Enum.Font.Unknown
 	TextLabel73["BackgroundTransparency"] = 1
-	TextLabel73["Position"] = UDim2.new(0.101095885, 0, 0.699545979, 0)
-	TextLabel73["Size"] = UDim2.new(0, 271, 0, 42)
+	TextLabel73["Position"] = UDim2.new(0.232261702, 0, 0.707787633, 0)
+	TextLabel73["Size"] = UDim2.new(0, 176, 0, 41)
 	TextLabel73["ZIndex"] = 5
 	TextLabel73["BorderSizePixel"] = 0
 	TextLabel73["BackgroundColor3"] = Color3.new(1, 1, 1)
@@ -597,9 +596,9 @@ local function createGui(parent)
 	TextLabel74["TextScaled"] = true
 	TextLabel74["Font"] = Enum.Font.Unknown
 	TextLabel74["BackgroundTransparency"] = 1
-	TextLabel74["Position"] = UDim2.new(0.110231116, 0, 0.71710813, 0)
+	TextLabel74["Position"] = UDim2.new(0.238227621, 0, 0.725017786, 0)
 	TextLabel74["Name"] = "playernames"
-	TextLabel74["Size"] = UDim2.new(0, 542, 0, 28)
+	TextLabel74["Size"] = UDim2.new(0, 353, 0, 27)
 	TextLabel74["BorderSizePixel"] = 0
 	TextLabel74["BackgroundColor3"] = Color3.new(1, 1, 1)
 	----TextLabel74----
@@ -615,9 +614,9 @@ local function createGui(parent)
 	TextLabel75["TextScaled"] = true
 	TextLabel75["Font"] = Enum.Font.Unknown
 	TextLabel75["BackgroundTransparency"] = 1
-	TextLabel75["Position"] = UDim2.new(0.101095982, 0, 0.601036012, 0)
+	TextLabel75["Position"] = UDim2.new(0.232261702, 0, 0.611139476, 0)
 	TextLabel75["Name"] = "playernames"
-	TextLabel75["Size"] = UDim2.new(0, 542, 0, 28)
+	TextLabel75["Size"] = UDim2.new(0, 353, 0, 27)
 	TextLabel75["BorderSizePixel"] = 0
 	TextLabel75["BackgroundColor3"] = Color3.new(1, 1, 1)
 	----TextLabel75----
@@ -634,8 +633,8 @@ local function createGui(parent)
 	TextLabel76["Name"] = "playernames"
 	TextLabel76["Font"] = Enum.Font.Unknown
 	TextLabel76["BackgroundTransparency"] = 1
-	TextLabel76["Position"] = UDim2.new(0.101095885, 0, 0.58299917, 0)
-	TextLabel76["Size"] = UDim2.new(0, 271, 0, 42)
+	TextLabel76["Position"] = UDim2.new(0.232261702, 0, 0.593443573, 0)
+	TextLabel76["Size"] = UDim2.new(0, 176, 0, 41)
 	TextLabel76["ZIndex"] = 5
 	TextLabel76["BorderSizePixel"] = 0
 	TextLabel76["BackgroundColor3"] = Color3.new(1, 1, 1)
@@ -647,14 +646,14 @@ local function createGui(parent)
 	TextLabel77["TextStrokeTransparency"] = 0
 	TextLabel77["ZIndex"] = 5
 	TextLabel77["BorderSizePixel"] = 0
-	TextLabel77["Size"] = UDim2.new(0, 268, 0, 34)
+	TextLabel77["Size"] = UDim2.new(0, 176, 0, 40)
 	TextLabel77["TextColor3"] = Color3.new(0, 0, 0)
 	TextLabel77["BorderColor3"] = Color3.new(0, 0, 0)
 	TextLabel77["Text"] = "######"
 	TextLabel77["Rotation"] = 5
 	TextLabel77["Font"] = Enum.Font.Unknown
 	TextLabel77["Name"] = "playernames"
-	TextLabel77["Position"] = UDim2.new(0.103297755, 0, 0.728654027, 0)
+	TextLabel77["Position"] = UDim2.new(0.232489496, 0, 0.724588633, 0)
 	TextLabel77["BackgroundTransparency"] = 1
 	TextLabel77["TextSize"] = 80
 	TextLabel77["TextScaled"] = true
@@ -667,14 +666,14 @@ local function createGui(parent)
 	TextLabel78["TextStrokeTransparency"] = 0
 	TextLabel78["ZIndex"] = 5
 	TextLabel78["BorderSizePixel"] = 0
-	TextLabel78["Size"] = UDim2.new(0, 268, 0, 34)
+	TextLabel78["Size"] = UDim2.new(0, 176, 0, 40)
 	TextLabel78["TextColor3"] = Color3.new(0, 0, 0)
 	TextLabel78["BorderColor3"] = Color3.new(0, 0, 0)
 	TextLabel78["Text"] = "######"
 	TextLabel78["Rotation"] = 5
 	TextLabel78["Font"] = Enum.Font.Unknown
 	TextLabel78["Name"] = "playernames"
-	TextLabel78["Position"] = UDim2.new(0.10329812, 0, 0.612107396, 0)
+	TextLabel78["Position"] = UDim2.new(0.232489765, 0, 0.610244691, 0)
 	TextLabel78["BackgroundTransparency"] = 1
 	TextLabel78["TextSize"] = 80
 	TextLabel78["TextScaled"] = true
@@ -687,14 +686,14 @@ local function createGui(parent)
 	TextLabel79["TextStrokeTransparency"] = 0
 	TextLabel79["ZIndex"] = 5
 	TextLabel79["BorderSizePixel"] = 0
-	TextLabel79["Size"] = UDim2.new(0, 274, 0, 51)
+	TextLabel79["Size"] = UDim2.new(0, 178, 0, 42)
 	TextLabel79["TextColor3"] = Color3.new(0, 0, 0)
 	TextLabel79["BorderColor3"] = Color3.new(0, 0, 0)
 	TextLabel79["Text"] = "######"
 	TextLabel79["Rotation"] = -5
 	TextLabel79["Font"] = Enum.Font.Unknown
 	TextLabel79["Name"] = "playernames"
-	TextLabel79["Position"] = UDim2.new(0.0830672234, 0, 0.672674, 0)
+	TextLabel79["Position"] = UDim2.new(0.221056879, 0, 0.693776548, 0)
 	TextLabel79["BackgroundTransparency"] = 1
 	TextLabel79["TextSize"] = 80
 	TextLabel79["TextScaled"] = true
@@ -707,14 +706,14 @@ local function createGui(parent)
 	TextLabel80["TextStrokeTransparency"] = 0
 	TextLabel80["ZIndex"] = 5
 	TextLabel80["BorderSizePixel"] = 0
-	TextLabel80["Size"] = UDim2.new(0, 274, 0, 51)
+	TextLabel80["Size"] = UDim2.new(0, 178, 0, 42)
 	TextLabel80["TextColor3"] = Color3.new(0, 0, 0)
 	TextLabel80["BorderColor3"] = Color3.new(0, 0, 0)
 	TextLabel80["Text"] = "######"
 	TextLabel80["Rotation"] = -5
 	TextLabel80["Font"] = Enum.Font.Unknown
 	TextLabel80["Name"] = "playernames"
-	TextLabel80["Position"] = UDim2.new(0.0826242641, 0, 0.556127429, 0)
+	TextLabel80["Position"] = UDim2.new(0.220767587, 0, 0.579432666, 0)
 	TextLabel80["BackgroundTransparency"] = 1
 	TextLabel80["TextSize"] = 80
 	TextLabel80["TextScaled"] = true
@@ -763,14 +762,14 @@ local function createGui(parent)
 	TextLabel83["TextStrokeTransparency"] = 0
 	TextLabel83["ZIndex"] = 5
 	TextLabel83["BorderSizePixel"] = 0
-	TextLabel83["Size"] = UDim2.new(0, 274, 0, 51)
+	TextLabel83["Size"] = UDim2.new(0, 178, 0, 42)
 	TextLabel83["TextColor3"] = Color3.new(0, 0, 0)
 	TextLabel83["BorderColor3"] = Color3.new(0, 0, 0)
 	TextLabel83["Text"] = "######"
 	TextLabel83["Rotation"] = -5
 	TextLabel83["Font"] = Enum.Font.Unknown
 	TextLabel83["Name"] = "playernames"
-	TextLabel83["Position"] = UDim2.new(0.207624093, 0, 0.567065299, 0)
+	TextLabel83["Position"] = UDim2.new(0.302402288, 0, 0.590163827, 0)
 	TextLabel83["BackgroundTransparency"] = 1
 	TextLabel83["TextSize"] = 80
 	TextLabel83["TextScaled"] = true
@@ -783,78 +782,78 @@ local function createGui(parent)
 	TextLabel84["TextStrokeTransparency"] = 0
 	TextLabel84["ZIndex"] = 5
 	TextLabel84["BorderSizePixel"] = 0
-	TextLabel84["Size"] = UDim2.new(0, 274, 0, 51)
+	TextLabel84["Size"] = UDim2.new(0, 178, 0, 42)
 	TextLabel84["TextColor3"] = Color3.new(0, 0, 0)
 	TextLabel84["BorderColor3"] = Color3.new(0, 0, 0)
 	TextLabel84["Text"] = "######"
 	TextLabel84["Rotation"] = -5
 	TextLabel84["Font"] = Enum.Font.Unknown
 	TextLabel84["Name"] = "playernames"
-	TextLabel84["Position"] = UDim2.new(0.17729792, 0, 0.68361181, 0)
+	TextLabel84["Position"] = UDim2.new(0.282596916, 0, 0.704507709, 0)
 	TextLabel84["BackgroundTransparency"] = 1
 	TextLabel84["TextSize"] = 80
 	TextLabel84["TextScaled"] = true
 	TextLabel84["BackgroundColor3"] = Color3.new(1, 1, 1)
 	----TextLabel84----
-	--Frame85--
-	local Frame85 = Instance.new("Frame",Frame6)
-	Frame85["Visible"] = false
-	Frame85["Name"] = "Fisch"
-	Frame85["Size"] = UDim2.new(0, 676, 0, 321)
-	Frame85["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame85["ZIndex"] = 5
-	Frame85["BorderSizePixel"] = 0
-	Frame85["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame85----
-	--TextButton86--
-	local TextButton86 = Instance.new("TextButton",Frame85)
-	TextButton86["TextWrapped"] = true
-	TextButton86["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton86["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton86["Text"] = "AVERAGE"
-	TextButton86["TextStrokeTransparency"] = 0
-	TextButton86["TextSize"] = 14
-	TextButton86["Font"] = Enum.Font.SourceSansBold
-	TextButton86["Name"] = "AVERAGE"
-	TextButton86["Position"] = UDim2.new(0.0329938345, 0, 0.054999996, 0)
-	TextButton86["TextScaled"] = true
-	TextButton86["Size"] = UDim2.new(0, 164, 0, 43)
-	TextButton86["BorderSizePixel"] = 0
-	TextButton86["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----TextButton86----
-	--UIStroke87--
-	local UIStroke87 = Instance.new("UIStroke",TextButton86)
-	UIStroke87["Color"] = Color3.new(1, 1, 1)
-	UIStroke87["Thickness"] = 3
-	UIStroke87["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-	----UIStroke87----
-	--UICorner88--
-	local UICorner88 = Instance.new("UICorner",TextButton86)
-	UICorner88["CornerRadius"] = UDim.new(0, 1)
-	----UICorner88----
+	--TextButton85--
+	local TextButton85 = Instance.new("TextButton",Frame70)
+	TextButton85["TextWrapped"] = true
+	TextButton85["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton85["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton85["Text"] = "INF YIELD"
+	TextButton85["TextStrokeTransparency"] = 0
+	TextButton85["TextSize"] = 14
+	TextButton85["Font"] = Enum.Font.SourceSansBold
+	TextButton85["Name"] = "INFYIELD"
+	TextButton85["Position"] = UDim2.new(0.411786139, 0, 0.414799869, 0)
+	TextButton85["TextScaled"] = true
+	TextButton85["Size"] = UDim2.new(0, 117, 0, 32)
+	TextButton85["BorderSizePixel"] = 0
+	TextButton85["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton85----
+	--UIStroke86--
+	local UIStroke86 = Instance.new("UIStroke",TextButton85)
+	UIStroke86["Color"] = Color3.new(1, 1, 1)
+	UIStroke86["Thickness"] = 3
+	UIStroke86["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke86----
+	--UICorner87--
+	local UICorner87 = Instance.new("UICorner",TextButton85)
+	UICorner87["CornerRadius"] = UDim.new(0, 1)
+	----UICorner87----
+	--Script88--
+	local Script88 = Instance.new("Script",TextButton85)
+	Script88["Name"] = "ButtonHover"
+	----Script88----
 	--Script89--
-	local Script89 = Instance.new("Script",TextButton86)
-	Script89["Name"] = "ButtonHover"
+	local Script89 = Instance.new("Script",TextButton85)
+	Script89["Name"] = "OpenFrame"
 	----Script89----
 	--Script90--
-	local Script90 = Instance.new("Script",TextButton86)
-	Script90["Name"] = "OpenFrame"
+	local Script90 = Instance.new("Script",TextButton85)
+	Script90["Name"] = "Execute"
 	----Script90----
-	--Script91--
-	local Script91 = Instance.new("Script",TextButton86)
-	Script91["Name"] = "Execute"
-	----Script91----
+	--Frame91--
+	local Frame91 = Instance.new("Frame",Frame6)
+	Frame91["Visible"] = false
+	Frame91["Name"] = "Fisch"
+	Frame91["Size"] = UDim2.new(0, 676, 0, 321)
+	Frame91["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame91["ZIndex"] = 5
+	Frame91["BorderSizePixel"] = 0
+	Frame91["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----Frame91----
 	--TextButton92--
-	local TextButton92 = Instance.new("TextButton",Frame85)
+	local TextButton92 = Instance.new("TextButton",Frame91)
 	TextButton92["TextWrapped"] = true
 	TextButton92["TextColor3"] = Color3.new(1, 1, 1)
 	TextButton92["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton92["Text"] = "NATIVE"
+	TextButton92["Text"] = "AVERAGE"
 	TextButton92["TextStrokeTransparency"] = 0
 	TextButton92["TextSize"] = 14
 	TextButton92["Font"] = Enum.Font.SourceSansBold
-	TextButton92["Name"] = "NATIVE"
-	TextButton92["Position"] = UDim2.new(0.0316086262, 0, 0.419531882, 0)
+	TextButton92["Name"] = "AVERAGE"
+	TextButton92["Position"] = UDim2.new(0.0329938345, 0, 0.054999996, 0)
 	TextButton92["TextScaled"] = true
 	TextButton92["Size"] = UDim2.new(0, 164, 0, 43)
 	TextButton92["BorderSizePixel"] = 0
@@ -883,16 +882,16 @@ local function createGui(parent)
 	Script97["Name"] = "Execute"
 	----Script97----
 	--TextButton98--
-	local TextButton98 = Instance.new("TextButton",Frame85)
+	local TextButton98 = Instance.new("TextButton",Frame91)
 	TextButton98["TextWrapped"] = true
 	TextButton98["TextColor3"] = Color3.new(1, 1, 1)
 	TextButton98["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton98["Text"] = "SPEED HUB"
+	TextButton98["Text"] = "NATIVE"
 	TextButton98["TextStrokeTransparency"] = 0
 	TextButton98["TextSize"] = 14
 	TextButton98["Font"] = Enum.Font.SourceSansBold
-	TextButton98["Name"] = "SPEEDHUB"
-	TextButton98["Position"] = UDim2.new(0.0329938345, 0, 0.237433508, 0)
+	TextButton98["Name"] = "NATIVE"
+	TextButton98["Position"] = UDim2.new(0.0316086262, 0, 0.419531882, 0)
 	TextButton98["TextScaled"] = true
 	TextButton98["Size"] = UDim2.new(0, 164, 0, 43)
 	TextButton98["BorderSizePixel"] = 0
@@ -921,18 +920,18 @@ local function createGui(parent)
 	Script103["Name"] = "Execute"
 	----Script103----
 	--TextButton104--
-	local TextButton104 = Instance.new("TextButton",Frame85)
+	local TextButton104 = Instance.new("TextButton",Frame91)
 	TextButton104["TextWrapped"] = true
 	TextButton104["TextColor3"] = Color3.new(1, 1, 1)
 	TextButton104["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton104["Text"] = "KICIAHOOK"
+	TextButton104["Text"] = "SPEED HUB"
 	TextButton104["TextStrokeTransparency"] = 0
 	TextButton104["TextSize"] = 14
 	TextButton104["Font"] = Enum.Font.SourceSansBold
-	TextButton104["Name"] = "kiciahook"
-	TextButton104["Position"] = UDim2.new(0.313420415, 0, 0.054999996, 0)
+	TextButton104["Name"] = "SPEEDHUB"
+	TextButton104["Position"] = UDim2.new(0.0329938345, 0, 0.237433508, 0)
 	TextButton104["TextScaled"] = true
-	TextButton104["Size"] = UDim2.new(0, 260, 0, 43)
+	TextButton104["Size"] = UDim2.new(0, 164, 0, 43)
 	TextButton104["BorderSizePixel"] = 0
 	TextButton104["BackgroundColor3"] = Color3.new(0, 0, 0)
 	----TextButton104----
@@ -959,16 +958,16 @@ local function createGui(parent)
 	Script109["Name"] = "Execute"
 	----Script109----
 	--TextButton110--
-	local TextButton110 = Instance.new("TextButton",Frame85)
+	local TextButton110 = Instance.new("TextButton",Frame91)
 	TextButton110["TextWrapped"] = true
 	TextButton110["TextColor3"] = Color3.new(1, 1, 1)
 	TextButton110["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton110["Text"] = "NAOKI"
+	TextButton110["Text"] = "KICIAHOOK"
 	TextButton110["TextStrokeTransparency"] = 0
 	TextButton110["TextSize"] = 14
 	TextButton110["Font"] = Enum.Font.SourceSansBold
-	TextButton110["Name"] = "naokihub"
-	TextButton110["Position"] = UDim2.new(0.31119442, 0, 0.419531882, 0)
+	TextButton110["Name"] = "kiciahook"
+	TextButton110["Position"] = UDim2.new(0.313420415, 0, 0.054999996, 0)
 	TextButton110["TextScaled"] = true
 	TextButton110["Size"] = UDim2.new(0, 260, 0, 43)
 	TextButton110["BorderSizePixel"] = 0
@@ -997,16 +996,16 @@ local function createGui(parent)
 	Script115["Name"] = "Execute"
 	----Script115----
 	--TextButton116--
-	local TextButton116 = Instance.new("TextButton",Frame85)
+	local TextButton116 = Instance.new("TextButton",Frame91)
 	TextButton116["TextWrapped"] = true
 	TextButton116["TextColor3"] = Color3.new(1, 1, 1)
 	TextButton116["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton116["Text"] = "KNCRYPT"
+	TextButton116["Text"] = "NAOKI"
 	TextButton116["TextStrokeTransparency"] = 0
 	TextButton116["TextSize"] = 14
 	TextButton116["Font"] = Enum.Font.SourceSansBold
-	TextButton116["Name"] = "KNCRYPT"
-	TextButton116["Position"] = UDim2.new(0.313420415, 0, 0.237433508, 0)
+	TextButton116["Name"] = "naokihub"
+	TextButton116["Position"] = UDim2.new(0.31119442, 0, 0.419531882, 0)
 	TextButton116["TextScaled"] = true
 	TextButton116["Size"] = UDim2.new(0, 260, 0, 43)
 	TextButton116["BorderSizePixel"] = 0
@@ -1035,18 +1034,18 @@ local function createGui(parent)
 	Script121["Name"] = "Execute"
 	----Script121----
 	--TextButton122--
-	local TextButton122 = Instance.new("TextButton",Frame85)
+	local TextButton122 = Instance.new("TextButton",Frame91)
 	TextButton122["TextWrapped"] = true
 	TextButton122["TextColor3"] = Color3.new(1, 1, 1)
 	TextButton122["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton122["Text"] = "NYX"
+	TextButton122["Text"] = "KNCRYPT"
 	TextButton122["TextStrokeTransparency"] = 0
 	TextButton122["TextSize"] = 14
 	TextButton122["Font"] = Enum.Font.SourceSansBold
-	TextButton122["Name"] = "NYX"
-	TextButton122["Position"] = UDim2.new(0.735656559, 0, 0.054999996, 0)
+	TextButton122["Name"] = "KNCRYPT"
+	TextButton122["Position"] = UDim2.new(0.313420415, 0, 0.237433508, 0)
 	TextButton122["TextScaled"] = true
-	TextButton122["Size"] = UDim2.new(0, 164, 0, 43)
+	TextButton122["Size"] = UDim2.new(0, 260, 0, 43)
 	TextButton122["BorderSizePixel"] = 0
 	TextButton122["BackgroundColor3"] = Color3.new(0, 0, 0)
 	----TextButton122----
@@ -1073,16 +1072,16 @@ local function createGui(parent)
 	Script127["Name"] = "Execute"
 	----Script127----
 	--TextButton128--
-	local TextButton128 = Instance.new("TextButton",Frame85)
+	local TextButton128 = Instance.new("TextButton",Frame91)
 	TextButton128["TextWrapped"] = true
 	TextButton128["TextColor3"] = Color3.new(1, 1, 1)
 	TextButton128["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton128["Text"] = "RAITO"
+	TextButton128["Text"] = "NYX"
 	TextButton128["TextStrokeTransparency"] = 0
 	TextButton128["TextSize"] = 14
 	TextButton128["Font"] = Enum.Font.SourceSansBold
-	TextButton128["Name"] = "RAITO"
-	TextButton128["Position"] = UDim2.new(0.734271348, 0, 0.419531882, 0)
+	TextButton128["Name"] = "NYX"
+	TextButton128["Position"] = UDim2.new(0.735656559, 0, 0.054999996, 0)
 	TextButton128["TextScaled"] = true
 	TextButton128["Size"] = UDim2.new(0, 164, 0, 43)
 	TextButton128["BorderSizePixel"] = 0
@@ -1111,16 +1110,16 @@ local function createGui(parent)
 	Script133["Name"] = "Execute"
 	----Script133----
 	--TextButton134--
-	local TextButton134 = Instance.new("TextButton",Frame85)
+	local TextButton134 = Instance.new("TextButton",Frame91)
 	TextButton134["TextWrapped"] = true
 	TextButton134["TextColor3"] = Color3.new(1, 1, 1)
 	TextButton134["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton134["Text"] = "LUNOR"
+	TextButton134["Text"] = "RAITO"
 	TextButton134["TextStrokeTransparency"] = 0
 	TextButton134["TextSize"] = 14
 	TextButton134["Font"] = Enum.Font.SourceSansBold
-	TextButton134["Name"] = "LUNOR"
-	TextButton134["Position"] = UDim2.new(0.735656559, 0, 0.237433508, 0)
+	TextButton134["Name"] = "RAITO"
+	TextButton134["Position"] = UDim2.new(0.734271348, 0, 0.419531882, 0)
 	TextButton134["TextScaled"] = true
 	TextButton134["Size"] = UDim2.new(0, 164, 0, 43)
 	TextButton134["BorderSizePixel"] = 0
@@ -1148,383 +1147,421 @@ local function createGui(parent)
 	local Script139 = Instance.new("Script",TextButton134)
 	Script139["Name"] = "Execute"
 	----Script139----
-	--TextLabel140--
-	local TextLabel140 = Instance.new("TextLabel",Frame85)
-	TextLabel140["TextWrapped"] = true
-	TextLabel140["TextColor3"] = Color3.new(0, 0, 0)
-	TextLabel140["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel140["Text"] = "psstt.. this isnt all of them, theres going to be a scrollingframe for almost 15+ scripts 🤫"
-	TextLabel140["TextStrokeColor3"] = Color3.new(1, 1, 1)
-	TextLabel140["TextStrokeTransparency"] = 0
-	TextLabel140["TextSize"] = 14
-	TextLabel140["Font"] = Enum.Font.SourceSans
-	TextLabel140["BackgroundTransparency"] = 1
-	TextLabel140["Position"] = UDim2.new(0, 0, 0.862928331, 0)
-	TextLabel140["TextScaled"] = true
-	TextLabel140["Size"] = UDim2.new(0, 675, 0, 44)
-	TextLabel140["BorderSizePixel"] = 0
-	TextLabel140["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel140----
-	--Script141--
-	local Script141 = Instance.new("Script",Frame6)
-	----Script141----
-	--Frame142--
-	local Frame142 = Instance.new("Frame",Frame6)
-	Frame142["Visible"] = false
-	Frame142["Name"] = "Arsenal"
-	Frame142["Size"] = UDim2.new(0, 676, 0, 321)
-	Frame142["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame142["ZIndex"] = 5
-	Frame142["BorderSizePixel"] = 0
-	Frame142["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame142----
-	--TextLabel143--
-	local TextLabel143 = Instance.new("TextLabel",Frame142)
-	TextLabel143["TextWrapped"] = true
-	TextLabel143["TextSize"] = 14
-	TextLabel143["TextColor3"] = Color3.new(0, 0, 0)
-	TextLabel143["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel143["Text"] = "Best Arsenal"
-	TextLabel143["TextStrokeColor3"] = Color3.new(1, 1, 1)
-	TextLabel143["TextStrokeTransparency"] = 0
-	TextLabel143["TextScaled"] = true
-	TextLabel143["Font"] = Enum.Font.Unknown
-	TextLabel143["BackgroundTransparency"] = 1
-	TextLabel143["Position"] = UDim2.new(0.0153927775, 0, 0.0567178205, 0)
-	TextLabel143["Name"] = "312"
-	TextLabel143["Size"] = UDim2.new(0, 655, 0, 42)
-	TextLabel143["BorderSizePixel"] = 0
-	TextLabel143["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel143----
-	--TextLabel144--
-	local TextLabel144 = Instance.new("TextLabel",Frame142)
-	TextLabel144["TextWrapped"] = true
-	TextLabel144["TextSize"] = 14
-	TextLabel144["TextColor3"] = Color3.new(0, 0, 0)
-	TextLabel144["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel144["Text"] = "2024 - 2025 Still Undetected!"
-	TextLabel144["TextStrokeColor3"] = Color3.new(1, 1, 1)
-	TextLabel144["TextStrokeTransparency"] = 0
-	TextLabel144["TextScaled"] = true
-	TextLabel144["Font"] = Enum.Font.Unknown
-	TextLabel144["BackgroundTransparency"] = 1
-	TextLabel144["Position"] = UDim2.new(0.0153927775, 0, 0.187558949, 0)
-	TextLabel144["Name"] = "312"
-	TextLabel144["Size"] = UDim2.new(0, 655, 0, 42)
-	TextLabel144["BorderSizePixel"] = 0
-	TextLabel144["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel144----
-	--TextButton145--
-	local TextButton145 = Instance.new("TextButton",Frame142)
-	TextButton145["TextWrapped"] = true
-	TextButton145["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton145["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton145["Text"] = "CARTEL"
-	TextButton145["TextStrokeTransparency"] = 0
-	TextButton145["TextSize"] = 14
-	TextButton145["Font"] = Enum.Font.SourceSansBold
-	TextButton145["Name"] = "CARTEL"
-	TextButton145["Position"] = UDim2.new(0.164650634, 0, 0.385218352, 0)
-	TextButton145["TextScaled"] = true
-	TextButton145["Size"] = UDim2.new(0, 453, 0, 118)
-	TextButton145["BorderSizePixel"] = 0
-	TextButton145["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----TextButton145----
-	--UIStroke146--
-	local UIStroke146 = Instance.new("UIStroke",TextButton145)
-	UIStroke146["Color"] = Color3.new(1, 1, 1)
-	UIStroke146["Thickness"] = 3
-	UIStroke146["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-	----UIStroke146----
+	--TextButton140--
+	local TextButton140 = Instance.new("TextButton",Frame91)
+	TextButton140["TextWrapped"] = true
+	TextButton140["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton140["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton140["Text"] = "LUNOR"
+	TextButton140["TextStrokeTransparency"] = 0
+	TextButton140["TextSize"] = 14
+	TextButton140["Font"] = Enum.Font.SourceSansBold
+	TextButton140["Name"] = "LUNOR"
+	TextButton140["Position"] = UDim2.new(0.735656559, 0, 0.237433508, 0)
+	TextButton140["TextScaled"] = true
+	TextButton140["Size"] = UDim2.new(0, 164, 0, 43)
+	TextButton140["BorderSizePixel"] = 0
+	TextButton140["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton140----
+	--UIStroke141--
+	local UIStroke141 = Instance.new("UIStroke",TextButton140)
+	UIStroke141["Color"] = Color3.new(1, 1, 1)
+	UIStroke141["Thickness"] = 3
+	UIStroke141["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke141----
+	--UICorner142--
+	local UICorner142 = Instance.new("UICorner",TextButton140)
+	UICorner142["CornerRadius"] = UDim.new(0, 1)
+	----UICorner142----
+	--Script143--
+	local Script143 = Instance.new("Script",TextButton140)
+	Script143["Name"] = "ButtonHover"
+	----Script143----
+	--Script144--
+	local Script144 = Instance.new("Script",TextButton140)
+	Script144["Name"] = "OpenFrame"
+	----Script144----
+	--Script145--
+	local Script145 = Instance.new("Script",TextButton140)
+	Script145["Name"] = "Execute"
+	----Script145----
+	--TextLabel146--
+	local TextLabel146 = Instance.new("TextLabel",Frame91)
+	TextLabel146["TextWrapped"] = true
+	TextLabel146["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel146["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel146["Text"] = "psstt.. this isnt all of them, theres going to be a scrollingframe for almost 15+ scripts 🤫"
+	TextLabel146["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel146["TextStrokeTransparency"] = 0
+	TextLabel146["TextSize"] = 14
+	TextLabel146["Font"] = Enum.Font.SourceSans
+	TextLabel146["BackgroundTransparency"] = 1
+	TextLabel146["Position"] = UDim2.new(0, 0, 0.862928331, 0)
+	TextLabel146["TextScaled"] = true
+	TextLabel146["Size"] = UDim2.new(0, 675, 0, 44)
+	TextLabel146["BorderSizePixel"] = 0
+	TextLabel146["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel146----
 	--Script147--
-	local Script147 = Instance.new("Script",TextButton145)
-	Script147["Name"] = "ButtonHover"
+	local Script147 = Instance.new("Script",Frame6)
 	----Script147----
-	--Script148--
-	local Script148 = Instance.new("Script",TextButton145)
-	Script148["Name"] = "OpenFrame"
-	----Script148----
-	--Script149--
-	local Script149 = Instance.new("Script",TextButton145)
-	Script149["Name"] = "Execute"
-	----Script149----
-	--UICorner150--
-	local UICorner150 = Instance.new("UICorner",TextButton145)
-	UICorner150["CornerRadius"] = UDim.new(0, 1)
-	----UICorner150----
-	--Frame151--
-	local Frame151 = Instance.new("Frame",Frame6)
-	Frame151["Visible"] = false
-	Frame151["Name"] = "RealHood"
-	Frame151["Size"] = UDim2.new(0, 676, 0, 321)
-	Frame151["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame151["ZIndex"] = 5
-	Frame151["BorderSizePixel"] = 0
-	Frame151["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame151----
-	--TextLabel152--
-	local TextLabel152 = Instance.new("TextLabel",Frame151)
-	TextLabel152["TextWrapped"] = true
-	TextLabel152["TextSize"] = 14
-	TextLabel152["TextColor3"] = Color3.new(0, 0, 0)
-	TextLabel152["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel152["Text"] = "i only know one :("
-	TextLabel152["TextStrokeColor3"] = Color3.new(1, 1, 1)
-	TextLabel152["TextStrokeTransparency"] = 0
-	TextLabel152["TextScaled"] = true
-	TextLabel152["Font"] = Enum.Font.Unknown
-	TextLabel152["BackgroundTransparency"] = 1
-	TextLabel152["Position"] = UDim2.new(0.0153927775, 0, 0.0567178205, 0)
-	TextLabel152["Name"] = "312"
-	TextLabel152["Size"] = UDim2.new(0, 655, 0, 42)
-	TextLabel152["BorderSizePixel"] = 0
-	TextLabel152["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel152----
-	--TextButton153--
-	local TextButton153 = Instance.new("TextButton",Frame151)
-	TextButton153["TextWrapped"] = true
-	TextButton153["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton153["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton153["Text"] = "YELLOWGREG"
-	TextButton153["TextStrokeTransparency"] = 0
-	TextButton153["TextSize"] = 14
-	TextButton153["Font"] = Enum.Font.SourceSansBold
-	TextButton153["Name"] = "YellowGregs"
-	TextButton153["Position"] = UDim2.new(0.164650634, 0, 0.245031431, 0)
-	TextButton153["TextScaled"] = true
-	TextButton153["Size"] = UDim2.new(0, 453, 0, 118)
-	TextButton153["BorderSizePixel"] = 0
-	TextButton153["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----TextButton153----
-	--UIStroke154--
-	local UIStroke154 = Instance.new("UIStroke",TextButton153)
-	UIStroke154["Color"] = Color3.new(1, 1, 1)
-	UIStroke154["Thickness"] = 3
-	UIStroke154["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-	----UIStroke154----
+	--Frame148--
+	local Frame148 = Instance.new("Frame",Frame6)
+	Frame148["Visible"] = false
+	Frame148["Name"] = "Arsenal"
+	Frame148["Size"] = UDim2.new(0, 676, 0, 321)
+	Frame148["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame148["ZIndex"] = 5
+	Frame148["BorderSizePixel"] = 0
+	Frame148["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----Frame148----
+	--TextLabel149--
+	local TextLabel149 = Instance.new("TextLabel",Frame148)
+	TextLabel149["TextWrapped"] = true
+	TextLabel149["TextSize"] = 14
+	TextLabel149["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel149["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel149["Text"] = "Best Arsenal"
+	TextLabel149["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel149["TextStrokeTransparency"] = 0
+	TextLabel149["TextScaled"] = true
+	TextLabel149["Font"] = Enum.Font.Unknown
+	TextLabel149["BackgroundTransparency"] = 1
+	TextLabel149["Position"] = UDim2.new(0.0153927775, 0, 0.0567178205, 0)
+	TextLabel149["Name"] = "312"
+	TextLabel149["Size"] = UDim2.new(0, 655, 0, 42)
+	TextLabel149["BorderSizePixel"] = 0
+	TextLabel149["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel149----
+	--TextLabel150--
+	local TextLabel150 = Instance.new("TextLabel",Frame148)
+	TextLabel150["TextWrapped"] = true
+	TextLabel150["TextSize"] = 14
+	TextLabel150["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel150["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel150["Text"] = "2024 - 2025 Still Undetected!"
+	TextLabel150["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel150["TextStrokeTransparency"] = 0
+	TextLabel150["TextScaled"] = true
+	TextLabel150["Font"] = Enum.Font.Unknown
+	TextLabel150["BackgroundTransparency"] = 1
+	TextLabel150["Position"] = UDim2.new(0.0153927775, 0, 0.187558949, 0)
+	TextLabel150["Name"] = "312"
+	TextLabel150["Size"] = UDim2.new(0, 655, 0, 42)
+	TextLabel150["BorderSizePixel"] = 0
+	TextLabel150["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel150----
+	--TextButton151--
+	local TextButton151 = Instance.new("TextButton",Frame148)
+	TextButton151["TextWrapped"] = true
+	TextButton151["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton151["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton151["Text"] = "CARTEL"
+	TextButton151["TextStrokeTransparency"] = 0
+	TextButton151["TextSize"] = 14
+	TextButton151["Font"] = Enum.Font.SourceSansBold
+	TextButton151["Name"] = "CARTEL"
+	TextButton151["Position"] = UDim2.new(0.164650634, 0, 0.385218352, 0)
+	TextButton151["TextScaled"] = true
+	TextButton151["Size"] = UDim2.new(0, 453, 0, 118)
+	TextButton151["BorderSizePixel"] = 0
+	TextButton151["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton151----
+	--UIStroke152--
+	local UIStroke152 = Instance.new("UIStroke",TextButton151)
+	UIStroke152["Color"] = Color3.new(1, 1, 1)
+	UIStroke152["Thickness"] = 3
+	UIStroke152["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke152----
+	--Script153--
+	local Script153 = Instance.new("Script",TextButton151)
+	Script153["Name"] = "ButtonHover"
+	----Script153----
+	--Script154--
+	local Script154 = Instance.new("Script",TextButton151)
+	Script154["Name"] = "OpenFrame"
+	----Script154----
 	--Script155--
-	local Script155 = Instance.new("Script",TextButton153)
-	Script155["Name"] = "ButtonHover"
+	local Script155 = Instance.new("Script",TextButton151)
+	Script155["Name"] = "Execute"
 	----Script155----
-	--Script156--
-	local Script156 = Instance.new("Script",TextButton153)
-	Script156["Name"] = "OpenFrame"
-	----Script156----
-	--Script157--
-	local Script157 = Instance.new("Script",TextButton153)
-	Script157["Name"] = "Execute"
-	----Script157----
-	--UICorner158--
-	local UICorner158 = Instance.new("UICorner",TextButton153)
-	UICorner158["CornerRadius"] = UDim.new(0, 1)
-	----UICorner158----
-	--TextLabel159--
-	local TextLabel159 = Instance.new("TextLabel",Frame6)
-	TextLabel159["TextScaled"] = true
-	TextLabel159["TextWrapped"] = true
-	TextLabel159["TextStrokeColor3"] = Color3.new(1, 1, 1)
-	TextLabel159["TextColor3"] = Color3.new(0, 0, 0)
-	TextLabel159["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel159["Text"] = "click on some buttons on the left side to access scripts!"
-	TextLabel159["TextSize"] = 14
-	TextLabel159["TextStrokeTransparency"] = 0
-	TextLabel159["Rotation"] = 1
-	TextLabel159["Font"] = Enum.Font.SourceSans
-	TextLabel159["BackgroundTransparency"] = 4
-	TextLabel159["Position"] = UDim2.new(0.064717494, 0, 0.262715101, 0)
-	TextLabel159["Size"] = UDim2.new(0, 587, 0, 134)
-	TextLabel159["ZIndex"] = 0
-	TextLabel159["BorderSizePixel"] = 0
-	TextLabel159["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----TextLabel159----
-	--Script160--
-	local Script160 = Instance.new("Script",TextLabel159)
-	----Script160----
-	--Frame161--
-	local Frame161 = Instance.new("Frame",ScreenGui1)
-	Frame161["Visible"] = false
-	Frame161["Name"] = "WarningFrame"
-	Frame161["Position"] = UDim2.new(0.331723779, 0, 0.340110332, 0)
-	Frame161["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame161["Size"] = UDim2.new(0, 461, 0, 267)
-	Frame161["BorderSizePixel"] = 0
-	Frame161["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----Frame161----
-	--TextLabel162--
-	local TextLabel162 = Instance.new("TextLabel",Frame161)
-	TextLabel162["TextWrapped"] = true
-	TextLabel162["TextColor3"] = Color3.new(0, 0, 0)
-	TextLabel162["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel162["Text"] = "Do you wish to CLOSE This Ui?"
-	TextLabel162["TextStrokeColor3"] = Color3.new(1, 1, 1)
-	TextLabel162["TextStrokeTransparency"] = 0
-	TextLabel162["TextSize"] = 14
-	TextLabel162["Font"] = Enum.Font.Unknown
-	TextLabel162["BackgroundTransparency"] = 1
-	TextLabel162["Position"] = UDim2.new(0.0801016912, 0, 0.267240018, 0)
-	TextLabel162["TextScaled"] = true
-	TextLabel162["Size"] = UDim2.new(0, 384, 0, 55)
-	TextLabel162["BorderSizePixel"] = 0
-	TextLabel162["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel162----
-	--ImageLabel163--
-	local ImageLabel163 = Instance.new("ImageLabel",Frame161)
-	ImageLabel163["Image"] = "http://www.roblox.com/asset/?id=113994082044278"
-	ImageLabel163["Position"] = UDim2.new(0.350138158, 0, -0.245364755, 0)
-	ImageLabel163["BorderColor3"] = Color3.new(0, 0, 0)
-	ImageLabel163["Size"] = UDim2.new(0, 137, 0, 137)
-	ImageLabel163["BorderSizePixel"] = 0
-	ImageLabel163["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----ImageLabel163----
-	--UIStroke164--
-	local UIStroke164 = Instance.new("UIStroke",ImageLabel163)
-	UIStroke164["Color"] = Color3.new(1, 1, 1)
-	UIStroke164["Thickness"] = 5
-	UIStroke164["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-	----UIStroke164----
-	--UIGradient165--
-	local UIGradient165 = Instance.new("UIGradient",UIStroke164)
-	UIGradient165["Color"] = ColorSequence.new{
+	--UICorner156--
+	local UICorner156 = Instance.new("UICorner",TextButton151)
+	UICorner156["CornerRadius"] = UDim.new(0, 1)
+	----UICorner156----
+	--Frame157--
+	local Frame157 = Instance.new("Frame",Frame6)
+	Frame157["Visible"] = false
+	Frame157["Name"] = "RealHood"
+	Frame157["Size"] = UDim2.new(0, 676, 0, 321)
+	Frame157["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame157["ZIndex"] = 5
+	Frame157["BorderSizePixel"] = 0
+	Frame157["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----Frame157----
+	--TextLabel158--
+	local TextLabel158 = Instance.new("TextLabel",Frame157)
+	TextLabel158["TextWrapped"] = true
+	TextLabel158["TextSize"] = 14
+	TextLabel158["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel158["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel158["Text"] = "i only know one :("
+	TextLabel158["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel158["TextStrokeTransparency"] = 0
+	TextLabel158["TextScaled"] = true
+	TextLabel158["Font"] = Enum.Font.Unknown
+	TextLabel158["BackgroundTransparency"] = 1
+	TextLabel158["Position"] = UDim2.new(0.0153927775, 0, 0.0567178205, 0)
+	TextLabel158["Name"] = "312"
+	TextLabel158["Size"] = UDim2.new(0, 655, 0, 42)
+	TextLabel158["BorderSizePixel"] = 0
+	TextLabel158["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel158----
+	--TextButton159--
+	local TextButton159 = Instance.new("TextButton",Frame157)
+	TextButton159["TextWrapped"] = true
+	TextButton159["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton159["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton159["Text"] = "YELLOWGREG"
+	TextButton159["TextStrokeTransparency"] = 0
+	TextButton159["TextSize"] = 14
+	TextButton159["Font"] = Enum.Font.SourceSansBold
+	TextButton159["Name"] = "YellowGregs"
+	TextButton159["Position"] = UDim2.new(0.164650634, 0, 0.245031431, 0)
+	TextButton159["TextScaled"] = true
+	TextButton159["Size"] = UDim2.new(0, 453, 0, 118)
+	TextButton159["BorderSizePixel"] = 0
+	TextButton159["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton159----
+	--UIStroke160--
+	local UIStroke160 = Instance.new("UIStroke",TextButton159)
+	UIStroke160["Color"] = Color3.new(1, 1, 1)
+	UIStroke160["Thickness"] = 3
+	UIStroke160["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke160----
+	--Script161--
+	local Script161 = Instance.new("Script",TextButton159)
+	Script161["Name"] = "ButtonHover"
+	----Script161----
+	--Script162--
+	local Script162 = Instance.new("Script",TextButton159)
+	Script162["Name"] = "OpenFrame"
+	----Script162----
+	--Script163--
+	local Script163 = Instance.new("Script",TextButton159)
+	Script163["Name"] = "Execute"
+	----Script163----
+	--UICorner164--
+	local UICorner164 = Instance.new("UICorner",TextButton159)
+	UICorner164["CornerRadius"] = UDim.new(0, 1)
+	----UICorner164----
+	--TextLabel165--
+	local TextLabel165 = Instance.new("TextLabel",Frame6)
+	TextLabel165["TextScaled"] = true
+	TextLabel165["TextWrapped"] = true
+	TextLabel165["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel165["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel165["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel165["Text"] = "click on some buttons on the left side to access scripts!"
+	TextLabel165["TextSize"] = 14
+	TextLabel165["TextStrokeTransparency"] = 0
+	TextLabel165["Rotation"] = 1
+	TextLabel165["Font"] = Enum.Font.SourceSans
+	TextLabel165["BackgroundTransparency"] = 4
+	TextLabel165["Position"] = UDim2.new(0.064717494, 0, 0.262715101, 0)
+	TextLabel165["Size"] = UDim2.new(0, 587, 0, 134)
+	TextLabel165["ZIndex"] = 0
+	TextLabel165["BorderSizePixel"] = 0
+	TextLabel165["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextLabel165----
+	--Script166--
+	local Script166 = Instance.new("Script",TextLabel165)
+	----Script166----
+	--Frame167--
+	local Frame167 = Instance.new("Frame",ScreenGui1)
+	Frame167["Visible"] = false
+	Frame167["Name"] = "WarningFrame"
+	Frame167["Position"] = UDim2.new(0.331723779, 0, 0.340110332, 0)
+	Frame167["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame167["Size"] = UDim2.new(0, 461, 0, 267)
+	Frame167["BorderSizePixel"] = 0
+	Frame167["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----Frame167----
+	--TextLabel168--
+	local TextLabel168 = Instance.new("TextLabel",Frame167)
+	TextLabel168["TextWrapped"] = true
+	TextLabel168["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel168["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel168["Text"] = "Do you wish to CLOSE This Ui?"
+	TextLabel168["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextLabel168["TextStrokeTransparency"] = 0
+	TextLabel168["TextSize"] = 14
+	TextLabel168["Font"] = Enum.Font.Unknown
+	TextLabel168["BackgroundTransparency"] = 1
+	TextLabel168["Position"] = UDim2.new(0.0801016912, 0, 0.267240018, 0)
+	TextLabel168["TextScaled"] = true
+	TextLabel168["Size"] = UDim2.new(0, 384, 0, 55)
+	TextLabel168["BorderSizePixel"] = 0
+	TextLabel168["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel168----
+	--ImageLabel169--
+	local ImageLabel169 = Instance.new("ImageLabel",Frame167)
+	ImageLabel169["Image"] = "http://www.roblox.com/asset/?id=113994082044278"
+	ImageLabel169["Position"] = UDim2.new(0.350138158, 0, -0.245364755, 0)
+	ImageLabel169["BorderColor3"] = Color3.new(0, 0, 0)
+	ImageLabel169["Size"] = UDim2.new(0, 137, 0, 137)
+	ImageLabel169["BorderSizePixel"] = 0
+	ImageLabel169["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----ImageLabel169----
+	--UIStroke170--
+	local UIStroke170 = Instance.new("UIStroke",ImageLabel169)
+	UIStroke170["Color"] = Color3.new(1, 1, 1)
+	UIStroke170["Thickness"] = 5
+	UIStroke170["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke170----
+	--UIGradient171--
+	local UIGradient171 = Instance.new("UIGradient",UIStroke170)
+	UIGradient171["Color"] = ColorSequence.new{
 		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
 		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
 		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
 	}
-	----UIGradient165----
-	--UICorner166--
-	local UICorner166 = Instance.new("UICorner",ImageLabel163)
-	UICorner166["CornerRadius"] = UDim.new(5, 5)
-	----UICorner166----
-	--TextLabel167--
-	local TextLabel167 = Instance.new("TextLabel",Frame161)
-	TextLabel167["TextWrapped"] = true
-	TextLabel167["TextColor3"] = Color3.new(0, 0, 0)
-	TextLabel167["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel167["Text"] = "**IT WILL DELETE THIS UI ENTIRELY**"
-	TextLabel167["TextStrokeColor3"] = Color3.new(1, 0, 0)
-	TextLabel167["TextStrokeTransparency"] = 0
-	TextLabel167["TextSize"] = 14
-	TextLabel167["Font"] = Enum.Font.Unknown
-	TextLabel167["BackgroundTransparency"] = 1
-	TextLabel167["Position"] = UDim2.new(0.0801016912, 0, 0.418755114, 0)
-	TextLabel167["TextScaled"] = true
-	TextLabel167["Size"] = UDim2.new(0, 384, 0, 55)
-	TextLabel167["BorderSizePixel"] = 0
-	TextLabel167["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel167----
-	--UIGradient168--
-	local UIGradient168 = Instance.new("UIGradient",Frame161)
-	UIGradient168["Rotation"] = 90
-	UIGradient168["Color"] = ColorSequence.new{
+	----UIGradient171----
+	--UICorner172--
+	local UICorner172 = Instance.new("UICorner",ImageLabel169)
+	UICorner172["CornerRadius"] = UDim.new(5, 5)
+	----UICorner172----
+	--TextLabel173--
+	local TextLabel173 = Instance.new("TextLabel",Frame167)
+	TextLabel173["TextWrapped"] = true
+	TextLabel173["TextColor3"] = Color3.new(0, 0, 0)
+	TextLabel173["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel173["Text"] = "**IT WILL DELETE THIS UI ENTIRELY**"
+	TextLabel173["TextStrokeColor3"] = Color3.new(1, 0, 0)
+	TextLabel173["TextStrokeTransparency"] = 0
+	TextLabel173["TextSize"] = 14
+	TextLabel173["Font"] = Enum.Font.Unknown
+	TextLabel173["BackgroundTransparency"] = 1
+	TextLabel173["Position"] = UDim2.new(0.0801016912, 0, 0.418755114, 0)
+	TextLabel173["TextScaled"] = true
+	TextLabel173["Size"] = UDim2.new(0, 384, 0, 55)
+	TextLabel173["BorderSizePixel"] = 0
+	TextLabel173["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel173----
+	--UIGradient174--
+	local UIGradient174 = Instance.new("UIGradient",Frame167)
+	UIGradient174["Rotation"] = 90
+	UIGradient174["Color"] = ColorSequence.new{
 		ColorSequenceKeypoint.new(0,Color3.new(0,0,0)),
 		ColorSequenceKeypoint.new(0.153979,Color3.new(0.0975965,0.0975965,0.0975965)),
 		ColorSequenceKeypoint.new(0.489619,Color3.new(0.486275,0.486275,0.486275)),
 		ColorSequenceKeypoint.new(0.889273,Color3.new(0.0907279,0.0907279,0.0907279)),
 		ColorSequenceKeypoint.new(1,Color3.new(0.0588235,0.0588235,0.0588235))
 	}
-	----UIGradient168----
-	--UIStroke169--
-	local UIStroke169 = Instance.new("UIStroke",Frame161)
-	UIStroke169["Color"] = Color3.new(1, 1, 1)
-	UIStroke169["Thickness"] = 5
-	UIStroke169["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-	----UIStroke169----
-	--UIGradient170--
-	local UIGradient170 = Instance.new("UIGradient",UIStroke169)
-	UIGradient170["Color"] = ColorSequence.new{
+	----UIGradient174----
+	--UIStroke175--
+	local UIStroke175 = Instance.new("UIStroke",Frame167)
+	UIStroke175["Color"] = Color3.new(1, 1, 1)
+	UIStroke175["Thickness"] = 5
+	UIStroke175["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke175----
+	--UIGradient176--
+	local UIGradient176 = Instance.new("UIGradient",UIStroke175)
+	UIGradient176["Color"] = ColorSequence.new{
 		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
 		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
 		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
 	}
-	----UIGradient170----
-	--UICorner171--
-	local UICorner171 = Instance.new("UICorner",Frame161)
-	UICorner171["CornerRadius"] = UDim.new(0, 16)
-	----UICorner171----
-	--ImageLabel172--
-	local ImageLabel172 = Instance.new("ImageLabel",Frame161)
-	ImageLabel172["Size"] = UDim2.new(0, 459, 0, 102)
-	ImageLabel172["Image"] = "http://www.roblox.com/asset/?id=104206787913401"
-	ImageLabel172["BackgroundTransparency"] = 1
-	ImageLabel172["Position"] = UDim2.new(-0.00127180852, 0, 0.327165127, 0)
-	ImageLabel172["BorderColor3"] = Color3.new(0, 0, 0)
-	ImageLabel172["ZIndex"] = 0
-	ImageLabel172["BorderSizePixel"] = 0
-	ImageLabel172["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----ImageLabel172----
-	--TextButton173--
-	local TextButton173 = Instance.new("TextButton",Frame161)
-	TextButton173["TextWrapped"] = true
-	TextButton173["TextColor3"] = Color3.new(0, 0, 0)
-	TextButton173["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton173["Text"] = "No, I Don't want to."
-	TextButton173["TextStrokeTransparency"] = 0
-	TextButton173["TextStrokeColor3"] = Color3.new(1, 1, 1)
-	TextButton173["Font"] = Enum.Font.Unknown
-	TextButton173["TextSize"] = 14
-	TextButton173["Position"] = UDim2.new(0.500792503, 0, 0.895131111, 0)
-	TextButton173["TextScaled"] = true
-	TextButton173["Size"] = UDim2.new(0, 176, 0, 45)
-	TextButton173["BorderSizePixel"] = 0
-	TextButton173["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----TextButton173----
-	--UIStroke174--
-	local UIStroke174 = Instance.new("UIStroke",TextButton173)
-	UIStroke174["Color"] = Color3.new(1, 1, 1)
-	UIStroke174["Thickness"] = 2
-	UIStroke174["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-	----UIStroke174----
-	--UIGradient175--
-	local UIGradient175 = Instance.new("UIGradient",UIStroke174)
-	UIGradient175["Color"] = ColorSequence.new{
+	----UIGradient176----
+	--UICorner177--
+	local UICorner177 = Instance.new("UICorner",Frame167)
+	UICorner177["CornerRadius"] = UDim.new(0, 16)
+	----UICorner177----
+	--ImageLabel178--
+	local ImageLabel178 = Instance.new("ImageLabel",Frame167)
+	ImageLabel178["Size"] = UDim2.new(0, 459, 0, 102)
+	ImageLabel178["Image"] = "http://www.roblox.com/asset/?id=104206787913401"
+	ImageLabel178["BackgroundTransparency"] = 1
+	ImageLabel178["Position"] = UDim2.new(-0.00127180852, 0, 0.327165127, 0)
+	ImageLabel178["BorderColor3"] = Color3.new(0, 0, 0)
+	ImageLabel178["ZIndex"] = 0
+	ImageLabel178["BorderSizePixel"] = 0
+	ImageLabel178["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----ImageLabel178----
+	--TextButton179--
+	local TextButton179 = Instance.new("TextButton",Frame167)
+	TextButton179["TextWrapped"] = true
+	TextButton179["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton179["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton179["Text"] = "No, I Don't want to."
+	TextButton179["TextStrokeTransparency"] = 0
+	TextButton179["TextStrokeColor3"] = Color3.new(1, 1, 1)
+	TextButton179["Font"] = Enum.Font.Unknown
+	TextButton179["TextSize"] = 14
+	TextButton179["Position"] = UDim2.new(0.500792503, 0, 0.895131111, 0)
+	TextButton179["TextScaled"] = true
+	TextButton179["Size"] = UDim2.new(0, 176, 0, 45)
+	TextButton179["BorderSizePixel"] = 0
+	TextButton179["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton179----
+	--UIStroke180--
+	local UIStroke180 = Instance.new("UIStroke",TextButton179)
+	UIStroke180["Color"] = Color3.new(1, 1, 1)
+	UIStroke180["Thickness"] = 2
+	UIStroke180["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke180----
+	--UIGradient181--
+	local UIGradient181 = Instance.new("UIGradient",UIStroke180)
+	UIGradient181["Color"] = ColorSequence.new{
 		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
 		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
 		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
 	}
-	----UIGradient175----
-	--UICorner176--
-	local UICorner176 = Instance.new("UICorner",TextButton173)
-	UICorner176["CornerRadius"] = UDim.new(0, 16)
-	----UICorner176----
-	--Script177--
-	local Script177 = Instance.new("Script",TextButton173)
-	----Script177----
-	--TextButton178--
-	local TextButton178 = Instance.new("TextButton",Frame161)
-	TextButton178["TextWrapped"] = true
-	TextButton178["TextColor3"] = Color3.new(0, 0, 0)
-	TextButton178["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton178["Text"] = "Yes, I Would like to."
-	TextButton178["TextStrokeTransparency"] = 0
-	TextButton178["TextStrokeColor3"] = Color3.new(1, 0, 0)
-	TextButton178["Font"] = Enum.Font.Unknown
-	TextButton178["TextSize"] = 14
-	TextButton178["Position"] = UDim2.new(0.108459868, 0, 0.895131111, 0)
-	TextButton178["TextScaled"] = true
-	TextButton178["Size"] = UDim2.new(0, 176, 0, 45)
-	TextButton178["BorderSizePixel"] = 0
-	TextButton178["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----TextButton178----
-	--UIStroke179--
-	local UIStroke179 = Instance.new("UIStroke",TextButton178)
-	UIStroke179["Color"] = Color3.new(1, 0, 0)
-	UIStroke179["Thickness"] = 2
-	UIStroke179["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-	----UIStroke179----
-	--UIGradient180--
-	local UIGradient180 = Instance.new("UIGradient",UIStroke179)
-	UIGradient180["Color"] = ColorSequence.new{
+	----UIGradient181----
+	--UICorner182--
+	local UICorner182 = Instance.new("UICorner",TextButton179)
+	UICorner182["CornerRadius"] = UDim.new(0, 16)
+	----UICorner182----
+	--Script183--
+	local Script183 = Instance.new("Script",TextButton179)
+	----Script183----
+	--TextButton184--
+	local TextButton184 = Instance.new("TextButton",Frame167)
+	TextButton184["TextWrapped"] = true
+	TextButton184["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton184["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton184["Text"] = "Yes, I Would like to."
+	TextButton184["TextStrokeTransparency"] = 0
+	TextButton184["TextStrokeColor3"] = Color3.new(1, 0, 0)
+	TextButton184["Font"] = Enum.Font.Unknown
+	TextButton184["TextSize"] = 14
+	TextButton184["Position"] = UDim2.new(0.108459868, 0, 0.895131111, 0)
+	TextButton184["TextScaled"] = true
+	TextButton184["Size"] = UDim2.new(0, 176, 0, 45)
+	TextButton184["BorderSizePixel"] = 0
+	TextButton184["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----TextButton184----
+	--UIStroke185--
+	local UIStroke185 = Instance.new("UIStroke",TextButton184)
+	UIStroke185["Color"] = Color3.new(1, 0, 0)
+	UIStroke185["Thickness"] = 2
+	UIStroke185["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+	----UIStroke185----
+	--UIGradient186--
+	local UIGradient186 = Instance.new("UIGradient",UIStroke185)
+	UIGradient186["Color"] = ColorSequence.new{
 		ColorSequenceKeypoint.new(0,Color3.new(0.513726,0.513726,0.513726)),
 		ColorSequenceKeypoint.new(0.489619,Color3.new(1,1,1)),
 		ColorSequenceKeypoint.new(1,Color3.new(0.537255,0.537255,0.537255))
 	}
-	----UIGradient180----
-	--UICorner181--
-	local UICorner181 = Instance.new("UICorner",TextButton178)
-	UICorner181["CornerRadius"] = UDim.new(0, 16)
-	----UICorner181----
-	--Script182--
-	local Script182 = Instance.new("Script",TextButton178)
-	----Script182----
+	----UIGradient186----
+	--UICorner187--
+	local UICorner187 = Instance.new("UICorner",TextButton184)
+	UICorner187["CornerRadius"] = UDim.new(0, 16)
+	----UICorner187----
+	--Script188--
+	local Script188 = Instance.new("Script",TextButton184)
+	----Script188----
 	spawn(function() --Source for Script4
 		local script = Script4
 		local UserInputService = game:GetService("UserInputService")
@@ -2167,8 +2204,8 @@ local function createGui(parent)
 		textLabel.Text = textLabel.Text:gsub("nan", player.Name)
 		
 	end)
-	spawn(function() --Source for Script89
-		local script = Script89
+	spawn(function() --Source for Script88
+		local script = Script88
 		local button = script.Parent -- Replace this with the reference to your button
 		local TweenService = game:GetService("TweenService")
 		
@@ -2202,8 +2239,8 @@ local function createGui(parent)
 		end)
 		
 	end)
-	spawn(function() --Source for Script90
-		local script = Script90
+	spawn(function() --Source for Script89
+		local script = Script89
 		-- Place this script inside the TextButton
 		local button = script.Parent
 		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
@@ -2225,10 +2262,10 @@ local function createGui(parent)
 		end)
 		
 	end)
-	spawn(function() --Source for Script91
-		local script = Script91
+	spawn(function() --Source for Script90
+		local script = Script90
 		script.Parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet("https://gist.githubusercontent.com/AverageHub/1980eccce4133d77fb24d166dc296125/raw/2d9c88acc21a302d92aed0e8b6f0dcd287c8b96b/gistfile1.txt"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 		end)
 		
 	end)
@@ -2293,7 +2330,7 @@ local function createGui(parent)
 	spawn(function() --Source for Script97
 		local script = Script97
 		script.Parent.MouseButton1Click:Connect(function()
-			(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/Native-lab/Native/main/loader.lua"))()
+			loadstring(game:HttpGet("https://gist.githubusercontent.com/AverageHub/1980eccce4133d77fb24d166dc296125/raw/2d9c88acc21a302d92aed0e8b6f0dcd287c8b96b/gistfile1.txt"))()
 		end)
 		
 	end)
@@ -2358,7 +2395,7 @@ local function createGui(parent)
 	spawn(function() --Source for Script103
 		local script = Script103
 		script.Parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+			(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/Native-lab/Native/main/loader.lua"))()
 		end)
 		
 	end)
@@ -2423,8 +2460,9 @@ local function createGui(parent)
 	spawn(function() --Source for Script109
 		local script = Script109
 		script.Parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
-			end)
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+		end)
+		
 	end)
 	spawn(function() --Source for Script113
 		local script = Script113
@@ -2487,9 +2525,8 @@ local function createGui(parent)
 	spawn(function() --Source for Script115
 		local script = Script115
 		script.Parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet("https://naokihub.vercel.app",true))()
-		end)
-		
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
+			end)
 	end)
 	spawn(function() --Source for Script119
 		local script = Script119
@@ -2552,7 +2589,7 @@ local function createGui(parent)
 	spawn(function() --Source for Script121
 		local script = Script121
 		script.Parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Kncrypt/refs/heads/main/sources/Fisch.lua"))({true})
+			loadstring(game:HttpGet("https://naokihub.vercel.app",true))()
 		end)
 		
 	end)
@@ -2617,7 +2654,7 @@ local function createGui(parent)
 	spawn(function() --Source for Script127
 		local script = Script127
 		script.Parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/refs/heads/main/Fisch.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Kncrypt/refs/heads/main/sources/Fisch.lua"))({true})
 		end)
 		
 	end)
@@ -2682,7 +2719,7 @@ local function createGui(parent)
 	spawn(function() --Source for Script133
 		local script = Script133
 		script.Parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/refs/heads/main/Script"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/refs/heads/main/Fisch.lua"))()
 		end)
 		
 	end)
@@ -2747,12 +2784,77 @@ local function createGui(parent)
 	spawn(function() --Source for Script139
 		local script = Script139
 		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/refs/heads/main/Script"))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script143
+		local script = Script143
+		local button = script.Parent -- Replace this with the reference to your button
+		local TweenService = game:GetService("TweenService")
+		
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(
+			0.2, -- Duration (in seconds)
+			Enum.EasingStyle.Quad, -- Easing style
+			Enum.EasingDirection.Out -- Easing direction
+		)
+		
+		-- Colors
+		local hoverColor = Color3.fromRGB(255, 255, 255) -- Hover background color
+		local hoverTextColor = Color3.fromRGB(0, 0, 0) -- Hover text color (black)
+		local defaultColor = Color3.fromRGB(0, 0, 0) -- Default background color
+		local defaultTextColor = Color3.fromRGB(255, 255, 255) -- Default text color (white)
+		
+		-- Hover (MouseEnter) Event
+		button.MouseEnter:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = hoverColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = hoverTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+		-- MouseLeave Event
+		button.MouseLeave:Connect(function()
+			local backgroundTween = TweenService:Create(button, tweenInfo, { BackgroundColor3 = defaultColor })
+			local textTween = TweenService:Create(button, tweenInfo, { TextColor3 = defaultTextColor })
+			backgroundTween:Play()
+			textTween:Play()
+		end)
+		
+	end)
+	spawn(function() --Source for Script144
+		local script = Script144
+		-- Place this script inside the TextButton
+		local button = script.Parent
+		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
+		local parentGui = script.Parent.Parent -- Adjust based on your GUI hierarchy
+		
+		-- Function to close all other frames
+		local function closeOtherFrames()
+			for _, child in pairs(parentGui:GetChildren()) do
+				if child:IsA("Frame") and child ~= targetFrame then
+					child.Visible = false
+				end
+			end
+		end
+		
+		-- Button click event
+		button.MouseButton1Click:Connect(function()
+			closeOtherFrames() -- Close all other frames
+			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
+		end)
+		
+	end)
+	spawn(function() --Source for Script145
+		local script = Script145
+		script.Parent.MouseButton1Click:Connect(function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Just3itx/Lunor-Loadstrings/refs/heads/main/Loader"))()
 		end)
 		
 	end)
-	spawn(function() --Source for Script141
-		local script = Script141
+	spawn(function() --Source for Script147
+		local script = Script147
 		local notificationTitle = "ecliptic hub" -- Title of the notification
 		local notificationText = "thanks for using my hub🥭" -- Text of the notification
 		local notificationIcon = "http://www.roblox.com/asset/?id=92949589789258" -- Icon of the notification (optional)
@@ -2784,8 +2886,8 @@ local function createGui(parent)
 		end
 		
 	end)
-	spawn(function() --Source for Script147
-		local script = Script147
+	spawn(function() --Source for Script153
+		local script = Script153
 		local button = script.Parent -- Replace this with the reference to your button
 		local TweenService = game:GetService("TweenService")
 		
@@ -2819,8 +2921,8 @@ local function createGui(parent)
 		end)
 		
 	end)
-	spawn(function() --Source for Script148
-		local script = Script148
+	spawn(function() --Source for Script154
+		local script = Script154
 		-- Place this script inside the TextButton
 		local button = script.Parent
 		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
@@ -2839,18 +2941,18 @@ local function createGui(parent)
 		button.MouseButton1Click:Connect(function()
 			closeOtherFrames() -- Close all other frames
 			targetFrame.Visible = not targetFrame.Visible -- Toggle the target frame's visibility
-		end)
-		
-	end)
-	spawn(function() --Source for Script149
-		local script = Script149
-		script.Parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/JackyPoopoo/cartel/main/0000000000000000000000000000000000000000000000000"))()
 		end)
 		
 	end)
 	spawn(function() --Source for Script155
 		local script = Script155
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/JackyPoopoo/cartel/main/0000000000000000000000000000000000000000000000000"))()
+		end)
+		
+	end)
+	spawn(function() --Source for Script161
+		local script = Script161
 		local button = script.Parent -- Replace this with the reference to your button
 		local TweenService = game:GetService("TweenService")
 		
@@ -2884,8 +2986,8 @@ local function createGui(parent)
 		end)
 		
 	end)
-	spawn(function() --Source for Script156
-		local script = Script156
+	spawn(function() --Source for Script162
+		local script = Script162
 		-- Place this script inside the TextButton
 		local button = script.Parent
 		local targetFrame = script.Parent.Parent:WaitForChild("UpdatesFrame") -- Replace "TargetFrame" with the name of your frame
@@ -2907,15 +3009,15 @@ local function createGui(parent)
 		end)
 		
 	end)
-	spawn(function() --Source for Script157
-		local script = Script157
+	spawn(function() --Source for Script163
+		local script = Script163
 		script.Parent.MouseButton1Click:Connect(function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGregs/Loadstring/refs/heads/main/rhtestesting.lua"))()
 		end)
 		
 	end)
-	spawn(function() --Source for Script160
-		local script = Script160
+	spawn(function() --Source for Script166
+		local script = Script166
 		local text = script.Parent
 		local tweenService = game:GetService("TweenService")
 		
@@ -2952,8 +3054,8 @@ local function createGui(parent)
 		fadeText(1, 0.1)
 		
 	end)
-	spawn(function() --Source for Script177
-		local script = Script177
+	spawn(function() --Source for Script183
+		local script = Script183
 		script.Parent.MouseButton1Click:Connect(function()
 			local eclipticFrame = script.Parent.Parent.Parent.Ecliptic
 			local warningFrame = script.Parent.Parent.Parent.WarningFrame
@@ -2969,8 +3071,8 @@ local function createGui(parent)
 		end)
 		
 	end)
-	spawn(function() --Source for Script182
-		local script = Script182
+	spawn(function() --Source for Script188
+		local script = Script188
 		script.Parent.MouseButton1Click:Connect(function()
 			-- Find the GUI named "EclipticHub" and destroy it
 			local eclipticHub = game.Players.LocalPlayer.PlayerGui:FindFirstChild("EclipticHub")
